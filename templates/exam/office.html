@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <link href="/static/exam/css/office.css" rel="stylesheet"></link>
+</head>
+<body>
+<div id="app" class="app"></div>
+{#{{ user.username }}   office<a href="/logout/">logout</a>#}
+</body>
+    <script>
+        window.office= {
+            'id':'{{ user.office.id }}',
+            'name':'{{ user.office.office_name }}'
+        }
+        window.user= {
+            'id':'{{ user.id }}',
+            'name':'{{ user.username }}'
+        }
+    </script>
+    <script src="/static/exam/js/manifest.js"></script>
+  <script src="/static/exam/js/vendor.js"></script>
+
+    <script src="/static/exam/js/office.js"></script>
+{#   <script type="text/javascript" src="http://localhost:6060/office.js"></script>#}
+</html>

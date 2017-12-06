@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+
+<html lang="zh-hans" xmlns="http://www.w3.org/1999/html">
+<head>
+<title>注册</title>
+<link href="/static/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+<style>
+
+    .form{
+        width: 360px;
+        margin: 150px auto;
+        background: #ffffff;
+    }
+</style>
+
+<meta name="robots" content="NONE,NOARCHIVE" />
+</head>
+
+{% load static %}
+
+<div class="form">
+    <form  action="/register/" method="post" id="login-form"><input type='hidden' name='csrfmiddlewaretoken' value='{{ csrf_token }}' />
+  <div class="form-group">
+
+    <label class="required control-label " for="id_username">用户名:</label>
+      <input class="form-control" autofocus="" id="id_username" maxlength="254" name="username" type="text" required />
+  </div>
+  <div class="form-group">
+
+    <label class="required control-label " for="id_password">密码:</label>
+      <input id="id_password" name="password" type="password" required class="form-control"/>
+    <input type="hidden"  name="next" value="/admin/" class="form-control next" />
+  </div>
+
+
+
+  <div class="form-group">
+   <input type="submit" value="登录" class="btn btn-primary bth-lg form-control"/>
+  </div>
+
+</form>
+</div>
+
+
+
+
+<script type="text/javascript">
+document.getElementById('id_username').focus()
+    document.querySelector('.next').value = location.search.replace("?next=",'')
+</script>
+
+
+</body>
+</html>

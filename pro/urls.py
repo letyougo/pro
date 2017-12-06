@@ -1,0 +1,39 @@
+"""pro URL Configuration
+
+The `urlpatterns` list routes URLs to views. For more information please see:
+    https://docs.djangoproject.com/en/2.0/topics/http/urls/
+Examples:
+Function views
+    1. Add an import:  from my_app import views
+    2. Add a URL to urlpatterns:  path('', views.home, name='home')
+Class-based views
+    1. Add an import:  from other_app.views import Home
+    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
+Including another URLconf
+    1. Import the include() function: from django.urls import include, path
+    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+"""
+from django.contrib import admin
+from django.urls import path,include
+from exam.api.teacher import TeacherResource
+from exam.api.schoolexam import SchoolExamResource
+from exam.api.teacherexam import TeacherExamResource
+from exam.api.school import SchoolResource
+from exam.api.exam import ExamResource
+from exam.account import login,logout
+import exam.views as view
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('api/teacher/', include(TeacherResource.urls())),
+    path('api/schoolexam/', include(SchoolExamResource.urls())),
+    path('api/teacherexam/', include(TeacherExamResource.urls())),
+    path('api/exam/', include(ExamResource.urls())),
+    path('api/school/', include(SchoolResource.urls())),
+    path(r'login/', login),
+
+    path(r'logout/', logout),
+    path(r'school/', view.school),
+    path(r'office/', view.office),
+    path(r'center/', view.center),
+    path(r'', view.index),
+]
