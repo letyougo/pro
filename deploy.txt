@@ -1,0 +1,1 @@
+uwsgi --http :8001 --chdir /Users/xiaoxiaosu/Documents/miui-2017/pro --wsgi-file pro/wsgi.py --master --processes 4 --threads 2 --stats 127.0.0.1:9191
