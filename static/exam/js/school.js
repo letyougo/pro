@@ -245,6 +245,13 @@ module.exports = (
 
 /***/ }),
 
+/***/ "34jq":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "4nb4":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -305,13 +312,6 @@ function btoa(input) {
 
 module.exports = btoa;
 
-
-/***/ }),
-
-/***/ "6Csb":
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
 
 /***/ }),
 
@@ -2882,6 +2882,17 @@ __WEBPACK_IMPORTED_MODULE_0_vue__["default"].use(__WEBPACK_IMPORTED_MODULE_1_vue
 
 /***/ }),
 
+/***/ "ZDja":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"exam"},[_c('h5',[_vm._v("   总计"+_vm._s(_vm.total)+"条数据")]),_vm._v(" "),_c('el-table',{directives:[{name:"loading",rawName:"v-loading",value:(_vm.loading),expression:"loading"}],staticStyle:{"width":"100%"},attrs:{"data":_vm.list,"border":"","size":"small"}},[_c('el-table-column',{attrs:{"prop":"id","label":"id"}}),_vm._v(" "),_c('el-table-column',{attrs:{"prop":"exam_desc","label":"考试描述"}}),_vm._v(" "),_c('el-table-column',{attrs:{"prop":"exam_time","label":"考试时间"}}),_vm._v(" "),_c('el-table-column',{attrs:{"prop":"exam_total","label":"考试办规划总监考费"}}),_vm._v(" "),_c('el-table-column',{attrs:{"prop":"total","label":"本校总监考费"}}),_vm._v(" "),_c('el-table-column',{attrs:{"label":"操作","width":"135"},scopedSlots:_vm._u([{key:"default",fn:function(scope){return [_c('el-button-group',[_c('el-button',{attrs:{"type":"primary","size":"small"},on:{"click":function($event){_vm.$router.push('/teacherexam/'+scope.row.id +'/')}}},[_vm._v("分配监考老师")])],1)]}}])})],1),_vm._v(" "),_c('el-dialog',{attrs:{"title":"增加考试信息","visible":_vm.add_form.visible},on:{"update:visible":function($event){_vm.$set(_vm.add_form, "visible", $event)}}},[_c('el-form',{staticClass:"demo-form-inline",attrs:{"label-width":"100px"}},[_c('el-form-item',{attrs:{"label":"考试名称"}},[_c('el-input',{attrs:{"placeholder":"输入考试名称"},model:{value:(_vm.add_form.name),callback:function ($$v) {_vm.$set(_vm.add_form, "name", $$v)},expression:"add_form.name"}})],1),_vm._v(" "),_c('el-form-item',{attrs:{"label":"考试地点"}},[_c('el-input',{attrs:{"placeholder":"输入考试地点"},model:{value:(_vm.add_form.place),callback:function ($$v) {_vm.$set(_vm.add_form, "place", $$v)},expression:"add_form.place"}})],1),_vm._v(" "),_c('el-form-item',{attrs:{"label":"开始时间"}},[_c('el-input',{attrs:{"placeholder":"输入开始时间"},model:{value:(_vm.add_form.start),callback:function ($$v) {_vm.$set(_vm.add_form, "start", $$v)},expression:"add_form.start"}})],1),_vm._v(" "),_c('el-form-item',{attrs:{"label":"结束时间"}},[_c('el-input',{attrs:{"placeholder":"输入结束时间"},model:{value:(_vm.add_form.end),callback:function ($$v) {_vm.$set(_vm.add_form, "end", $$v)},expression:"add_form.end"}})],1),_vm._v(" "),_c('el-form-item',{attrs:{"label":"监考老师"}},[_c('el-input',{attrs:{"placeholder":"输入监考老师"},model:{value:(_vm.add_form.teacher),callback:function ($$v) {_vm.$set(_vm.add_form, "teacher", $$v)},expression:"add_form.teacher"}})],1)],1),_vm._v(" "),_c('span',{staticClass:"dialog-footer",attrs:{"slot":"footer"},slot:"footer"},[_c('el-button',{attrs:{"size":"small"},on:{"click":function($event){_vm.add_form.visible=false}}},[_vm._v("取 消")]),_vm._v(" "),_c('el-button',{attrs:{"type":"primary","size":"small"},on:{"click":_vm.add}},[_vm._v("确 定")])],1)],1),_vm._v(" "),_c('el-dialog',{attrs:{"title":"编辑考试信息","visible":_vm.edit_form.visible},on:{"update:visible":function($event){_vm.$set(_vm.edit_form, "visible", $event)}}},[_c('el-form',{staticClass:"demo-form-inline",attrs:{"label-width":"100px"}},[_c('el-form-item',{attrs:{"label":"考试描述"}},[_c('el-input',{attrs:{"placeholder":"输入考试名称"},model:{value:(_vm.edit_form.name),callback:function ($$v) {_vm.$set(_vm.edit_form, "name", $$v)},expression:"edit_form.name"}})],1),_vm._v(" "),_c('el-form-item',{attrs:{"label":"考试地点"}},[_c('el-input',{attrs:{"placeholder":"输入考试地点"},model:{value:(_vm.edit_form.place),callback:function ($$v) {_vm.$set(_vm.edit_form, "place", $$v)},expression:"edit_form.place"}})],1),_vm._v(" "),_c('el-form-item',{attrs:{"label":"开始时间"}},[_c('el-input',{attrs:{"placeholder":"输入开始时间"},model:{value:(_vm.edit_form.start),callback:function ($$v) {_vm.$set(_vm.edit_form, "start", $$v)},expression:"edit_form.start"}})],1),_vm._v(" "),_c('el-form-item',{attrs:{"label":"结束时间"}},[_c('el-input',{attrs:{"placeholder":"输入结束时间"},model:{value:(_vm.edit_form.end),callback:function ($$v) {_vm.$set(_vm.edit_form, "end", $$v)},expression:"edit_form.end"}})],1),_vm._v(" "),_c('el-form-item',{attrs:{"label":"监考老师"}},[_c('el-input',{attrs:{"placeholder":"输入监考老师"},model:{value:(_vm.edit_form.teacher),callback:function ($$v) {_vm.$set(_vm.edit_form, "teacher", $$v)},expression:"edit_form.teacher"}})],1)],1),_vm._v(" "),_c('span',{staticClass:"dialog-footer",attrs:{"slot":"footer"},slot:"footer"},[_c('el-button',{attrs:{"size":"small"},on:{"click":function($event){_vm.edit_form.visible=false}}},[_vm._v("取 消")]),_vm._v(" "),_c('el-button',{attrs:{"type":"primary","size":"small"},on:{"click":_vm.edit}},[_vm._v("确 定")])],1)],1),_vm._v(" "),_c('br'),_vm._v(" "),_c('el-pagination',{attrs:{"layout":"prev, pager, next","total":_vm.total,"current-page":_vm.current_page,"page-size":_vm.page_size},on:{"current-change":function (p){ return _vm.current_page=p; }}})],1)}
+var staticRenderFns = []
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+
+/***/ }),
+
 /***/ "ZH5x":
 /***/ (function(module, exports) {
 
@@ -2933,17 +2944,6 @@ function isSlowBuffer (obj) {
 
 /***/ }),
 
-/***/ "coZl":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"exam"},[_c('h5',[_vm._v("   总计"+_vm._s(_vm.total)+"条数据")]),_vm._v(" "),_c('el-table',{directives:[{name:"loading",rawName:"v-loading",value:(_vm.loading),expression:"loading"}],staticStyle:{"width":"100%"},attrs:{"data":_vm.list,"border":"","size":"small"}},[_c('el-table-column',{attrs:{"prop":"id","label":"id"}}),_vm._v(" "),_c('el-table-column',{attrs:{"prop":"exam_desc","label":"考试描述"}}),_vm._v(" "),_c('el-table-column',{attrs:{"prop":"exam_time","label":"考试时间"}}),_vm._v(" "),_c('el-table-column',{attrs:{"prop":"exam_total","label":"考试办规划总监考费"}}),_vm._v(" "),_c('el-table-column',{attrs:{"prop":"total","label":"本校总监考费"}}),_vm._v(" "),_c('el-table-column',{attrs:{"label":"操作","width":"135"},scopedSlots:_vm._u([{key:"default",fn:function(scope){return [_c('el-button-group',[_c('el-button',{attrs:{"type":"primary","size":"small"},on:{"click":function($event){_vm.$router.push('/teacherexam/'+scope.row.id +'/')}}},[_vm._v("分配监考老师")])],1)]}}])})],1),_vm._v(" "),_c('el-dialog',{attrs:{"title":"增加考试信息","visible":_vm.add_form.visible},on:{"update:visible":function($event){_vm.$set(_vm.add_form, "visible", $event)}}},[_c('el-form',{staticClass:"demo-form-inline",attrs:{"label-width":"100px"}},[_c('el-form-item',{attrs:{"label":"考试名称"}},[_c('el-input',{attrs:{"placeholder":"输入考试名称"},model:{value:(_vm.add_form.name),callback:function ($$v) {_vm.$set(_vm.add_form, "name", $$v)},expression:"add_form.name"}})],1),_vm._v(" "),_c('el-form-item',{attrs:{"label":"考试地点"}},[_c('el-input',{attrs:{"placeholder":"输入考试地点"},model:{value:(_vm.add_form.place),callback:function ($$v) {_vm.$set(_vm.add_form, "place", $$v)},expression:"add_form.place"}})],1),_vm._v(" "),_c('el-form-item',{attrs:{"label":"开始时间"}},[_c('el-input',{attrs:{"placeholder":"输入开始时间"},model:{value:(_vm.add_form.start),callback:function ($$v) {_vm.$set(_vm.add_form, "start", $$v)},expression:"add_form.start"}})],1),_vm._v(" "),_c('el-form-item',{attrs:{"label":"结束时间"}},[_c('el-input',{attrs:{"placeholder":"输入结束时间"},model:{value:(_vm.add_form.end),callback:function ($$v) {_vm.$set(_vm.add_form, "end", $$v)},expression:"add_form.end"}})],1),_vm._v(" "),_c('el-form-item',{attrs:{"label":"监考老师"}},[_c('el-input',{attrs:{"placeholder":"输入监考老师"},model:{value:(_vm.add_form.teacher),callback:function ($$v) {_vm.$set(_vm.add_form, "teacher", $$v)},expression:"add_form.teacher"}})],1)],1),_vm._v(" "),_c('span',{staticClass:"dialog-footer",attrs:{"slot":"footer"},slot:"footer"},[_c('el-button',{attrs:{"size":"small"},on:{"click":function($event){_vm.add_form.visible=false}}},[_vm._v("取 消")]),_vm._v(" "),_c('el-button',{attrs:{"type":"primary","size":"small"},on:{"click":_vm.add}},[_vm._v("确 定")])],1)],1),_vm._v(" "),_c('el-dialog',{attrs:{"title":"编辑考试信息","visible":_vm.edit_form.visible},on:{"update:visible":function($event){_vm.$set(_vm.edit_form, "visible", $event)}}},[_c('el-form',{staticClass:"demo-form-inline",attrs:{"label-width":"100px"}},[_c('el-form-item',{attrs:{"label":"考试描述"}},[_c('el-input',{attrs:{"placeholder":"输入考试名称"},model:{value:(_vm.edit_form.name),callback:function ($$v) {_vm.$set(_vm.edit_form, "name", $$v)},expression:"edit_form.name"}})],1),_vm._v(" "),_c('el-form-item',{attrs:{"label":"考试地点"}},[_c('el-input',{attrs:{"placeholder":"输入考试地点"},model:{value:(_vm.edit_form.place),callback:function ($$v) {_vm.$set(_vm.edit_form, "place", $$v)},expression:"edit_form.place"}})],1),_vm._v(" "),_c('el-form-item',{attrs:{"label":"开始时间"}},[_c('el-input',{attrs:{"placeholder":"输入开始时间"},model:{value:(_vm.edit_form.start),callback:function ($$v) {_vm.$set(_vm.edit_form, "start", $$v)},expression:"edit_form.start"}})],1),_vm._v(" "),_c('el-form-item',{attrs:{"label":"结束时间"}},[_c('el-input',{attrs:{"placeholder":"输入结束时间"},model:{value:(_vm.edit_form.end),callback:function ($$v) {_vm.$set(_vm.edit_form, "end", $$v)},expression:"edit_form.end"}})],1),_vm._v(" "),_c('el-form-item',{attrs:{"label":"监考老师"}},[_c('el-input',{attrs:{"placeholder":"输入监考老师"},model:{value:(_vm.edit_form.teacher),callback:function ($$v) {_vm.$set(_vm.edit_form, "teacher", $$v)},expression:"edit_form.teacher"}})],1)],1),_vm._v(" "),_c('span',{staticClass:"dialog-footer",attrs:{"slot":"footer"},slot:"footer"},[_c('el-button',{attrs:{"size":"small"},on:{"click":function($event){_vm.edit_form.visible=false}}},[_vm._v("取 消")]),_vm._v(" "),_c('el-button',{attrs:{"type":"primary","size":"small"},on:{"click":_vm.edit}},[_vm._v("确 定")])],1)],1),_vm._v(" "),_c('br'),_vm._v(" "),_c('el-pagination',{attrs:{"layout":"prev, pager, next","total":_vm.total,"current-page":_vm.current_page,"page-size":_vm.page_size},on:{"current-change":function (p){ return _vm.current_page=p; }}})],1)}
-var staticRenderFns = []
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-
-/***/ }),
-
 /***/ "dlYC":
 /***/ (function(module, exports) {
 
@@ -2956,9 +2956,9 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_exam_info_vue__ = __webpack_require__("edgv");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1f0928ee_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_exam_info_vue__ = __webpack_require__("coZl");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_7d32c9e7_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_exam_info_vue__ = __webpack_require__("ZDja");
 function injectStyle (ssrContext) {
-  __webpack_require__("6Csb")
+  __webpack_require__("34jq")
 }
 var normalizeComponent = __webpack_require__("VU/8")
 /* script */
@@ -2970,12 +2970,12 @@ var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-1f0928ee"
+var __vue_scopeId__ = "data-v-7d32c9e7"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_exam_info_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1f0928ee_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_exam_info_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_7d32c9e7_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_exam_info_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -3199,7 +3199,7 @@ var Component = normalizeComponent(
             var _this = this;
 
             return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_asyncToGenerator___default()( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee() {
-                var _limit, _page, search, response;
+                var _limit, _page, search, id, response;
 
                 return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
                     while (1) {
@@ -3209,10 +3209,11 @@ var Component = normalizeComponent(
 
 
                                 _this.loading = true;
-                                _context.next = 4;
-                                return __WEBPACK_IMPORTED_MODULE_4__config__["a" /* default */].get('/api/schoolexam/');
+                                id = _this.id;
+                                _context.next = 5;
+                                return __WEBPACK_IMPORTED_MODULE_4__config__["a" /* default */].get('/api/schoolexam/?school_id=' + window.school.id);
 
-                            case 4:
+                            case 5:
                                 response = _context.sent;
 
 
@@ -3220,7 +3221,7 @@ var Component = normalizeComponent(
 
                                 _this.loading = false;
 
-                            case 7:
+                            case 8:
                             case 'end':
                                 return _context.stop();
                         }

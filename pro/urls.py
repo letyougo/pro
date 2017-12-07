@@ -20,6 +20,7 @@ from exam.api.schoolexam import SchoolExamResource
 from exam.api.teacherexam import TeacherExamResource
 from exam.api.school import SchoolResource
 from exam.api.exam import ExamResource
+from exam.api.office import officeResource
 from exam.account import login,logout
 import exam.views as view
 urlpatterns = [
@@ -29,6 +30,7 @@ urlpatterns = [
     path('api/teacherexam/', include(TeacherExamResource.urls())),
     path('api/exam/', include(ExamResource.urls())),
     path('api/school/', include(SchoolResource.urls())),
+    path('api/office/', include(officeResource.urls())),
     path(r'login/', login),
 
     path(r'logout/', logout),

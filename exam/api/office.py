@@ -1,21 +1,22 @@
 from restless.dj import DjangoResource
 from restless.preparers import FieldsPreparer,SubPreparer,CollectionSubPreparer
 
-from exam.models import Teacher,School
+from exam.models import Teacher,Office
 from django.contrib.auth.models import User
 from django.contrib.auth.hashers import make_password, check_password
 
-class SchoolResource(DjangoResource):
+class officeResource(DjangoResource):
     # Controls what data is included in the serialized output.
 
 
-    school_preparer = FieldsPreparer(fields={
+    office_preparer = FieldsPreparer(fields={
         'id': 'id',
         'name': 'name',
     })
     preparer = FieldsPreparer(fields={
         'id': 'id',
-        'name':'name',
+        'office_name':'office_name',
+        'exam_name': 'exam_name',
         'register_username':'user.username',
         'register_password':'user.password',
         'register_userid':'user.id'
@@ -30,7 +31,7 @@ class SchoolResource(DjangoResource):
     # GET /
     def list(self):
 
-        return School.objects.all()
+        return Office.objects.all()
 
     # GET /pk/
     def detail(self, pk):
@@ -42,9 +43,10 @@ class SchoolResource(DjangoResource):
             username=self.data['register_username'],
             password=make_password(self.data['register_password'])
         )
-        return School.objects.create(
+        return Office.objects.create(
             user=user,
-            name=self.data['name']
+            office_name=self.data['office_name'],
+            exam_name=self.data['exam_name']
         )
         # return Teacher.objects.create(
         #     name=self.data['name'],
@@ -52,7 +54,7 @@ class SchoolResource(DjangoResource):
         #     idcard=self.data['idcard'],
         #     bankcard=self.data['bankcard'],
         #     bankinfo=self.data['bankinfo'],
-        #     school=self.request.user.school
+        #     office=self.request.user.office
         # )
 
     # PUT /pk/
@@ -66,18 +68,18 @@ class SchoolResource(DjangoResource):
             user.password = make_password(self.data['register_password'])
 
         user.save()
-        print(user,pk)
-        school = School.objects.get(id=pk)
-        print(school)
-        school.name=self.data['name']
 
-        school.save()
+        office = Office.objects.get(id=pk)
+
+        office.office_name=self.data['office_name']
+        office.exam_name = self.data['exam_name']
+        office.save()
 
 
-        return school
+        return office
 
 
 
     # DELETE /pk/
     def delete(self, pk):
-        School.objects.get(id=pk).delete()
+        Office.objects.get(id=pk).delete()
