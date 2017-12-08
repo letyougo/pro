@@ -29,6 +29,7 @@ ALLOWED_HOSTS = [
     '101.200.129.112',
     'localhost',
     '127.0.0.1'
+    'fe.dongnaoedu.com'
 ]
 
 

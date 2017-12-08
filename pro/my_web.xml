@@ -1,0 +1,8 @@
+<uwsgi>
+	<http>127.0.0.1:7777</http>
+	<chdir>/root/pro</chdir>
+	<module>pro.wsgi</module>
+	<processes>4</processes>
+	<daemonize>uwsgi.log</daemonize>
+	<home>/root/.virtualenvs/pr</home>
+</uwsgi>
