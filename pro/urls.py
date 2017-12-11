@@ -23,6 +23,15 @@ from exam.api.exam import ExamResource
 from exam.api.office import officeResource
 from exam.account import login,logout
 import exam.views as view
+
+from django.conf.urls import handler404, handler500
+
+
+
+
+handler404 = 'exam.status.page404'
+handler500 = 'exam.status.page500'
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/teacher/', include(TeacherResource.urls())),
@@ -39,3 +48,5 @@ urlpatterns = [
     path(r'center/', view.center),
     path(r'', view.index),
 ]
+
+
