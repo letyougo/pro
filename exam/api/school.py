@@ -34,7 +34,7 @@ class SchoolResource(DjangoResource):
 
     # GET /pk/
     def detail(self, pk):
-        return Teacher.objects.get(id=pk)
+        return School.objects.get(id=pk)
 
     # POST /
     def create(self):

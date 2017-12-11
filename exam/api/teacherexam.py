@@ -37,11 +37,19 @@ class TeacherExamResource(DjangoResource):
     # GET /
     def list(self):
         # user_id = self.request.user.id
+        if 'schoolexam_id' in self.request.GET:
+            schoolexam = Schoolexam.objects.get(id= int(self.request.GET['schoolexam_id']))
+            return Teacherexam.objects.filter(schoolexam=schoolexam)
+        if 'teacher_id' in self.request.GET:
+            teacher = Teacher.objects.get(id=int(self.request.GET['teacher_id']))
+            if 'start' in self.request.GET and 'end' in self.request.GET:
 
-        schoolexam = Schoolexam.objects.get(id= int(self.request.GET['schoolexam_id']))
-        print(schoolexam)
-        return Teacherexam.objects.filter(schoolexam=schoolexam)
+                return Teacherexam.objects.filter(teacher=teacher,schoolexam__exam__time__range=[self.request.GET['start'],self.request.GET['end']])
+            else:
+                return Teacherexam.objects.filter(teacher=teacher)
 
+
+        return Teacherexam.objects.all()
 
     # GET /pk/
     def detail(self, pk):
