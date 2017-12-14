@@ -1,8 +1,60 @@
 from restless.dj import DjangoResource
 from restless.preparers import FieldsPreparer,SubPreparer,CollectionSubPreparer
-
+from django.core.paginator import Paginator
+from django.http import JsonResponse,HttpResponse
 from exam.models import Teacher,School
+from django.views import View
+import json
+import simplejson
 
+class teacher2(View):
+    def get(self,request):
+
+        page_size = int(request.GET.get('page_size',10))
+        page_num = int(request.GET.get('page_num',1))
+
+        school = School.objects.get(id=int(request.GET['school_id']))
+        teacher = Teacher.objects.filter(school=school)
+        paginator = Paginator(teacher, page_size)
+        pa = paginator.page(page_num)
+        return JsonResponse(
+            dict(
+                page=dict(
+                    page_size=page_size,
+                    page_num=page_num,
+                    total=len(teacher)
+                ),
+                list=[t.to_obj() for t in pa]
+            )
+        )
+
+    def post(self,request):
+        list = simplejson.loads(request.body)
+        bulk_teacher = [
+            Teacher(
+                name=item['name'],
+                idcard=item['idcard'],
+                phone=item['phone'],
+                bankcard=item['bankcard'],
+                bankinfo=item['bankinfo'],
+                school=request.user.school
+            )
+            for item in list if not Teacher.objects.filter(idcard=item['idcard']).exists()
+        ]
+
+        Teacher.objects.bulk_create(bulk_teacher)
+        return JsonResponse(dict(error=False,create=len(bulk_teacher)))
+
+
+
+
+
+
+
+
+
+def create2(request):
+    pass
 
 class TeacherResource(DjangoResource):
     # Controls what data is included in the serialized output.
@@ -19,7 +71,8 @@ class TeacherResource(DjangoResource):
         'idcard': 'idcard',
         'bankcard': 'bankcard',
         'bankinfo':'bankinfo',
-        'school_id':'school.id'
+        'school_id':'school.id',
+        'create_time':'create_time'
     })
 
     def is_authenticated(self):

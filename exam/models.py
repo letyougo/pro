@@ -54,7 +54,7 @@ class Center(models.Model):
 class Teacher(models.Model):
     name = models.CharField(max_length=128,null=True,blank=True,verbose_name='老师名字')
     phone = models.CharField(max_length=128,null=True,blank=True,verbose_name='手机号码')
-    idcard = models.CharField(max_length=256,null=True,blank=True,verbose_name='身份证')
+    idcard = models.CharField(max_length=128,null=True,blank=True,verbose_name='身份证',unique=True)
     bankcard = models.CharField(max_length=256,null=True,blank=True,verbose_name='银行卡')
     bankinfo = models.TextField(verbose_name='银行信息')
     school = models.ForeignKey(School,null=True,blank=True,on_delete=models.CASCADE,verbose_name='所在学校')
@@ -64,9 +64,21 @@ class Teacher(models.Model):
     class Meta:
         verbose_name = '教师列表'
         verbose_name_plural = verbose_name
+        ordering = ['-create_time','-update_time']
 
 
-
+    def to_obj(self):
+        return dict(
+            name=self.name,
+            phone=self.phone,
+            idcard=self.idcard,
+            bankcard=self.bankcard,
+            bankinfo=self.bankinfo,
+            school_name=self.school.name,
+            school_id=self.school.id,
+            create_time=self.create_time,
+            update_time=self.update_time
+        )
 
     def __str__(self):
         return self.school.name + '('+ self.name+')'

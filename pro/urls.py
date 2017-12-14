@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from exam.api.teacher import TeacherResource
+from exam.api.teacher import TeacherResource,teacher2
 from exam.api.schoolexam import SchoolExamResource
 from exam.api.teacherexam import TeacherExamResource
 from exam.api.school import SchoolResource
@@ -33,6 +33,8 @@ handler404 = 'exam.status.page404'
 handler500 = 'exam.status.page500'
 
 urlpatterns = [
+    path(r'upload/', view.upload),
+    path(r'upload2/', view.upload2),
     path('admin/', admin.site.urls),
     path('api/teacher/', include(TeacherResource.urls())),
     path('api/schoolexam/', include(SchoolExamResource.urls())),
@@ -47,6 +49,8 @@ urlpatterns = [
     path(r'office/', view.office),
     path(r'center/', view.center),
     path(r'', view.index),
+
+    path('api2/teacher/',teacher2.as_view()),
 ]
 
 
