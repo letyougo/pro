@@ -13,12 +13,15 @@ def index(req):
     return render(req,'exam/index.html')
 
 def school(request):
+    school = request.user.school
     return render(request, 'exam/school.html')
 
 def office(request):
+    office = request.user.office
     return render(request, 'exam/office.html')
 
 def center(request):
+    center = request.user.center
     return render(request, 'exam/center.html')
 
 def upload(request):
