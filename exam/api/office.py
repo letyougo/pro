@@ -25,8 +25,7 @@ class officeResource(DjangoResource):
     def is_authenticated(self):
 
         return True
-        # print(self.request.user.is_authenticated(),'-=----')
-        # return self.request.user.is_authenticated()
+
 
     # GET /
     def list(self):
@@ -64,7 +63,6 @@ class officeResource(DjangoResource):
 
         user.username = self.data['register_username']
         if self.data['change_password']:
-            print('change password')
             user.password = make_password(self.data['register_password'])
 
         user.save()

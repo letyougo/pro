@@ -28,12 +28,11 @@ class ExamResource(DjangoResource):
     def is_authenticated(self):
 
         return True
-        # print(self.request.user.is_authenticated(),'-=----')
-        # return self.request.user.is_authenticated()
+
 
     # GET /
     def list(self):
-        print(self.request.GET)
+
         office = Office.objects.get(id=int(self.request.GET['office_id']))
         return Exam.objects.filter(office=office)
 
@@ -62,7 +61,7 @@ class ExamResource(DjangoResource):
         except Teacher.DoesNotExist:
             exam = Exam()
 
-        print('hello exam',self.data,exam)
+
         exam.time = self.data['time']
         exam.desc = self.data['desc']
         exam.total = self.data['total']

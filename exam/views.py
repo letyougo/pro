@@ -26,7 +26,7 @@ def center(request):
 
 def upload(request):
     file = request.FILES.get('file')
-    print(file,file.name)
+
 
     destination = open(os.path.join(os.path.join(BASE_DIR, "static",'upload','teacher'), file.name), 'wb+')
     for chunk in file.chunks():  # 分块写入文件
@@ -34,7 +34,7 @@ def upload(request):
     destination.close()
 
     pic = open(os.path.join(BASE_DIR, "static", 'upload', 'teacher',file.name),'rb')
-    print(os.path.join(BASE_DIR, "static", 'upload', 'teacher',file.name))
+
     ls_f = base64.b64encode(pic.read())
 
     pic.close()
@@ -45,11 +45,11 @@ def upload(request):
     )
 
     r = requests.post("https://api-cn.faceplusplus.com/cardpp/v1/ocridcard", data=data)
-    print(r.json())
+
 
     return JsonResponse(r.json())
 
 def upload2(request):
     file = request.FILES.get('file')
-    print(file.get_path_info())
+
     data = xlrd.open_workbook(file)

@@ -32,6 +32,19 @@ from django.conf.urls import handler404, handler500
 handler404 = 'exam.status.page404'
 handler500 = 'exam.status.page500'
 
+
+
+
+from rest_framework import routers
+from study import views
+
+router = routers.DefaultRouter()
+router.register(r'users', views.UserViewSet)
+router.register(r'groups', views.GroupViewSet)
+
+from rest_framework_swagger.views import get_swagger_view
+schema_view = get_swagger_view(title='Pastebin API')
+
 urlpatterns = [
     path(r'upload/', view.upload),
     path(r'upload2/', view.upload2),
@@ -51,6 +64,12 @@ urlpatterns = [
     path(r'', view.index),
 
     path('api2/teacher/',teacher2.as_view()),
+
+    path(r'api3/', include(router.urls)),
+
+    path(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    path(r'doc/', schema_view)
+
 ]
 
 

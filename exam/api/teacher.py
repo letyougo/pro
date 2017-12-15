@@ -78,8 +78,7 @@ class TeacherResource(DjangoResource):
     def is_authenticated(self):
 
         return True
-        # print(self.request.user.is_authenticated(),'-=----')
-        # return self.request.user.is_authenticated()
+
 
     # GET /
     def list(self):
@@ -93,7 +92,7 @@ class TeacherResource(DjangoResource):
 
     # POST /
     def create(self):
-        print(self.request.user.school,'self.request.user.school')
+
         return Teacher.objects.create(
             name=self.data['name'],
             phone=self.data['phone'],
@@ -109,7 +108,7 @@ class TeacherResource(DjangoResource):
             post = Teacher.objects.get(id=pk)
         except Teacher.DoesNotExist:
             post = Teacher()
-        print(self.data)
+
         post.name = self.data['name']
         post.phone = self.data['phone']
         post.idcard = self.data['idcard']

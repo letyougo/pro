@@ -31,8 +31,7 @@ class TeacherExamResource(DjangoResource):
     def is_authenticated(self):
 
         return True
-        # print(self.request.user.is_authenticated(),'-=----')
-        # return self.request.user.is_authenticated()
+
 
     # GET /
     def list(self):
@@ -57,7 +56,7 @@ class TeacherExamResource(DjangoResource):
 
     # POST /
     def create(self):
-        print(self.data,'---')
+
         teacher = Teacher.objects.get(id=int(self.data['teacher']))
         schoolexam = Schoolexam.objects.get(id=int(self.data['school_exam']))
         total = self.data['total']
@@ -69,7 +68,7 @@ class TeacherExamResource(DjangoResource):
 
     # PUT /pk/
     def update(self, pk):
-        print('hello ',pk)
+
         try:
             post = Teacherexam.objects.get(id=pk)
         except Teacher.DoesNotExist:
@@ -78,7 +77,6 @@ class TeacherExamResource(DjangoResource):
 
         post.total = self.data['teacher_total']
 
-        #
         post.save()
         return post
 
