@@ -98,13 +98,22 @@ class Exam(models.Model):
         verbose_name = '考试信息'
         verbose_name_plural = verbose_name
 
+    def to_obj(self):
+        return dict(
+            id=self.id,
+            time=self.time,
+            desc=self.desc,
+            total=self.total,
+            office_name=self.office.office_name,
+            office_id=self.office.id
+        )
 
     def __str__(self):
         return self.desc
 
 class Schoolexam(models.Model):
     exam = models.ForeignKey(Exam,null=True,blank=True,on_delete=models.CASCADE,verbose_name='所属考试')
-    school = models.ForeignKey(School,null=True,blank=True,on_delete=models.CASCADE,verbose_name='指派学校')
+    school = models.ForeignKey(School,null=True,blank=True,on_delete=models.CASCADE,verbose_name='监考学校')
     total = models.IntegerField(max_length=256,null=True,blank=True,verbose_name='学校总监考费')
     create_time = models.DateTimeField(auto_now_add=True, null=True, blank=True,verbose_name='创建时间')
     update_time = models.DateTimeField(auto_now=True, null=True, blank=True,verbose_name='更新时间')
@@ -118,6 +127,11 @@ class Schoolexam(models.Model):
 
     def __str__(self):
         return self.get_name()
+
+    def to_obj(self):
+        return dict(
+            id=self.id
+        )
 
 class Teacherexam(models.Model):
     teacher = models.ForeignKey(Teacher,null=True,blank=True,on_delete=models.CASCADE,verbose_name='监考老师')
@@ -133,6 +147,22 @@ class Teacherexam(models.Model):
 
     def __str__(self):
         return self.schoolexam.get_name()+'----'+ '监考老师:'+ self.teacher.name+ '-所属学校:' + self.teacher.school.name + ''
+
+
+    def to_obj(self):
+
+
+        return dict(
+            teacher=self.teacher.to_obj(),
+            teacher_id=self.teacher.id,
+            exam_id=self.schoolexam.exam.id,
+
+            total = self.total,
+            school_total=self.schoolexam.total,
+            update_time = self.update_time,
+            create_time = self.create_time,
+            desc=self.schoolexam.exam.desc
+        )
 
 
 

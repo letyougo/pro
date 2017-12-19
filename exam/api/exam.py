@@ -14,15 +14,10 @@ class ExamResource(DjangoResource):
     })
     preparer = FieldsPreparer(fields={
         'id': 'id',
-        # 'time':'time',
+        'time':'time',
         'total':'total',
-        'desc':'desc'
-        # 'name': 'name',
-        # 'phone': 'phone',
-        # 'idcard': 'idcard',
-        # 'bankcard': 'bankcard',
-        # 'bankinfo':'bankinfo',
-        # 'school_id':'school.id'
+        'desc':'desc',
+
     })
 
     def is_authenticated(self):

@@ -47,6 +47,7 @@ urlpatterns = [
     path('api/exam/', include(ExamResource.urls())),
     path('api/school/', include(SchoolResource.urls())),
     path('api/office/', include(officeResource.urls())),
+    path('api/excel/', view.excel),
     path(r'login/', login),
 
     path(r'logout/', logout),

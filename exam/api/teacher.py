@@ -4,14 +4,15 @@ from django.core.paginator import Paginator
 from django.http import JsonResponse,HttpResponse
 from exam.models import Teacher,School
 from django.views import View
+from pro.settings import PAGE_SIZE,PAGE_NUM
 import json
 import simplejson
 
 class teacher2(View):
     def get(self,request):
 
-        page_size = int(request.GET.get('page_size',10))
-        page_num = int(request.GET.get('page_num',1))
+        page_size = int(request.GET.get('page_size',PAGE_SIZE))
+        page_num = int(request.GET.get('page_num',PAGE_NUM))
 
         school = School.objects.get(id=int(request.GET['school_id']))
         teacher = Teacher.objects.filter(school=school)
