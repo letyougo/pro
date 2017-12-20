@@ -1,10 +1,11 @@
 from restless.dj import DjangoResource
 from restless.preparers import FieldsPreparer,SubPreparer,CollectionSubPreparer
-from django.core.paginator import Paginator
+
 from django.http import JsonResponse,HttpResponse
 from exam.models import Teacher,School
 from django.views import View
 from pro.settings import PAGE_SIZE,PAGE_NUM
+from django.core.paginator import Paginator
 import json
 import simplejson
 
@@ -84,8 +85,25 @@ class TeacherResource(DjangoResource):
     # GET /
     def list(self):
         school = School.objects.get(id=int(self.request.GET['school_id']))
-        return Teacher.objects.filter(school=school)
 
+        return Teacher.objects.filter(school=school,name__contains=self.request.GET.get('search',''))
+
+    def serialize_list(self, data):
+        page_size = self.request.GET.get('page_size',PAGE_SIZE)
+
+        paginator = Paginator(data, page_size)  # get value data
+        page_num = self.request.GET.get('page_num',PAGE_NUM)
+
+        self.page = paginator.page(page_num)  # This django method takes care of the page number
+        list = self.page.object_list
+        prepped_data = [self.prepare(item) for item in list]
+        final_data = self.wrap_list_response(prepped_data)
+        final_data['page'] = dict(
+            page_size=int(page_size),
+            page_num=int(page_num),
+            total=len(data)
+        )
+        return self.serializer.serialize(final_data)
 
     # GET /pk/
     def detail(self, pk):

@@ -16,8 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from exam.api.teacher import TeacherResource,teacher2
-from exam.api.schoolexam import SchoolExamResource
-from exam.api.teacherexam import TeacherExamResource
+from exam.api.schoolexam import SchoolExamResource,money
+from exam.api.teacherexam import TeacherExamResource,money2
 from exam.api.school import SchoolResource
 from exam.api.exam import ExamResource
 from exam.api.office import officeResource
@@ -58,7 +58,8 @@ urlpatterns = [
 
     path('api2/teacher/',teacher2.as_view()),
 
-
+    path('api2/schoolexam/money/', money),
+    path('api2/teacherexam/money/', money2),
 ]
 
 

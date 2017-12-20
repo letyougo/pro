@@ -69,6 +69,7 @@ class Teacher(models.Model):
 
     def to_obj(self):
         return dict(
+            id=self.id,
             name=self.name,
             phone=self.phone,
             idcard=self.idcard,
@@ -130,7 +131,8 @@ class Schoolexam(models.Model):
 
     def to_obj(self):
         return dict(
-            id=self.id
+            id=self.id,
+            total=self.total
         )
 
 class Teacherexam(models.Model):
