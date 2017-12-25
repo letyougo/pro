@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <meta name="viewport"
+          content="width=device-width,user-scalable=no">
+    <link href="/static/iconfont/iconfont.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="app" id="app"></div>
+</body>
+<script>
+        window.user= {
+            'id':'{{ user.id }}',
+            'name':'{{ user.username }}'
+        }
+</script>
+    <script src="http://oss.sheetjs.com/js-xlsx/xlsx.full.min.js"></script>
+
+    <script type="text/javascript" src="http://localhost:6060/center.js"></script>
+</html>
+
+

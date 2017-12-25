@@ -16,10 +16,10 @@ class teacher_admin(admin.ModelAdmin):
     list_display = ('name','phone','idcard','bankcard','bankinfo','school','create_time','update_time')
 
 class exam_admin(admin.ModelAdmin):
-    list_display = ('office','time','total','desc','create_time','update_time')
+    list_display = ('office','time','total','desc','status','create_time','update_time')
 
 class school_exam_admin(admin.ModelAdmin):
-    list_display = ('exam','school','total','create_time','update_time')
+    list_display = ('exam','school','total','status','create_time','update_time')
 
 class teacher_exam_admin(admin.ModelAdmin):
     list_display = ('teacher','schoolexam','total','create_time','update_time')

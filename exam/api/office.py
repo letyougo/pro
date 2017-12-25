@@ -21,7 +21,9 @@ class officeResource(DjangoResource):
         'exam_name': 'exam_name',
         'register_username':'user.username',
         'register_password':'user.password',
-        'register_userid':'user.id'
+        'register_userid':'user.id',
+        'admin_name':'admin_name',
+        'admin_phone':'admin_phone'
     })
 
     def is_authenticated(self):
@@ -53,7 +55,7 @@ class officeResource(DjangoResource):
 
     # GET /pk/
     def detail(self, pk):
-        return Teacher.objects.get(id=pk)
+        return Office.objects.get(id=pk)
 
     # POST /
     def create(self):
@@ -64,7 +66,9 @@ class officeResource(DjangoResource):
         return Office.objects.create(
             user=user,
             office_name=self.data['office_name'],
-            exam_name=self.data['exam_name']
+            exam_name=self.data['exam_name'],
+            admin_name=self.data['admin_name'],
+            admin_phone=self.data['admin_phone']
         )
         # return Teacher.objects.create(
         #     name=self.data['name'],
@@ -90,6 +94,8 @@ class officeResource(DjangoResource):
 
         office.office_name=self.data['office_name']
         office.exam_name = self.data['exam_name']
+        office.admin_name = self.data['admin_name']
+        office.admin_phone = self.data['admin_phone']
         office.save()
 
 

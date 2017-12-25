@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{{ user.username }} {{ user.center }}  {{ user.school }}  {{ user.office }}<a href="/logout/">logout</a>
+</body>
+<script>
+   var is_school = '{{ user.school }}'
+    var is_office = '{{ user.office }}'
+    var is_center = '{{ user.center }}'
+
+
+    if(is_school){
+        location.href = '/school/#/teacher'
+    }
+    if(is_office){
+         location.href = '/office/#/school_list'
+    }
+    if(is_center){
+         location.href = '/center/#/school_list'
+    }
+</script>
+
+
+
+</html>

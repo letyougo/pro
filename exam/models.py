@@ -10,10 +10,12 @@ from django.contrib.auth.models import User
 class School(models.Model):
     user = models.OneToOneField(User,null=True,blank=True,on_delete=models.CASCADE,verbose_name=u'注册用户')
     name = models.CharField(max_length=128,null=True,blank=True,verbose_name=u'学校名字')
+    admin_name = models.CharField(max_length=128, null=True, blank=True, verbose_name=u'学校管理员')
+    admin_phone = models.CharField(max_length=128, null=True, blank=True, verbose_name=u'学校联系电话')
     create_time = models.DateTimeField(auto_now_add=True,null=True,blank=True,verbose_name=u'创建时间')
     update_time = models.DateTimeField(auto_now=True,null=True,blank=True,verbose_name=u'更新时间')
     class Meta:
-        verbose_name = '学校端'
+        verbose_name = '学校'
         verbose_name_plural = verbose_name
 
 
@@ -26,10 +28,12 @@ class Office(models.Model):
     user = models.OneToOneField(User,null=True,blank=True,on_delete=models.CASCADE,verbose_name='注册用户')
     office_name = models.CharField(max_length=128,null=True,blank=True,verbose_name='考试办名字')
     exam_name = models.CharField(max_length=128,null=True,blank=True,verbose_name='考试名字')
+    admin_name = models.CharField(max_length=128,null=True,blank=True,verbose_name=u'考办管理员')
+    admin_phone = models.CharField(max_length=128,null=True,blank=True,verbose_name=u'考办联系电话')
     create_time = models.DateTimeField(auto_now_add=True, null=True, blank=True,verbose_name='创建时间')
     update_time = models.DateTimeField(auto_now=True, null=True, blank=True,verbose_name='更新时间')
     class Meta:
-        verbose_name = '考试办'
+        verbose_name = '考办'
         verbose_name_plural = verbose_name
 
 
@@ -43,7 +47,7 @@ class Center(models.Model):
     create_time = models.DateTimeField(auto_now_add=True, null=True, blank=True,verbose_name='创建时间')
     update_time = models.DateTimeField(auto_now=True, null=True, blank=True,verbose_name='更新时间')
     class Meta:
-        verbose_name = '考试中心'
+        verbose_name = '中心'
         verbose_name_plural = verbose_name
 
 
@@ -62,7 +66,7 @@ class Teacher(models.Model):
     update_time = models.DateTimeField(auto_now=True, null=True, blank=True,verbose_name='更新时间')
 
     class Meta:
-        verbose_name = '教师列表'
+        verbose_name = '教师'
         verbose_name_plural = verbose_name
         ordering = ['-create_time','-update_time']
 
@@ -86,6 +90,12 @@ class Teacher(models.Model):
 
 import time
 
+status_list = (
+         ('pass', u'通过'),
+         ('checking', u'审核中'),
+         ('uncheck', u'未审核'),
+    )
+
 class Exam(models.Model):
     office = models.ForeignKey(Office,null=True,blank=True,on_delete=models.CASCADE,verbose_name='所属考试办')
     time = models.DateField(null=True,blank=True,verbose_name='考试时间')
@@ -93,10 +103,10 @@ class Exam(models.Model):
     desc = models.TextField(verbose_name='考试描述')
     create_time = models.DateTimeField(auto_now_add=True, null=True, blank=True,verbose_name='创建时间')
     update_time = models.DateTimeField(auto_now=True, null=True, blank=True,verbose_name='更新时间')
-
+    status = models.CharField(max_length=128,verbose_name=u'状态',choices=status_list,null=True,blank=True)
 
     class Meta:
-        verbose_name = '考试信息'
+        verbose_name = '考试'
         verbose_name_plural = verbose_name
 
     def to_obj(self):
@@ -116,11 +126,12 @@ class Schoolexam(models.Model):
     exam = models.ForeignKey(Exam,null=True,blank=True,on_delete=models.CASCADE,verbose_name='所属考试')
     school = models.ForeignKey(School,null=True,blank=True,on_delete=models.CASCADE,verbose_name='监考学校')
     total = models.IntegerField(max_length=256,null=True,blank=True,verbose_name='学校总监考费')
+    status = models.CharField(max_length=128, verbose_name=u'状态', choices=status_list, null=True, blank=True)
     create_time = models.DateTimeField(auto_now_add=True, null=True, blank=True,verbose_name='创建时间')
     update_time = models.DateTimeField(auto_now=True, null=True, blank=True,verbose_name='更新时间')
 
     class Meta:
-        verbose_name = '考试办分配给学校的考试'
+        verbose_name = '考点考试'
         verbose_name_plural = verbose_name
 
     def get_name(self):
@@ -143,7 +154,7 @@ class Teacherexam(models.Model):
     update_time = models.DateTimeField(auto_now=True, null=True, blank=True,verbose_name='更新时间')
 
     class Meta:
-        verbose_name = '学校分配给老师的考试'
+        verbose_name = '监考考试'
         verbose_name_plural = verbose_name
 
 

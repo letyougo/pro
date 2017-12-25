@@ -18,7 +18,9 @@ class ExamResource(DjangoResource):
         'time':'time',
         'total':'total',
         'desc':'desc',
-
+        'office_name':'office.office_name',
+        'office_id':'office.id',
+        'status':'status'
     })
 
     def is_authenticated(self):

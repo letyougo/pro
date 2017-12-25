@@ -10,20 +10,31 @@ import os
 from pro.settings import BASE_DIR
 import base64
 import xlrd
+from pro.settings import DEBUG
+
 @login_required
 def index(req):
+
+    if DEBUG:
+        return render(req,'exam_dev/index.html')
     return render(req,'exam/index.html')
 
 def school(request):
     school = request.user.school
+    if DEBUG:
+        return render(request,'exam_dev/school.html')
     return render(request, 'exam/school.html')
 
 def office(request):
     office = request.user.office
+    if DEBUG:
+        return render(request,'exam_dev/office.html')
     return render(request, 'exam/office.html')
 
 def center(request):
     center = request.user.center
+    if DEBUG:
+        return render(request,'exam_dev/center.html')
     return render(request, 'exam/center.html')
 
 def upload(request):
@@ -93,6 +104,8 @@ def excel(request):
     )
 
 import datetime
+import xlwt
+from django.contrib.auth.models import User
 def date_parse(time):
     return datetime.datetime.strptime(time, '%Y-%m-%d').date()
 
@@ -100,3 +113,41 @@ def upload2(request):
     file = request.FILES.get('file')
 
     data = xlrd.open_workbook(file)
+
+
+def export_users_csv(request):
+    response = HttpResponse(content_type='application/ms-excel')
+    response['Content-Disposition'] = 'attachment; filename="users.xls"'
+
+    wb = xlwt.Workbook(encoding='utf-8')
+    ws = wb.add_sheet('Users')
+
+    # Sheet header, first row
+    row_num = 1
+
+    font_style = xlwt.XFStyle()
+    font_style.font.bold = True
+    font_style.alignment_right = xlwt.Alignment()
+    font_style.align='horiz right'
+    columns = ['Username', 'First name', 'Last name', 'Email address', ]
+    # ws.write(0, 0, '合并计税表', font_style)
+
+    ws.write_merge(0, 0, 0, len(columns), 'Long Cell')
+    # ws.write(1, 0, 1)
+    # ws.write(1, 1, 2)
+    for col_num in range(len(columns)):
+        ws.write(row_num, col_num, columns[col_num], font_style)
+
+    # Sheet body, remaining rows
+    font_style = xlwt.XFStyle()
+
+    rows = User.objects.all().values_list('username', 'first_name', 'last_name', 'email')
+    for row in rows:
+        row_num += 1
+        for col_num in range(len(row)):
+            ws.write(row_num, col_num, 11, font_style)
+
+    wb.save(response)
+    return response
+
+    return response

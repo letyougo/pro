@@ -11,14 +11,18 @@
     var is_school = '{{ user.school }}'
     var is_office = '{{ user.office }}'
     var is_center = '{{ user.center }}'
+
+
+
+
     if(is_school){
-        location.href = '/school/#/teacher'
+        location.href = '/school/#/teacher?id='+ {{ user.school.id }}
     }
     if(is_office){
-         location.href = '/office/'
+         location.href = '/office/#/school_list'
     }
     if(is_center){
-         location.href = '/center/'
+         location.href = '/center/#/school_list'
     }
 </script>
 </html>

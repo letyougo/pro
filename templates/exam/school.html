@@ -18,6 +18,7 @@
             'id':'{{ user.id }}',
             'name':'{{ user.username }}'
         }
+        location.hash = 'teacher_list?id='+window.school.id
     </script>
 
       <script src="http://oss.sheetjs.com/js-xlsx/xlsx.full.min.js"></script>
@@ -25,7 +26,7 @@
      <script src="/static/exam/js/vendor.js"></script>
 
     <script src="/static/exam/js/school.js"></script>
-{#    <script type="text/javascript" src="http://localhost:6060/school.js"></script>#}
+
 
     </body>
     <script>

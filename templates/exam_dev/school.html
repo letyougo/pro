@@ -1,0 +1,32 @@
+   <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+         <meta name="viewport"
+          content="width=device-width,user-scalable=no">
+
+    <link href="/static/iconfont/iconfont.css" rel="stylesheet">
+    <body>
+    <div id="app"></div>
+    <script>
+        window.school= {
+            'id':'{{ user.school.id }}',
+            'name':'{{ user.school.name }}'
+        }
+        window.user= {
+            'id':'{{ user.id }}',
+            'name':'{{ user.username }}'
+        }
+          location.hash = 'teacher_list?id='+window.school.id
+    </script>
+
+      <script src="http://oss.sheetjs.com/js-xlsx/xlsx.full.min.js"></script>
+
+    <script type="text/javascript" src="http://localhost:6060/school.js"></script>
+
+    </body>
+    <script>
+
+    </script>
+    </html>

@@ -60,6 +60,8 @@ urlpatterns = [
 
     path('api2/schoolexam/money/', money),
     path('api2/teacherexam/money/', money2),
+
+    path('api2/excel2/', view.export_users_csv),
 ]
 
 

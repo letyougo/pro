@@ -47,7 +47,8 @@ class SchoolExamResource(DjangoResource):
         "school_id":'school.id',
         'school_name':'school.name',
 
-        'total':'total'
+        'total':'total',
+        'status':'status'
     })
 
     def is_authenticated(self):
@@ -60,7 +61,7 @@ class SchoolExamResource(DjangoResource):
 
 
         if 'school_id' in self.request.GET:
-            id = int(self.request.GET['school_id'][0])
+            id = int(self.request.GET['school_id'])
 
             school = School.objects.get(id=id)
             return Schoolexam.objects.filter(school=school)
@@ -96,9 +97,6 @@ class SchoolExamResource(DjangoResource):
 
     # POST /
     def create(self):
-
-
-
         return Schoolexam.objects.create(
             exam=Exam.objects.get(id=int(self.data['exam_id'])),
             school = School.objects.get(id=int(self.data['school_id'])),
@@ -115,8 +113,6 @@ class SchoolExamResource(DjangoResource):
         schoolexam.total = self.data['total']
         schoolexam.save()
         return schoolexam
-
-
 
     # DELETE /pk/
     def delete(self, pk):

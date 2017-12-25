@@ -21,7 +21,9 @@ class SchoolResource(DjangoResource):
         'name':'name',
         'register_username':'user.username',
         'register_password':'user.password',
-        'register_userid':'user.id'
+        'register_userid':'user.id',
+        'admin_name': 'admin_name',
+        'admin_phone': 'admin_phone'
     })
 
     def is_authenticated(self):
@@ -63,7 +65,9 @@ class SchoolResource(DjangoResource):
         )
         return School.objects.create(
             user=user,
-            name=self.data['name']
+            name=self.data['name'],
+            admin_name=self.data['admin_name'],
+            admin_phone=self.data['admin_phone']
         )
         # return Teacher.objects.create(
         #     name=self.data['name'],
@@ -85,7 +89,8 @@ class SchoolResource(DjangoResource):
         user.save()
         school = School.objects.get(id=pk)
         school.name=self.data['name']
-
+        school.admin_name = self.data['admin_name']
+        school.admin_phone = self.data['admin_phone']
         school.save()
 
 
