@@ -8,15 +8,13 @@
 {#{{ user.username }} {{ user.center }}  {{ user.school }}  {{ user.office }}<a href="/logout/">logout</a>#}
 </body>
 <script>
-    var is_school = '{{ user.school }}'
+     var is_school = '{{ user.school }}'
     var is_office = '{{ user.office }}'
     var is_center = '{{ user.center }}'
 
 
-
-
     if(is_school){
-        location.href = '/school/#/teacher?id='+ {{ user.school.id }}
+        location.href = '/school/#/teacher'
     }
     if(is_office){
          location.href = '/office/#/school_list'
