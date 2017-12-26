@@ -1,12 +1,12 @@
 from restless.dj import DjangoResource
 from restless.preparers import FieldsPreparer,SubPreparer,CollectionSubPreparer
 
-from exam.models import Teacher,School,Schoolexam,Exam
+from exam.models import Teacher,School,Schoolexam,Exam,Teacherexam
 from pro.settings import PAGE_SIZE,PAGE_NUM
 from django.core.paginator import Paginator
 from django.db.models import Avg,Max,Min,Count
 from django.http import JsonResponse
-
+from django.db.models import Sum
 def money(request):
     id = int(request.GET['exam_id'])
     exam = Exam.objects.get(id=id)
@@ -110,7 +110,8 @@ class SchoolExamResource(DjangoResource):
         except Schoolexam.DoesNotExist:
             schoolexam = Schoolexam()
 
-        schoolexam.total = self.data['total']
+        if 'total' in self.data:
+            schoolexam.total = self.data['total']
         schoolexam.save()
         return schoolexam
 

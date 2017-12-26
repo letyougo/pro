@@ -115,6 +115,32 @@ def upload2(request):
     data = xlrd.open_workbook(file)
 
 
+def data_export(request):
+    start = date_parse(request.GET['start'])
+    end = date_parse(request.GET['end'])
+    page_size = int(request.GET.get('page_size', PAGE_SIZE))
+    page_num = int(request.GET.get('page_num', PAGE_NUM))
+    exam = Exam.objects.filter(time__range=[start, end])
+    if 'school_id' in request.GET:
+        school = School.objects.get(id=int(request.GET['school_id']))
+        query = Teacherexam.objects.filter(schoolexam__school=school, schoolexam__exam__time__range=[start, end])
+
+    elif 'office_id' in request.GET:
+        office = Office.objects.get(id=request.GET['office_id'])
+        exam = Exam.objects.filter(office=office, time__range=[start, end])
+        query = Teacherexam.objects.filter(schoolexam__exam__office=office, schoolexam__exam__time__range=[start, end])
+    else:
+        exam = Exam.objects.filter(time__range=[start, end])
+        query = Teacherexam.objects.filter(schoolexam__exam__time__range=[start, end])
+
+    return JsonResponse(
+        dict(
+            list=[t.to_obj() for t in query],
+            exam=[e.to_obj() for e in exam]
+        ),
+        safe=False
+    )
+
 def export_users_csv(request):
     response = HttpResponse(content_type='application/ms-excel')
     response['Content-Disposition'] = 'attachment; filename="users.xls"'
@@ -148,6 +174,4 @@ def export_users_csv(request):
             ws.write(row_num, col_num, 11, font_style)
 
     wb.save(response)
-    return response
-
     return response
