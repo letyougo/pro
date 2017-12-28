@@ -3,11 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <meta name="viewport"
-          content="width=device-width,user-scalable=no">
-    <link href="/static/exam/css/school.css" rel="stylesheet">
-    <link href="/static/iconfont/iconfont.css" rel="stylesheet">
-    <style>
+       <style>
         #app {
             display: none
         }
@@ -39,10 +35,21 @@
             height: 200px;
             text-align: center;
             font-size: 14px;
-
         }
-
     </style>
+    <script>
+
+        window.onload = function () {
+            document.getElementById('wrapper').style.display = 'none'
+            document.getElementById('app').style.display = 'block'
+        }
+    </script>
+    <meta name="viewport"
+          content="width=device-width,user-scalable=no">
+
+
+    <link href="/static/exam/css/school.css" rel="stylesheet">
+    <link href="/static/iconfont/iconfont.css" rel="stylesheet">
 <body>
 <div id="app"></div>
 <div id="wrapper">
@@ -61,10 +68,6 @@
             'name': '{{ user.username }}'
         }
 
-        window.onload = function () {
-            document.getElementById('wrapper').style.display = 'none'
-            document.getElementById('app').style.display = 'block'
-        }
         location.hash = 'teacher_list?id=' + window.school.id
     </script>
 

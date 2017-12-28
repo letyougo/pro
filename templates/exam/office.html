@@ -5,8 +5,7 @@
     <meta name="viewport"
           content="width=device-width,user-scalable=no">
 
-    <link href="/static/iconfont/iconfont.css" rel="stylesheet">
-    <link href="/static/exam/css/office.css" rel="stylesheet"></link>
+
     <style>
         #app {
             display: none
@@ -43,6 +42,14 @@
         }
 
     </style>
+      <script>
+        window.onload = function () {
+            document.getElementById('wrapper').style.display = 'none'
+            document.getElementById('app').style.display = 'block'
+        }
+    </script>
+    <link href="/static/iconfont/iconfont.css" rel="stylesheet">
+    <link href="/static/exam/css/office.css" rel="stylesheet"></link>
 </head>
 <body>
 <div id="app" class="app"></div>
@@ -68,10 +75,7 @@
         'id': '{{ user.id }}',
         'name': '{{ user.username }}'
     }
-    window.onload = function () {
-        document.getElementById('wrapper').style.display = 'none'
-        document.getElementById('app').style.display = 'block'
-    }
+
 </script>
 
 <script src="/static/exam/js/manifest.js"></script>
