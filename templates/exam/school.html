@@ -81,7 +81,13 @@
 
 
 <script src="/static/exam/js/manifest.js"></script>
-<script src="/static/exam/js/vendor.js"></script>
+<script  id="vender"></script>
+<script id="school"></script>
+<script>
+    document.getElementById('vender').src="/static/exam/js/vendor.js"
+    document.getElementById('vender').onload = function () {
+            document.getElementById('school').src  = '/static/exam/js/school.js'
+    }
+</script>
 
-<script src="/static/exam/js/school.js"></script>
 </html>
