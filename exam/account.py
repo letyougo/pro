@@ -19,7 +19,7 @@ def login(request):
     username = request.POST.get('username', '')
     password = request.POST.get('password', '')
     user = auth.authenticate(username=username, password=password)
-    print(user,user.is_active)
+    # print(user,user.is_active)
     if user and user.is_active:
         u = auth.login(request, user)
         return HttpResponseRedirect(('/'))

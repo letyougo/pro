@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import School,Center,Office,Teacher,Exam,Schoolexam,Teacherexam
+from .models import School,Center,Office,Teacher,Exam,Schoolexam,Teacherexam,Config
 
 class school_admin(admin.ModelAdmin):
     list_display = ('user','name','create_time','update_time')
@@ -23,6 +23,9 @@ class school_exam_admin(admin.ModelAdmin):
 
 class teacher_exam_admin(admin.ModelAdmin):
     list_display = ('teacher','schoolexam','total','create_time','update_time')
+
+class config_admin(admin.ModelAdmin):
+    list_display = ('id','key','value')
 admin.site.register(School,school_admin)
 admin.site.register(Office,office_admin)
 admin.site.register(Center,center_admin)
@@ -30,3 +33,4 @@ admin.site.register(Teacher,teacher_admin)
 admin.site.register(Exam,exam_admin)
 admin.site.register(Schoolexam,school_exam_admin)
 admin.site.register(Teacherexam,teacher_exam_admin)
+admin.site.register(Config,config_admin)

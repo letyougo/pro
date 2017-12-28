@@ -24,6 +24,10 @@ from exam.api.office import officeResource
 from exam.account import login,logout
 import exam.views as view
 
+
+from exam.models import Center,Office,Schoolexam,Teacher,Exam,School,Teacherexam
+
+
 from django.conf.urls import handler404, handler500
 
 

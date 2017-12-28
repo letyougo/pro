@@ -148,8 +148,25 @@ APPEND_SLASH=False
 PAGE_SIZE = 10
 PAGE_NUM = 1
 
+#
+# LOGGING = {
+#     'version': 1,
+#     'disable_existing_loggers': False,
+#     'handlers': {
+#         'console': {
+#             'class': 'logging.StreamHandler',
+#         },
+#     },
+#     'loggers': {
+#         'django.db.backends': {
+#             'handlers': ['console'],
+#             'level': 'DEBUG' if DEBUG else 'INFO',
+#         },
+#     },
+# }
 
-import logging
+
+
 if DEBUG:
 
    # INTERNAL_IPS = ('127.0.0.1', 'localhost',)

@@ -2,7 +2,7 @@ from restless.dj import DjangoResource
 from restless.preparers import FieldsPreparer,SubPreparer,CollectionSubPreparer
 
 from django.http import JsonResponse,HttpResponse
-from exam.models import Teacher,School
+from exam.models import Teacher,School,Exam
 from django.views import View
 from pro.settings import PAGE_SIZE,PAGE_NUM
 from django.core.paginator import Paginator
@@ -84,9 +84,14 @@ class TeacherResource(DjangoResource):
 
     # GET /
     def list(self):
-        school = School.objects.get(id=int(self.request.GET['school_id']))
+        if 'exclude_exam_id' in self.request.GET:
+            school = School.objects.get(id=int(self.request.GET['school_id']))
+            exam = Exam.objects.get(id=int(self.request.GET['exclude_exam_id']))
+            return Teacher.objects.filter(school=school, name__contains=self.request.GET.get('search', '')).exclude(teacherexam__schoolexam__exam=exam)
 
-        return Teacher.objects.filter(school=school,name__contains=self.request.GET.get('search',''))
+        else:
+            school = School.objects.get(id=int(self.request.GET['school_id']))
+            return Teacher.objects.filter(school=school,name__contains=self.request.GET.get('search',''))
 
     def serialize_list(self, data):
         page_size = self.request.GET.get('page_size',PAGE_SIZE)

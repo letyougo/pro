@@ -169,7 +169,7 @@ class Teacherexam(models.Model):
             teacher=self.teacher.to_obj(),
             teacher_id=self.teacher.id,
             exam_id=self.schoolexam.exam.id,
-
+            school_exam_id=self.schoolexam.id,
             total = self.total,
             school_total=self.schoolexam.total,
             update_time = self.update_time,
@@ -177,8 +177,7 @@ class Teacherexam(models.Model):
             desc=self.schoolexam.exam.desc
         )
 
-
-
-
-
+class Config(models.Model):
+    key = models.CharField(max_length=128,unique=True)
+    value = models.TextField()
 
