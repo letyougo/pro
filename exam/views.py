@@ -21,8 +21,8 @@ def index(req):
 
 def school(request):
     school = request.user.school
-    # if DEBUG:
-    #     return render(request,'exam_dev/school.html')
+    if DEBUG:
+        return render(request,'exam_dev/school.html')
     return render(request, 'exam/school.html')
 
 def office(request):
