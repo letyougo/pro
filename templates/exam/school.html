@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-       <style>
+    <meta href="/static/exam/img/loading-spokes.svg">
+    <style>
         #app {
-            display: none
+            opacity: 0
         }
 
         html, body {
@@ -13,7 +14,6 @@
             height: 100%;
             font-family: "Microsoft YaHei";
             color: #ffffff;
-
         }
 
         #wrapper {
@@ -41,7 +41,7 @@
 
         window.onload = function () {
             document.getElementById('wrapper').style.display = 'none'
-            document.getElementById('app').style.display = 'block'
+            document.getElementById('app').style.opacity = 1
         }
     </script>
     <meta name="viewport"
@@ -61,22 +61,27 @@
 </div>
 
 </body>
-  <script>
-        window.school = {
-            'id': '{{ user.school.id }}',
-            'name': '{{ user.school.name }}'
-        }
-        window.user = {
-            'id': '{{ user.id }}',
-            'name': '{{ user.username }}'
-        }
+<script>
+    window.school = {
+        'id': '{{ user.school.id }}',
+        'name': '{{ user.school.name }}'
+    }
+    window.user = {
+        'id': '{{ user.id }}',
+        'name': '{{ user.username }}'
+    }
+    window.type = {
+        center: false,
+        office: false,
+        school: true
+    }
 
-        location.hash = 'teacher_list?id=' + window.school.id
-    </script>
+    location.hash = 'teacher_list?id=' + window.school.id
+</script>
 
 
-    <script src="/static/exam/js/manifest.js"></script>
-    <script src="/static/exam/js/vendor.js"></script>
+<script src="/static/exam/js/manifest.js"></script>
+<script src="/static/exam/js/vendor.js"></script>
 
-    <script src="/static/exam/js/school.js"></script>
+<script src="/static/exam/js/school.js"></script>
 </html>
