@@ -14,32 +14,37 @@ from django.db.models import Sum
 @receiver(post_save, sender=Schoolexam, dispatch_uid="schoolexam_pre_save")
 @receiver(post_delete, sender=Schoolexam, dispatch_uid="schoolexam_pre_save")
 def schoolexam_handler(sender,**kwargs):
+    try:
+        exam = kwargs['instance'].exam
+        total = Schoolexam.objects.filter(exam=exam).aggregate(Sum('total'))
 
-    exam = kwargs['instance'].exam
-    total = Schoolexam.objects.filter(exam=exam).aggregate(Sum('total'))
+        if int(total['total__sum']) == int(exam.total):
+            exam.status = 'pass'
 
-    if int(total['total__sum']) == int(exam.total):
-        exam.status = 'pass'
+        else:
+            exam.status = 'uncheck'
 
-    else:
-        exam.status = 'uncheck'
-
-    exam.save()
+        exam.save()
+    except:
+        pass
 
 @receiver(post_save, sender=Teacherexam, dispatch_uid="teacher_pre_save")
 @receiver(post_delete, sender=Teacherexam, dispatch_uid="teacher_pre_save")
 def teacherexam_handler(sender,**kwargs):
-    schoolexam = kwargs['instance'].schoolexam
+    try:
+        schoolexam = kwargs['instance'].schoolexam
 
-    total = Teacherexam.objects.filter(schoolexam=schoolexam).aggregate(Sum('total'))
+        total = Teacherexam.objects.filter(schoolexam=schoolexam).aggregate(Sum('total'))
 
-    if int(total['total__sum']) == int(schoolexam.total):
-        schoolexam.status = 'pass'
+        if int(total['total__sum']) == int(schoolexam.total):
+            schoolexam.status = 'pass'
 
-    else:
-        schoolexam.status = 'uncheck'
+        else:
+            schoolexam.status = 'uncheck'
 
-    schoolexam.save()
+        schoolexam.save()
+    except:
+        pass
 
 
 # request_finished.connect(my_signal_handler)
