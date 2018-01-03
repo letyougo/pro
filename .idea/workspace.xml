@@ -1,0 +1,1697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3e175e6c-5f66-4d73-8c72-c21be1c807eb" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/pro.iml" afterPath="$PROJECT_DIR$/.idea/pro.iml" />
+      <change beforePath="$PROJECT_DIR$/exam/api/school.py" afterPath="$PROJECT_DIR$/exam/api/school.py" />
+      <change beforePath="$PROJECT_DIR$/exam/models.py" afterPath="$PROJECT_DIR$/exam/models.py" />
+      <change beforePath="$PROJECT_DIR$/exam/signals/exam.py" afterPath="$PROJECT_DIR$/exam/signals/exam.py" />
+      <change beforePath="$PROJECT_DIR$/exam/tests.py" afterPath="$PROJECT_DIR$/exam/tests.py" />
+      <change beforePath="$PROJECT_DIR$/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
+      <change beforePath="$PROJECT_DIR$/pro/settings.py" afterPath="$PROJECT_DIR$/pro/settings.py" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/css/animate.css" afterPath="$PROJECT_DIR$/static/Angular/css/animate.css" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/static/Angular/css/bootstrap.min.css" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/css/patterns/3.png" afterPath="$PROJECT_DIR$/static/Angular/css/patterns/3.png" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/css/patterns/4.png" afterPath="$PROJECT_DIR$/static/Angular/css/patterns/4.png" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/css/patterns/header-profile-skin-1.png" afterPath="$PROJECT_DIR$/static/Angular/css/patterns/header-profile-skin-1.png" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/css/patterns/header-profile-skin-2.png" afterPath="$PROJECT_DIR$/static/Angular/css/patterns/header-profile-skin-2.png" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/css/patterns/header-profile-skin-3.png" afterPath="$PROJECT_DIR$/static/Angular/css/patterns/header-profile-skin-3.png" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/css/patterns/header-profile.png" afterPath="$PROJECT_DIR$/static/Angular/css/patterns/header-profile.png" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/css/patterns/shattered.png" afterPath="$PROJECT_DIR$/static/Angular/css/patterns/shattered.png" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/css/style.css" afterPath="$PROJECT_DIR$/static/Angular/css/style.css" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/font-awesome/css/font-awesome.css" afterPath="$PROJECT_DIR$/static/Angular/font-awesome/css/font-awesome.css" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/font-awesome/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/static/Angular/font-awesome/fonts/fontawesome-webfont.eot" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/font-awesome/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/static/Angular/font-awesome/fonts/fontawesome-webfont.svg" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/static/Angular/font-awesome/fonts/fontawesome-webfont.ttf" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/font-awesome/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/static/Angular/font-awesome/fonts/fontawesome-webfont.woff" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/static/Angular/font-awesome/fonts/fontawesome-webfont.woff2" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/static/Angular/fonts/glyphicons-halflings-regular.eot" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/static/Angular/fonts/glyphicons-halflings-regular.svg" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/static/Angular/fonts/glyphicons-halflings-regular.ttf" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/static/Angular/fonts/glyphicons-halflings-regular.woff" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/static/Angular/fonts/glyphicons-halflings-regular.woff2" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/img/landing/avatar_all.png" afterPath="$PROJECT_DIR$/static/Angular/img/landing/avatar_all.png" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/img/landing/header_one.jpg" afterPath="$PROJECT_DIR$/static/Angular/img/landing/header_one.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/img/landing/header_two.jpg" afterPath="$PROJECT_DIR$/static/Angular/img/landing/header_two.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/img/landing/word_map.png" afterPath="$PROJECT_DIR$/static/Angular/img/landing/word_map.png" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/index.html" afterPath="$PROJECT_DIR$/static/Angular/index.html" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/js/angular-translate/angular-translate.min.js" afterPath="$PROJECT_DIR$/static/Angular/js/angular-translate/angular-translate.min.js" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/js/angular/angular-sanitize.js" afterPath="$PROJECT_DIR$/static/Angular/js/angular/angular-sanitize.js" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/js/angular/angular.min.js" afterPath="$PROJECT_DIR$/static/Angular/js/angular/angular.min.js" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/js/app.js" afterPath="$PROJECT_DIR$/static/Angular/js/app.js" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/js/bootstrap/bootstrap.min.js" afterPath="$PROJECT_DIR$/static/Angular/js/bootstrap/bootstrap.min.js" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/js/bootstrap/ui-bootstrap-tpls-1.1.2.min.js" afterPath="$PROJECT_DIR$/static/Angular/js/bootstrap/ui-bootstrap-tpls-1.1.2.min.js" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/js/config.js" afterPath="$PROJECT_DIR$/static/Angular/js/config.js" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/js/controllers.js" afterPath="$PROJECT_DIR$/static/Angular/js/controllers.js" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/js/directives.js" afterPath="$PROJECT_DIR$/static/Angular/js/directives.js" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/js/inspinia.js" afterPath="$PROJECT_DIR$/static/Angular/js/inspinia.js" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/js/jquery/jquery-2.1.1.min.js" afterPath="$PROJECT_DIR$/static/Angular/js/jquery/jquery-2.1.1.min.js" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/js/plugins/angular-idle/angular-idle.js" afterPath="$PROJECT_DIR$/static/Angular/js/plugins/angular-idle/angular-idle.js" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/js/plugins/jquery-ui/jquery-ui.js" afterPath="$PROJECT_DIR$/static/Angular/js/plugins/jquery-ui/jquery-ui.js" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/js/plugins/metisMenu/jquery.metisMenu.js" afterPath="$PROJECT_DIR$/static/Angular/js/plugins/metisMenu/jquery.metisMenu.js" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/js/plugins/oclazyload/dist/ocLazyLoad.min.js" afterPath="$PROJECT_DIR$/static/Angular/js/plugins/oclazyload/dist/ocLazyLoad.min.js" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/js/plugins/pace/pace.min.js" afterPath="$PROJECT_DIR$/static/Angular/js/plugins/pace/pace.min.js" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/js/plugins/slimscroll/jquery.slimscroll.min.js" afterPath="$PROJECT_DIR$/static/Angular/js/plugins/slimscroll/jquery.slimscroll.min.js" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/js/translations.js" afterPath="$PROJECT_DIR$/static/Angular/js/translations.js" />
+      <change beforePath="$PROJECT_DIR$/static/Angular/js/ui-router/angular-ui-router.min.js" afterPath="$PROJECT_DIR$/static/Angular/js/ui-router/angular-ui-router.min.js" />
+      <change beforePath="$PROJECT_DIR$/static/css/animate.css" afterPath="$PROJECT_DIR$/static/css/animate.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/static/css/bootstrap.min.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/patterns/3.png" afterPath="$PROJECT_DIR$/static/css/patterns/3.png" />
+      <change beforePath="$PROJECT_DIR$/static/css/patterns/4.png" afterPath="$PROJECT_DIR$/static/css/patterns/4.png" />
+      <change beforePath="$PROJECT_DIR$/static/css/patterns/header-profile-skin-1.png" afterPath="$PROJECT_DIR$/static/css/patterns/header-profile-skin-1.png" />
+      <change beforePath="$PROJECT_DIR$/static/css/patterns/header-profile-skin-2.png" afterPath="$PROJECT_DIR$/static/css/patterns/header-profile-skin-2.png" />
+      <change beforePath="$PROJECT_DIR$/static/css/patterns/header-profile-skin-3.png" afterPath="$PROJECT_DIR$/static/css/patterns/header-profile-skin-3.png" />
+      <change beforePath="$PROJECT_DIR$/static/css/patterns/header-profile.png" afterPath="$PROJECT_DIR$/static/css/patterns/header-profile.png" />
+      <change beforePath="$PROJECT_DIR$/static/css/patterns/shattered.png" afterPath="$PROJECT_DIR$/static/css/patterns/shattered.png" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" afterPath="$PROJECT_DIR$/static/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/blueimp/css/blueimp-gallery.min.css" afterPath="$PROJECT_DIR$/static/css/plugins/blueimp/css/blueimp-gallery.min.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/blueimp/img/error.png" afterPath="$PROJECT_DIR$/static/css/plugins/blueimp/img/error.png" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/blueimp/img/error.svg" afterPath="$PROJECT_DIR$/static/css/plugins/blueimp/img/error.svg" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/blueimp/img/loading.gif" afterPath="$PROJECT_DIR$/static/css/plugins/blueimp/img/loading.gif" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/blueimp/img/play-pause.png" afterPath="$PROJECT_DIR$/static/css/plugins/blueimp/img/play-pause.png" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/blueimp/img/play-pause.svg" afterPath="$PROJECT_DIR$/static/css/plugins/blueimp/img/play-pause.svg" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/blueimp/img/video-play.png" afterPath="$PROJECT_DIR$/static/css/plugins/blueimp/img/video-play.png" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/blueimp/img/video-play.svg" afterPath="$PROJECT_DIR$/static/css/plugins/blueimp/img/video-play.svg" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/bootstrap-markdown/bootstrap-markdown.min.css" afterPath="$PROJECT_DIR$/static/css/plugins/bootstrap-markdown/bootstrap-markdown.min.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/bootstrapTour/bootstrap-tour.min.css" afterPath="$PROJECT_DIR$/static/css/plugins/bootstrapTour/bootstrap-tour.min.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/c3/c3.min.css" afterPath="$PROJECT_DIR$/static/css/plugins/c3/c3.min.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/chartist/chartist.min.css" afterPath="$PROJECT_DIR$/static/css/plugins/chartist/chartist.min.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/chosen/chosen-sprite.png" afterPath="$PROJECT_DIR$/static/css/plugins/chosen/chosen-sprite.png" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/chosen/chosen-sprite@2x.png" afterPath="$PROJECT_DIR$/static/css/plugins/chosen/chosen-sprite@2x.png" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/chosen/chosen.css" afterPath="$PROJECT_DIR$/static/css/plugins/chosen/chosen.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/clockpicker/clockpicker.css" afterPath="$PROJECT_DIR$/static/css/plugins/clockpicker/clockpicker.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/codemirror/ambiance.css" afterPath="$PROJECT_DIR$/static/css/plugins/codemirror/ambiance.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/codemirror/codemirror.css" afterPath="$PROJECT_DIR$/static/css/plugins/codemirror/codemirror.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/colorpicker/bootstrap-colorpicker.min.css" afterPath="$PROJECT_DIR$/static/css/plugins/colorpicker/bootstrap-colorpicker.min.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/cropper/cropper.min.css" afterPath="$PROJECT_DIR$/static/css/plugins/cropper/cropper.min.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/dataTables/datatables.min.css" afterPath="$PROJECT_DIR$/static/css/plugins/dataTables/datatables.min.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/datapicker/datepicker3.css" afterPath="$PROJECT_DIR$/static/css/plugins/datapicker/datepicker3.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/daterangepicker/daterangepicker-bs3.css" afterPath="$PROJECT_DIR$/static/css/plugins/daterangepicker/daterangepicker-bs3.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/dropzone/basic.css" afterPath="$PROJECT_DIR$/static/css/plugins/dropzone/basic.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/dropzone/dropzone.css" afterPath="$PROJECT_DIR$/static/css/plugins/dropzone/dropzone.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/footable/fonts/footable.eot" afterPath="$PROJECT_DIR$/static/css/plugins/footable/fonts/footable.eot" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/footable/fonts/footable.svg" afterPath="$PROJECT_DIR$/static/css/plugins/footable/fonts/footable.svg" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/footable/fonts/footable.ttf" afterPath="$PROJECT_DIR$/static/css/plugins/footable/fonts/footable.ttf" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/footable/fonts/footable.woff" afterPath="$PROJECT_DIR$/static/css/plugins/footable/fonts/footable.woff" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/footable/footable.core.css" afterPath="$PROJECT_DIR$/static/css/plugins/footable/footable.core.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/fullcalendar/fullcalendar.css" afterPath="$PROJECT_DIR$/static/css/plugins/fullcalendar/fullcalendar.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/fullcalendar/fullcalendar.print.css" afterPath="$PROJECT_DIR$/static/css/plugins/fullcalendar/fullcalendar.print.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/iCheck/custom.css" afterPath="$PROJECT_DIR$/static/css/plugins/iCheck/custom.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/iCheck/green.png" afterPath="$PROJECT_DIR$/static/css/plugins/iCheck/green.png" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/iCheck/green@2x.png" afterPath="$PROJECT_DIR$/static/css/plugins/iCheck/green@2x.png" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/images/bootstrap-colorpicker/alpha-horizontal.png" afterPath="$PROJECT_DIR$/static/css/plugins/images/bootstrap-colorpicker/alpha-horizontal.png" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/images/bootstrap-colorpicker/alpha.png" afterPath="$PROJECT_DIR$/static/css/plugins/images/bootstrap-colorpicker/alpha.png" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/images/bootstrap-colorpicker/hue-horizontal.png" afterPath="$PROJECT_DIR$/static/css/plugins/images/bootstrap-colorpicker/hue-horizontal.png" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/images/bootstrap-colorpicker/hue.png" afterPath="$PROJECT_DIR$/static/css/plugins/images/bootstrap-colorpicker/hue.png" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/images/bootstrap-colorpicker/saturation.png" afterPath="$PROJECT_DIR$/static/css/plugins/images/bootstrap-colorpicker/saturation.png" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/images/sprite-skin-flat.png" afterPath="$PROJECT_DIR$/static/css/plugins/images/sprite-skin-flat.png" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/images/spritemap.png" afterPath="$PROJECT_DIR$/static/css/plugins/images/spritemap.png" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/images/spritemap@2x.png" afterPath="$PROJECT_DIR$/static/css/plugins/images/spritemap@2x.png" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/ionRangeSlider/ion.rangeSlider.css" afterPath="$PROJECT_DIR$/static/css/plugins/ionRangeSlider/ion.rangeSlider.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/ionRangeSlider/ion.rangeSlider.skinFlat.css" afterPath="$PROJECT_DIR$/static/css/plugins/ionRangeSlider/ion.rangeSlider.skinFlat.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/jQueryUI/images/animated-overlay.gif" afterPath="$PROJECT_DIR$/static/css/plugins/jQueryUI/images/animated-overlay.gif" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/jQueryUI/images/ui-bg_flat_0_aaaaaa_40x100.png" afterPath="$PROJECT_DIR$/static/css/plugins/jQueryUI/images/ui-bg_flat_0_aaaaaa_40x100.png" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/jQueryUI/images/ui-bg_flat_75_ffffff_40x100.png" afterPath="$PROJECT_DIR$/static/css/plugins/jQueryUI/images/ui-bg_flat_75_ffffff_40x100.png" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/jQueryUI/images/ui-bg_glass_55_fbf9ee_1x400.png" afterPath="$PROJECT_DIR$/static/css/plugins/jQueryUI/images/ui-bg_glass_55_fbf9ee_1x400.png" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/jQueryUI/images/ui-bg_glass_65_ffffff_1x400.png" afterPath="$PROJECT_DIR$/static/css/plugins/jQueryUI/images/ui-bg_glass_65_ffffff_1x400.png" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/jQueryUI/images/ui-bg_glass_75_dadada_1x400.png" afterPath="$PROJECT_DIR$/static/css/plugins/jQueryUI/images/ui-bg_glass_75_dadada_1x400.png" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/jQueryUI/images/ui-bg_glass_75_e6e6e6_1x400.png" afterPath="$PROJECT_DIR$/static/css/plugins/jQueryUI/images/ui-bg_glass_75_e6e6e6_1x400.png" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/jQueryUI/images/ui-bg_glass_95_fef1ec_1x400.png" afterPath="$PROJECT_DIR$/static/css/plugins/jQueryUI/images/ui-bg_glass_95_fef1ec_1x400.png" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/jQueryUI/images/ui-bg_highlight-soft_75_cccccc_1x100.png" afterPath="$PROJECT_DIR$/static/css/plugins/jQueryUI/images/ui-bg_highlight-soft_75_cccccc_1x100.png" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/jQueryUI/images/ui-icons_222222_256x240.png" afterPath="$PROJECT_DIR$/static/css/plugins/jQueryUI/images/ui-icons_222222_256x240.png" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/jQueryUI/images/ui-icons_2e83ff_256x240.png" afterPath="$PROJECT_DIR$/static/css/plugins/jQueryUI/images/ui-icons_2e83ff_256x240.png" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/jQueryUI/images/ui-icons_454545_256x240.png" afterPath="$PROJECT_DIR$/static/css/plugins/jQueryUI/images/ui-icons_454545_256x240.png" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/jQueryUI/images/ui-icons_888888_256x240.png" afterPath="$PROJECT_DIR$/static/css/plugins/jQueryUI/images/ui-icons_888888_256x240.png" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/jQueryUI/images/ui-icons_cd0a0a_256x240.png" afterPath="$PROJECT_DIR$/static/css/plugins/jQueryUI/images/ui-icons_cd0a0a_256x240.png" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/jQueryUI/jquery-ui-1.10.4.custom.min.css" afterPath="$PROJECT_DIR$/static/css/plugins/jQueryUI/jquery-ui-1.10.4.custom.min.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/jQueryUI/jquery-ui.css" afterPath="$PROJECT_DIR$/static/css/plugins/jQueryUI/jquery-ui.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/jasny/jasny-bootstrap.min.css" afterPath="$PROJECT_DIR$/static/css/plugins/jasny/jasny-bootstrap.min.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/jqGrid/ui.jqgrid.css" afterPath="$PROJECT_DIR$/static/css/plugins/jqGrid/ui.jqgrid.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/jsTree/32px.png" afterPath="$PROJECT_DIR$/static/css/plugins/jsTree/32px.png" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/jsTree/40px.png" afterPath="$PROJECT_DIR$/static/css/plugins/jsTree/40px.png" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/jsTree/style.min.css" afterPath="$PROJECT_DIR$/static/css/plugins/jsTree/style.min.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/jsTree/throbber.gif" afterPath="$PROJECT_DIR$/static/css/plugins/jsTree/throbber.gif" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/ladda/ladda-themeless.min.css" afterPath="$PROJECT_DIR$/static/css/plugins/ladda/ladda-themeless.min.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/morris/morris-0.4.3.min.css" afterPath="$PROJECT_DIR$/static/css/plugins/morris/morris-0.4.3.min.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/nouslider/jquery.nouislider.css" afterPath="$PROJECT_DIR$/static/css/plugins/nouslider/jquery.nouislider.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/select2/select2.min.css" afterPath="$PROJECT_DIR$/static/css/plugins/select2/select2.min.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/slick/ajax-loader.gif" afterPath="$PROJECT_DIR$/static/css/plugins/slick/ajax-loader.gif" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/slick/fonts/slick.eot" afterPath="$PROJECT_DIR$/static/css/plugins/slick/fonts/slick.eot" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/slick/fonts/slick.svg" afterPath="$PROJECT_DIR$/static/css/plugins/slick/fonts/slick.svg" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/slick/fonts/slick.ttf" afterPath="$PROJECT_DIR$/static/css/plugins/slick/fonts/slick.ttf" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/slick/fonts/slick.woff" afterPath="$PROJECT_DIR$/static/css/plugins/slick/fonts/slick.woff" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/slick/slick-theme.css" afterPath="$PROJECT_DIR$/static/css/plugins/slick/slick-theme.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/slick/slick.css" afterPath="$PROJECT_DIR$/static/css/plugins/slick/slick.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/steps/jquery.steps.css" afterPath="$PROJECT_DIR$/static/css/plugins/steps/jquery.steps.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/summernote/summernote-bs3.css" afterPath="$PROJECT_DIR$/static/css/plugins/summernote/summernote-bs3.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/summernote/summernote.css" afterPath="$PROJECT_DIR$/static/css/plugins/summernote/summernote.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/sweetalert/sweetalert.css" afterPath="$PROJECT_DIR$/static/css/plugins/sweetalert/sweetalert.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/switchery/switchery.css" afterPath="$PROJECT_DIR$/static/css/plugins/switchery/switchery.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/toastr/toastr.min.css" afterPath="$PROJECT_DIR$/static/css/plugins/toastr/toastr.min.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/plugins/touchspin/jquery.bootstrap-touchspin.min.css" afterPath="$PROJECT_DIR$/static/css/plugins/touchspin/jquery.bootstrap-touchspin.min.css" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.css" afterPath="$PROJECT_DIR$/static/css/style.css" />
+      <change beforePath="$PROJECT_DIR$/static/email_templates/action.html" afterPath="$PROJECT_DIR$/static/email_templates/action.html" />
+      <change beforePath="$PROJECT_DIR$/static/email_templates/alert.html" afterPath="$PROJECT_DIR$/static/email_templates/alert.html" />
+      <change beforePath="$PROJECT_DIR$/static/email_templates/billing.html" afterPath="$PROJECT_DIR$/static/email_templates/billing.html" />
+      <change beforePath="$PROJECT_DIR$/static/email_templates/img/header.jpg" afterPath="$PROJECT_DIR$/static/email_templates/img/header.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/email_templates/styles.css" afterPath="$PROJECT_DIR$/static/email_templates/styles.css" />
+      <change beforePath="$PROJECT_DIR$/static/font-awesome/css/font-awesome.css" afterPath="$PROJECT_DIR$/static/font-awesome/css/font-awesome.css" />
+      <change beforePath="$PROJECT_DIR$/static/font-awesome/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/static/font-awesome/css/font-awesome.min.css" />
+      <change beforePath="$PROJECT_DIR$/static/font-awesome/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/static/font-awesome/fonts/fontawesome-webfont.eot" />
+      <change beforePath="$PROJECT_DIR$/static/font-awesome/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/static/font-awesome/fonts/fontawesome-webfont.svg" />
+      <change beforePath="$PROJECT_DIR$/static/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/static/font-awesome/fonts/fontawesome-webfont.ttf" />
+      <change beforePath="$PROJECT_DIR$/static/font-awesome/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/static/font-awesome/fonts/fontawesome-webfont.woff" />
+      <change beforePath="$PROJECT_DIR$/static/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/static/font-awesome/fonts/fontawesome-webfont.woff2" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.eot" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.svg" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.ttf" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff2" />
+      <change beforePath="$PROJECT_DIR$/static/img/a1.jpg" afterPath="$PROJECT_DIR$/static/img/a1.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/a2.jpg" afterPath="$PROJECT_DIR$/static/img/a2.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/a3.jpg" afterPath="$PROJECT_DIR$/static/img/a3.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/a4.jpg" afterPath="$PROJECT_DIR$/static/img/a4.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/a5.jpg" afterPath="$PROJECT_DIR$/static/img/a5.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/a6.jpg" afterPath="$PROJECT_DIR$/static/img/a6.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/a7.jpg" afterPath="$PROJECT_DIR$/static/img/a7.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/a8.jpg" afterPath="$PROJECT_DIR$/static/img/a8.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/angular_logo.png" afterPath="$PROJECT_DIR$/static/img/angular_logo.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/dashbard4_1.jpg" afterPath="$PROJECT_DIR$/static/img/dashbard4_1.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/dashbard4_2.jpg" afterPath="$PROJECT_DIR$/static/img/dashbard4_2.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/email_1.jpg" afterPath="$PROJECT_DIR$/static/img/email_1.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/email_2.jpg" afterPath="$PROJECT_DIR$/static/img/email_2.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/email_3.jpg" afterPath="$PROJECT_DIR$/static/img/email_3.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/16/Spain.png" afterPath="$PROJECT_DIR$/static/img/flags/16/Spain.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/16/United-States.png" afterPath="$PROJECT_DIR$/static/img/flags/16/United-States.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Abkhazia.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Abkhazia.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Afghanistan.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Afghanistan.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Aland.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Aland.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Albania.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Albania.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Algeria.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Algeria.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/American-Samoa.png" afterPath="$PROJECT_DIR$/static/img/flags/32/American-Samoa.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Andorra.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Andorra.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Angola.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Angola.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Anguilla.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Anguilla.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Antarctica.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Antarctica.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Antigua-and-Barbuda.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Antigua-and-Barbuda.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Argentina.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Argentina.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Armenia.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Armenia.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Aruba.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Aruba.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Australia.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Australia.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Austria.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Austria.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Azerbaijan.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Azerbaijan.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Bahamas.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Bahamas.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Bahrain.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Bahrain.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Bangladesh.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Bangladesh.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Barbados.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Barbados.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Basque-Country.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Basque-Country.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Belarus.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Belarus.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Belgium.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Belgium.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Belize.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Belize.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Benin.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Benin.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Bermuda.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Bermuda.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Bhutan.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Bhutan.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Bolivia.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Bolivia.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Bosnia-and-Herzegovina.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Bosnia-and-Herzegovina.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Botswana.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Botswana.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Brazil.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Brazil.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/British-Antarctic-Territory.png" afterPath="$PROJECT_DIR$/static/img/flags/32/British-Antarctic-Territory.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/British-Virgin-Islands.png" afterPath="$PROJECT_DIR$/static/img/flags/32/British-Virgin-Islands.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Brunei.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Brunei.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Bulgaria.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Bulgaria.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Burkina-Faso.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Burkina-Faso.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Burundi.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Burundi.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Cambodia.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Cambodia.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Cameroon.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Cameroon.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Canada.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Canada.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Canary-Islands.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Canary-Islands.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Cape-Verde.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Cape-Verde.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Cayman-Islands.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Cayman-Islands.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Central-African-Republic.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Central-African-Republic.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Chad.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Chad.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Chile.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Chile.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/China.png" afterPath="$PROJECT_DIR$/static/img/flags/32/China.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Christmas-Island.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Christmas-Island.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Cocos-Keeling-Islands.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Cocos-Keeling-Islands.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Colombia.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Colombia.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Commonwealth.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Commonwealth.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Comoros.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Comoros.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Cook-Islands.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Cook-Islands.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Costa-Rica.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Costa-Rica.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Cote-dIvoire.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Cote-dIvoire.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Croatia.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Croatia.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Cuba.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Cuba.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Curacao.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Curacao.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Cyprus.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Cyprus.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Czech-Republic.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Czech-Republic.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Democratic-Republic-of-the-Congo.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Democratic-Republic-of-the-Congo.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Denmark.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Denmark.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Djibouti.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Djibouti.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Dominica.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Dominica.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Dominican-Republic.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Dominican-Republic.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/East-Timor.png" afterPath="$PROJECT_DIR$/static/img/flags/32/East-Timor.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Ecuador.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Ecuador.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Egypt.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Egypt.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/El-Salvador.png" afterPath="$PROJECT_DIR$/static/img/flags/32/El-Salvador.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/England.png" afterPath="$PROJECT_DIR$/static/img/flags/32/England.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Equatorial-Guinea.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Equatorial-Guinea.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Eritrea.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Eritrea.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Estonia.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Estonia.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Ethiopia.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Ethiopia.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/European-Union.png" afterPath="$PROJECT_DIR$/static/img/flags/32/European-Union.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Falkland-Islands.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Falkland-Islands.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Faroes.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Faroes.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Fiji.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Fiji.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Finland.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Finland.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/France.png" afterPath="$PROJECT_DIR$/static/img/flags/32/France.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/French-Polynesia.png" afterPath="$PROJECT_DIR$/static/img/flags/32/French-Polynesia.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/French-Southern-Territories.png" afterPath="$PROJECT_DIR$/static/img/flags/32/French-Southern-Territories.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Gabon.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Gabon.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Gambia.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Gambia.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Georgia.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Georgia.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Germany.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Germany.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Ghana.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Ghana.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Gibraltar.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Gibraltar.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/GoSquared.png" afterPath="$PROJECT_DIR$/static/img/flags/32/GoSquared.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Greece.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Greece.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Greenland.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Greenland.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Grenada.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Grenada.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Guam.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Guam.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Guatemala.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Guatemala.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Guernsey.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Guernsey.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Guinea-Bissau.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Guinea-Bissau.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Guinea.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Guinea.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Guyana.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Guyana.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Haiti.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Haiti.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Honduras.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Honduras.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Hong-Kong.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Hong-Kong.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Hungary.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Hungary.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Iceland.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Iceland.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/India.png" afterPath="$PROJECT_DIR$/static/img/flags/32/India.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Indonesia.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Indonesia.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Iran.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Iran.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Iraq.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Iraq.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Ireland.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Ireland.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Isle-of-Man.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Isle-of-Man.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Israel.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Israel.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Italy.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Italy.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Jamaica.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Jamaica.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Japan.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Japan.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Jersey.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Jersey.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Jordan.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Jordan.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Kazakhstan.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Kazakhstan.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Kenya.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Kenya.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Kiribati.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Kiribati.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Kosovo.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Kosovo.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Kuwait.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Kuwait.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Kyrgyzstan.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Kyrgyzstan.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Laos.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Laos.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Latvia.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Latvia.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Lebanon.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Lebanon.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Lesotho.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Lesotho.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Liberia.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Liberia.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Libya.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Libya.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Liechtenstein.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Liechtenstein.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Lithuania.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Lithuania.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Luxembourg.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Luxembourg.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Macau.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Macau.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Macedonia.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Macedonia.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Madagascar.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Madagascar.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Malawi.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Malawi.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Malaysia.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Malaysia.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Maldives.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Maldives.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Mali.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Mali.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Malta.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Malta.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Mars.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Mars.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Marshall-Islands.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Marshall-Islands.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Martinique.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Martinique.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Mauritania.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Mauritania.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Mauritius.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Mauritius.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Mayotte.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Mayotte.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Mexico.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Mexico.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Micronesia.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Micronesia.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Moldova.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Moldova.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Monaco.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Monaco.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Mongolia.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Mongolia.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Montenegro.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Montenegro.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Montserrat.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Montserrat.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Morocco.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Morocco.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Mozambique.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Mozambique.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Myanmar.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Myanmar.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/NATO.png" afterPath="$PROJECT_DIR$/static/img/flags/32/NATO.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Nagorno-Karabakh.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Nagorno-Karabakh.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Namibia.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Namibia.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Nauru.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Nauru.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Nepal.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Nepal.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Netherlands-Antilles.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Netherlands-Antilles.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Netherlands.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Netherlands.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/New-Caledonia.png" afterPath="$PROJECT_DIR$/static/img/flags/32/New-Caledonia.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/New-Zealand.png" afterPath="$PROJECT_DIR$/static/img/flags/32/New-Zealand.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Nicaragua.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Nicaragua.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Niger.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Niger.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Nigeria.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Nigeria.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Niue.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Niue.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Norfolk-Island.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Norfolk-Island.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/North-Korea.png" afterPath="$PROJECT_DIR$/static/img/flags/32/North-Korea.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Northern-Cyprus.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Northern-Cyprus.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Northern-Mariana-Islands.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Northern-Mariana-Islands.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Norway.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Norway.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Olympics.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Olympics.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Oman.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Oman.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Pakistan.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Pakistan.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Palau.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Palau.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Palestine.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Palestine.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Panama.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Panama.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Papua-New-Guinea.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Papua-New-Guinea.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Paraguay.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Paraguay.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Peru.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Peru.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Philippines.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Philippines.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Pitcairn-Islands.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Pitcairn-Islands.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Poland.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Poland.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Portugal.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Portugal.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Puerto-Rico.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Puerto-Rico.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Qatar.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Qatar.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Red-Cross.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Red-Cross.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Republic-of-the-Congo.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Republic-of-the-Congo.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Romania.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Romania.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Russia.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Russia.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Rwanda.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Rwanda.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Saint-Barthelemy.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Saint-Barthelemy.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Saint-Helena.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Saint-Helena.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Saint-Kitts-and-Nevis.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Saint-Kitts-and-Nevis.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Saint-Lucia.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Saint-Lucia.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Saint-Martin.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Saint-Martin.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Saint-Vincent-and-the-Grenadines.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Saint-Vincent-and-the-Grenadines.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Samoa.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Samoa.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/San-Marino.png" afterPath="$PROJECT_DIR$/static/img/flags/32/San-Marino.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Sao-Tome-and-Principe.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Sao-Tome-and-Principe.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Saudi-Arabia.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Saudi-Arabia.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Scotland.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Scotland.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Senegal.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Senegal.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Serbia.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Serbia.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Seychelles.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Seychelles.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Sierra-Leone.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Sierra-Leone.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Singapore.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Singapore.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Slovakia.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Slovakia.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Slovenia.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Slovenia.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Solomon-Islands.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Solomon-Islands.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Somalia.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Somalia.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Somaliland.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Somaliland.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/South-Africa.png" afterPath="$PROJECT_DIR$/static/img/flags/32/South-Africa.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/South-Georgia-and-the-South-Sandwich-Islands.png" afterPath="$PROJECT_DIR$/static/img/flags/32/South-Georgia-and-the-South-Sandwich-Islands.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/South-Korea.png" afterPath="$PROJECT_DIR$/static/img/flags/32/South-Korea.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/South-Ossetia.png" afterPath="$PROJECT_DIR$/static/img/flags/32/South-Ossetia.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/South-Sudan.png" afterPath="$PROJECT_DIR$/static/img/flags/32/South-Sudan.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Spain.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Spain.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Sri-Lanka.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Sri-Lanka.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Sudan.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Sudan.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Suriname.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Suriname.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Swaziland.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Swaziland.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Sweden.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Sweden.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Switzerland.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Switzerland.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Syria.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Syria.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Taiwan.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Taiwan.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Tajikistan.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Tajikistan.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Tanzania.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Tanzania.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Thailand.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Thailand.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Togo.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Togo.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Tokelau.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Tokelau.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Tonga.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Tonga.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Trinidad-and-Tobago.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Trinidad-and-Tobago.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Tunisia.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Tunisia.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Turkey.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Turkey.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Turkmenistan.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Turkmenistan.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Turks-and-Caicos-Islands.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Turks-and-Caicos-Islands.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Tuvalu.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Tuvalu.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/US-Virgin-Islands.png" afterPath="$PROJECT_DIR$/static/img/flags/32/US-Virgin-Islands.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Uganda.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Uganda.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Ukraine.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Ukraine.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/United-Arab-Emirates.png" afterPath="$PROJECT_DIR$/static/img/flags/32/United-Arab-Emirates.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/United-Kingdom.png" afterPath="$PROJECT_DIR$/static/img/flags/32/United-Kingdom.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/United-Nations.png" afterPath="$PROJECT_DIR$/static/img/flags/32/United-Nations.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/United-States.png" afterPath="$PROJECT_DIR$/static/img/flags/32/United-States.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Unknown.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Unknown.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Uruguay.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Uruguay.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Uzbekistan.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Uzbekistan.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Vanuatu.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Vanuatu.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Vatican-City.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Vatican-City.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Venezuela.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Venezuela.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Vietnam.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Vietnam.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Wales.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Wales.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Wallis-And-Futuna.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Wallis-And-Futuna.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Western-Sahara.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Western-Sahara.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Yemen.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Yemen.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Zambia.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Zambia.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/flags/32/Zimbabwe.png" afterPath="$PROJECT_DIR$/static/img/flags/32/Zimbabwe.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/full_height.jpg" afterPath="$PROJECT_DIR$/static/img/full_height.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/1.jpg" afterPath="$PROJECT_DIR$/static/img/gallery/1.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/10.jpg" afterPath="$PROJECT_DIR$/static/img/gallery/10.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/10s.jpg" afterPath="$PROJECT_DIR$/static/img/gallery/10s.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/11.jpg" afterPath="$PROJECT_DIR$/static/img/gallery/11.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/11s.jpg" afterPath="$PROJECT_DIR$/static/img/gallery/11s.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/12.jpg" afterPath="$PROJECT_DIR$/static/img/gallery/12.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/12s.jpg" afterPath="$PROJECT_DIR$/static/img/gallery/12s.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/1s.jpg" afterPath="$PROJECT_DIR$/static/img/gallery/1s.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/2.jpg" afterPath="$PROJECT_DIR$/static/img/gallery/2.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/2s.jpg" afterPath="$PROJECT_DIR$/static/img/gallery/2s.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/3.jpg" afterPath="$PROJECT_DIR$/static/img/gallery/3.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/3s.jpg" afterPath="$PROJECT_DIR$/static/img/gallery/3s.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/4.jpg" afterPath="$PROJECT_DIR$/static/img/gallery/4.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/4s.jpg" afterPath="$PROJECT_DIR$/static/img/gallery/4s.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/5.jpg" afterPath="$PROJECT_DIR$/static/img/gallery/5.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/5s.jpg" afterPath="$PROJECT_DIR$/static/img/gallery/5s.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/6.jpg" afterPath="$PROJECT_DIR$/static/img/gallery/6.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/6s.jpg" afterPath="$PROJECT_DIR$/static/img/gallery/6s.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/7.jpg" afterPath="$PROJECT_DIR$/static/img/gallery/7.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/7s.jpg" afterPath="$PROJECT_DIR$/static/img/gallery/7s.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/8.jpg" afterPath="$PROJECT_DIR$/static/img/gallery/8.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/8s.jpg" afterPath="$PROJECT_DIR$/static/img/gallery/8s.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/9.jpg" afterPath="$PROJECT_DIR$/static/img/gallery/9.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/gallery/9s.jpg" afterPath="$PROJECT_DIR$/static/img/gallery/9s.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/html_logo.png" afterPath="$PROJECT_DIR$/static/img/html_logo.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/landing/avatar1.jpg" afterPath="$PROJECT_DIR$/static/img/landing/avatar1.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/landing/avatar2.jpg" afterPath="$PROJECT_DIR$/static/img/landing/avatar2.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/landing/avatar3.jpg" afterPath="$PROJECT_DIR$/static/img/landing/avatar3.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/landing/avatar_all.png" afterPath="$PROJECT_DIR$/static/img/landing/avatar_all.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/landing/dashboard.png" afterPath="$PROJECT_DIR$/static/img/landing/dashboard.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/landing/header_one.jpg" afterPath="$PROJECT_DIR$/static/img/landing/header_one.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/landing/header_two.jpg" afterPath="$PROJECT_DIR$/static/img/landing/header_two.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/landing/iphone.jpg" afterPath="$PROJECT_DIR$/static/img/landing/iphone.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/landing/laptop.png" afterPath="$PROJECT_DIR$/static/img/landing/laptop.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/landing/perspective.png" afterPath="$PROJECT_DIR$/static/img/landing/perspective.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/landing/word_map.png" afterPath="$PROJECT_DIR$/static/img/landing/word_map.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/meteor_logo.png" afterPath="$PROJECT_DIR$/static/img/meteor_logo.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/mvc_logo.png" afterPath="$PROJECT_DIR$/static/img/mvc_logo.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/off_canvas.jpg" afterPath="$PROJECT_DIR$/static/img/off_canvas.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/p1.jpg" afterPath="$PROJECT_DIR$/static/img/p1.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/p2.jpg" afterPath="$PROJECT_DIR$/static/img/p2.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/p3.jpg" afterPath="$PROJECT_DIR$/static/img/p3.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/p_big1.jpg" afterPath="$PROJECT_DIR$/static/img/p_big1.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/p_big2.jpg" afterPath="$PROJECT_DIR$/static/img/p_big2.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/p_big3.jpg" afterPath="$PROJECT_DIR$/static/img/p_big3.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/profile.jpg" afterPath="$PROJECT_DIR$/static/img/profile.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/profile_big.jpg" afterPath="$PROJECT_DIR$/static/img/profile_big.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/profile_small.jpg" afterPath="$PROJECT_DIR$/static/img/profile_small.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/img/rails_logo.png" afterPath="$PROJECT_DIR$/static/img/rails_logo.png" />
+      <change beforePath="$PROJECT_DIR$/static/img/zender_logo.png" afterPath="$PROJECT_DIR$/static/img/zender_logo.png" />
+      <change beforePath="$PROJECT_DIR$/templates/account/register.html" afterPath="$PROJECT_DIR$/templates/account/register.html" />
+      <change beforePath="$PROJECT_DIR$/templates/status/404.html" afterPath="$PROJECT_DIR$/templates/status/404.html" />
+      <change beforePath="$PROJECT_DIR$/templates/status/500.html" afterPath="$PROJECT_DIR$/templates/status/500.html" />
+    </list>
+    <ignored path="pro.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="pro" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="school.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/exam/school.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1710">
+              <caret line="90" column="5" lean-forward="false" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/account/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="988">
+              <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/exam/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logout.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/account/logout.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pro/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pro/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1045">
+              <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="deploy.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deploy.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/exam/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="center.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/exam/center.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1254">
+              <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="office.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/exam/office.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1159">
+              <caret line="61" column="48" lean-forward="false" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pro/local.ini" />
+        <option value="$PROJECT_DIR$/exam/status.py" />
+        <option value="$PROJECT_DIR$/templates/status/500.html" />
+        <option value="$PROJECT_DIR$/templates/account/login.html" />
+        <option value="$PROJECT_DIR$/templates/status/404.html" />
+        <option value="$PROJECT_DIR$/demo.py" />
+        <option value="$PROJECT_DIR$/collected_static/admin/index.html" />
+        <option value="$PROJECT_DIR$/exam/middle/pa.py" />
+        <option value="$PROJECT_DIR$/static/common/index.css" />
+        <option value="$PROJECT_DIR$/static/iconfont/iconfont.css" />
+        <option value="$PROJECT_DIR$/study/serializers.py" />
+        <option value="$PROJECT_DIR$/study/views.py" />
+        <option value="$PROJECT_DIR$/study/url.py" />
+        <option value="$USER_HOME$/.virtualenvs/mypy/lib/python3.5/site-packages/restless/resources.py" />
+        <option value="$PROJECT_DIR$/exam/api/teacherexam.py" />
+        <option value="$PROJECT_DIR$/exam/api/school.py" />
+        <option value="$PROJECT_DIR$/exam/api/office.py" />
+        <option value="$PROJECT_DIR$/exam/api/exam.py" />
+        <option value="$PROJECT_DIR$/templates/exam_dev/index.html" />
+        <option value="$PROJECT_DIR$/exam/__init__.py" />
+        <option value="$PROJECT_DIR$/exam/signals/schoolexam.py" />
+        <option value="$PROJECT_DIR$/exam/apps.py" />
+        <option value="$PROJECT_DIR$/exam/signals/exam.py" />
+        <option value="$PROJECT_DIR$/templates/exam/index.html" />
+        <option value="$PROJECT_DIR$/exam/api/teacher.py" />
+        <option value="$PROJECT_DIR$/exam/mid/pa.py" />
+        <option value="$PROJECT_DIR$/exam/account.py" />
+        <option value="$PROJECT_DIR$/exam/admin.py" />
+        <option value="$PROJECT_DIR$/templates/exam_dev/center.html" />
+        <option value="$PROJECT_DIR$/templates/exam_dev/office.html" />
+        <option value="$PROJECT_DIR$/templates/exam_dev/school.html" />
+        <option value="$PROJECT_DIR$/exam/models.py" />
+        <option value="$PROJECT_DIR$/exam/api/schoolexam.py" />
+        <option value="$PROJECT_DIR$/pro/urls.py" />
+        <option value="$PROJECT_DIR$/templates/exam/center.html" />
+        <option value="$PROJECT_DIR$/templates/exam/school.html" />
+        <option value="$PROJECT_DIR$/templates/exam/office.html" />
+        <option value="$PROJECT_DIR$/deploy.txt" />
+        <option value="$PROJECT_DIR$/exam/views.py" />
+        <option value="$PROJECT_DIR$/pro/settings.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1919" />
+    <option name="y" value="23" />
+    <option name="width" value="1920" />
+    <option name="height" value="976" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="$USER_HOME$/.nvm/versions/node/v8.0.0/bin/node" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/static/exam/img" />
+      <recent name="$PROJECT_DIR$/static/exam" />
+      <recent name="$PROJECT_DIR$/static/js" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/img" />
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$/templates/exam" />
+      <recent name="$PROJECT_DIR$/exam/mid" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="考试系统" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="pro.settings" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/.virtualenvs/mypy/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pro" />
+      <option name="launchJavascriptDebuger" value="true" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="http://127.0.0.1:8000/" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+    </configuration>
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/.virtualenvs/mypy/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pro" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="http://127.0.0.1:8000/" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+    </configuration>
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pro" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pro" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pro" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pro" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <module name="pro" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pro" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pro" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pro" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pro" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pro" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3e175e6c-5f66-4d73-8c72-c21be1c807eb" name="Default" comment="" />
+      <created>1512819834798</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1512819834798</updated>
+    </task>
+    <task id="LOCAL-00001" summary="add deploy">
+      <created>1512959904331</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1512959904331</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add deploy 2">
+      <created>1512959954544</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1512959954544</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add deploy 3">
+      <created>1512960481920</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1512960481920</updated>
+    </task>
+    <task id="LOCAL-00004" summary="改成绿色主题色">
+      <created>1513239459648</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1513239459648</updated>
+    </task>
+    <task id="LOCAL-00005" summary="改成绿色主题色2">
+      <created>1513240939081</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1513240939081</updated>
+    </task>
+    <task id="LOCAL-00006" summary="改成绿色主题色3">
+      <created>1513241170281</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1513241170281</updated>
+    </task>
+    <task id="LOCAL-00007" summary="改成绿色主题色4">
+      <created>1513246793079</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1513246793079</updated>
+    </task>
+    <task id="LOCAL-00008" summary="改成绿色主题色5">
+      <created>1513322294567</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1513322294567</updated>
+    </task>
+    <task id="LOCAL-00009" summary="改成绿色主题色6">
+      <created>1513322311416</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1513322311416</updated>
+    </task>
+    <task id="LOCAL-00010" summary="改成绿色主题色7">
+      <created>1513322685774</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1513322685774</updated>
+    </task>
+    <task id="LOCAL-00011" summary="改成绿色主题色8">
+      <created>1513326602494</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1513326602494</updated>
+    </task>
+    <task id="LOCAL-00012" summary="改成绿色主题色9">
+      <created>1513677482314</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1513677482314</updated>
+    </task>
+    <task id="LOCAL-00013" summary="改成绿色主题色10">
+      <created>1513677555364</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1513677555364</updated>
+    </task>
+    <task id="LOCAL-00014" summary="改成绿色主题色11">
+      <created>1513677860889</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1513677860889</updated>
+    </task>
+    <task id="LOCAL-00015" summary="改成绿色主题色12">
+      <created>1513677987604</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1513677987604</updated>
+    </task>
+    <task id="LOCAL-00016" summary="改成绿色主题色13">
+      <created>1513678763661</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1513678763661</updated>
+    </task>
+    <task id="LOCAL-00017" summary="改成绿色主题色14">
+      <created>1513757655100</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1513757655100</updated>
+    </task>
+    <task id="LOCAL-00018" summary="改成绿色主题色15">
+      <created>1513758312074</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1513758312074</updated>
+    </task>
+    <task id="LOCAL-00019" summary="改成绿色主题色16">
+      <created>1513758610153</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1513758610153</updated>
+    </task>
+    <task id="LOCAL-00020" summary="改成绿色主题色17">
+      <created>1513758799291</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1513758799291</updated>
+    </task>
+    <task id="LOCAL-00021" summary="改成绿色主题色18">
+      <created>1513763930018</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1513763930018</updated>
+    </task>
+    <task id="LOCAL-00022" summary="改成绿色主题色18">
+      <created>1514210987973</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1514210987973</updated>
+    </task>
+    <task id="LOCAL-00023" summary="改成绿色主题色19">
+      <created>1514281620250</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1514281620250</updated>
+    </task>
+    <task id="LOCAL-00024" summary="改成绿色主题色20">
+      <created>1514281761515</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1514281761515</updated>
+    </task>
+    <task id="LOCAL-00025" summary="改成绿色主题色22">
+      <created>1514439590001</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1514439590001</updated>
+    </task>
+    <task id="LOCAL-00026" summary="改成绿色主题色23">
+      <created>1514446728701</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1514446728701</updated>
+    </task>
+    <task id="LOCAL-00027" summary="改成绿色主题色24">
+      <created>1514447243061</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1514447243061</updated>
+    </task>
+    <task id="LOCAL-00028" summary="改成绿色主题色25">
+      <created>1514447657172</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1514447657172</updated>
+    </task>
+    <task id="LOCAL-00029" summary="改成绿色主题色26">
+      <created>1514448691265</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1514448691265</updated>
+    </task>
+    <task id="LOCAL-00030" summary="改成绿色主题色27">
+      <created>1514449211546</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1514449211546</updated>
+    </task>
+    <task id="LOCAL-00031" summary="改成绿色主题色28">
+      <created>1514451085899</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1514451085899</updated>
+    </task>
+    <task id="LOCAL-00032" summary="改成绿色主题色29">
+      <created>1514451385691</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1514451385691</updated>
+    </task>
+    <task id="LOCAL-00033" summary="改成绿色主题色30">
+      <created>1514452227027</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1514452227027</updated>
+    </task>
+    <task id="LOCAL-00034" summary="改成绿色主题色31">
+      <created>1514455871665</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1514455871665</updated>
+    </task>
+    <task id="LOCAL-00035" summary="改成绿色主题色32">
+      <created>1514456580376</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1514456580376</updated>
+    </task>
+    <task id="LOCAL-00036" summary="改成绿色主题色33">
+      <created>1514460093591</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1514460093591</updated>
+    </task>
+    <task id="LOCAL-00037" summary="改成绿色主题色34">
+      <created>1514460117631</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1514460117631</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1919" y="23" width="1920" height="976" extended-state="0" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4602076" sideWeight="0.38602942" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.42110875" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280543" sideWeight="0.48187634" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935917" sideWeight="0.49506173" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4602076" sideWeight="0.6139706" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17962185" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4709389" sideWeight="0.6296296" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="改成绿色主题色9" />
+    <MESSAGE value="改成绿色主题色10" />
+    <MESSAGE value="改成绿色主题色11" />
+    <MESSAGE value="改成绿色主题色12" />
+    <MESSAGE value="改成绿色主题色13" />
+    <MESSAGE value="改成绿色主题色14" />
+    <MESSAGE value="改成绿色主题色15" />
+    <MESSAGE value="改成绿色主题色16" />
+    <MESSAGE value="改成绿色主题色17" />
+    <MESSAGE value="改成绿色主题色18" />
+    <MESSAGE value="改成绿色主题色19" />
+    <MESSAGE value="改成绿色主题色20" />
+    <MESSAGE value="改成绿色主题色22" />
+    <MESSAGE value="改成绿色主题色23" />
+    <MESSAGE value="改成绿色主题色24" />
+    <MESSAGE value="改成绿色主题色25" />
+    <MESSAGE value="改成绿色主题色26" />
+    <MESSAGE value="改成绿色主题色27" />
+    <MESSAGE value="改成绿色主题色28" />
+    <MESSAGE value="改成绿色主题色29" />
+    <MESSAGE value="改成绿色主题色30" />
+    <MESSAGE value="改成绿色主题色31" />
+    <MESSAGE value="改成绿色主题色32" />
+    <MESSAGE value="改成绿色主题色33" />
+    <MESSAGE value="改成绿色主题色34" />
+    <option name="LAST_COMMIT_MESSAGE" value="改成绿色主题色34" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="django-line">
+          <url>file://$PROJECT_DIR$/templates/exam/center.html</url>
+          <line>70</line>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/static/common/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/study/tests.py" />
+    <entry file="file://$PROJECT_DIR$/study/serializers.py" />
+    <entry file="file://$PROJECT_DIR$/study/url.py" />
+    <entry file="file://$PROJECT_DIR$/study/views.py" />
+    <entry file="file://$USER_HOME$/.virtualenvs/mypy/lib/python3.5/site-packages/restless/serializers.py" />
+    <entry file="file://$PROJECT_DIR$/exam/status.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pro/uwsgi.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/api/office.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="70" column="23" lean-forward="false" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/mypy/lib/python3.5/site-packages/restless/dj.py" />
+    <entry file="file://$USER_HOME$/.virtualenvs/mypy/lib/python3.5/site-packages/restless/resources.py" />
+    <entry file="file://$PROJECT_DIR$/templates/exam_dev/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="2" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="23" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/api/school.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="68" column="8" lean-forward="false" selection-start-line="68" selection-start-column="8" selection-end-line="69" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/migrations/0013_auto_20171228_1131.py" />
+    <entry file="file://$PROJECT_DIR$/exam/migrations/0009_auto_20171214_1006.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/migrations/0012_auto_20171228_1130.py" />
+    <entry file="file://$PROJECT_DIR$/exam/migrations/0011_auto_20171223_2127.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/migrations/0010_auto_20171223_2023.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-94">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/exam_dev/school.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="24" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/exam_dev/office.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="7" lean-forward="false" selection-start-line="23" selection-start-column="7" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/account.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/mid/pa.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="26" column="24" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="42" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/signals/exam.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="39" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/api/exam.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="35" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/api/teacherexam.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="25" column="14" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/api/teacher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/api/schoolexam.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="113" column="25" lean-forward="false" selection-start-line="113" selection-start-column="25" selection-end-line="113" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loading-test/loading/index.html" />
+    <entry file="file://$PROJECT_DIR$/static/iconfont/demo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/iconfont/iconfont.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/iconfont/demo_symbol.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="20" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/iconfont/demo_fontclass.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="51" column="15" lean-forward="false" selection-start-line="51" selection-start-column="15" selection-end-line="54" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/img/a3.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/exam_dev/center.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="22" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pro/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1045">
+          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/admin/DateTimeShortcuts.js" />
+    <entry file="file://$PROJECT_DIR$/templates/account/logout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/account/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="988">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/img/loading-spokes.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/exam/center.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1254">
+          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/exam/office.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1159">
+          <caret line="61" column="48" lean-forward="false" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/exam/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/exam/school.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1710">
+          <caret line="90" column="5" lean-forward="false" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pro/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

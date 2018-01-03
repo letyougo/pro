@@ -17,24 +17,6 @@ def schoolexam_handler(sender,**kwargs):
     try:
         exam = kwargs['instance'].exam
         total = Schoolexam.objects.filter(exam=exam).aggregate(Sum('total'))
-<<<<<<< HEAD
-        if int(total['total__sum']) == int(exam.total):
-            exam.status = 'pass'
-        else:
-            exam.status = 'uncheck'
-        exam.save()
-    except:
-        pass
-   
-@receiver(post_save, sender=Teacherexam, dispatch_uid="teacherexam_post_save")
-@receiver(post_delete, sender=Teacherexam, dispatch_uid="teacherexam_post_delete")
-def teacherexam_handler(sender,**kwargs):
-    try:
-        schoolexam = kwargs['instance'].schoolexam
-        total = Teacherexam.objects.filter(schoolexam=schoolexam).aggregate(Sum('total'))
-        if int(total['total__sum']) == int(schoolexam.total):
-            schoolexam.status = 'pass'
-=======
 
         if int(total['total__sum']) == int(exam.total):
             exam.status = 'pass'
@@ -57,17 +39,12 @@ def teacherexam_handler(sender,**kwargs):
         if int(total['total__sum']) == int(schoolexam.total):
             schoolexam.status = 'pass'
 
->>>>>>> cf6805912a770755de5daa247211b7dd5176074f
         else:
             schoolexam.status = 'uncheck'
 
         schoolexam.save()
     except:
         pass
-<<<<<<< HEAD
-   
-=======
->>>>>>> cf6805912a770755de5daa247211b7dd5176074f
 
 
 # request_finished.connect(my_signal_handler)
