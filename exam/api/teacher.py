@@ -31,15 +31,18 @@ class teacher2(View):
         )
 
     def post(self,request):
-        list = simplejson.loads(request.body)
+
+        body = simplejson.loads(request.body)
+        list = body['list']
+        school_id = int(body['school_id'])
         bulk_teacher = [
             Teacher(
                 name=item['name'],
                 idcard=item['idcard'],
-                phone=item['phone'],
-                bankcard=item['bankcard'],
-                bankinfo=item['bankinfo'],
-                school=request.user.school
+                phone=  item['phone'] if 'phone' in item else '',
+                bankcard=item['bankcard']  if 'bankcard' in item else '',
+                bankinfo=item['bankinfo'] if 'bankinfo' in item else '',
+                school=School.objects.get(id=school_id)
             )
             for item in list if not Teacher.objects.filter(idcard=item['idcard']).exists()
         ]

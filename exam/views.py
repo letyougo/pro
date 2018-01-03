@@ -33,8 +33,8 @@ def office(request):
 
 def center(request):
     center = request.user.center
-    if DEBUG:
-        return render(request,'exam_dev/center.html')
+    # if DEBUG:
+    #     return render(request,'exam_dev/center.html')
     return render(request, 'exam/center.html')
 
 def upload(request):
