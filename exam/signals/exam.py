@@ -11,35 +11,35 @@ from django.db.models import Sum
 # def my_signal_handler(sender, **kwargs):
 #     print("Request finished!================================")
 
-@receiver(post_save, sender=Schoolexam, dispatch_uid="schoolexam_pre_save")
-@receiver(post_delete, sender=Schoolexam, dispatch_uid="schoolexam_pre_save")
+@receiver(post_save, sender=Schoolexam, dispatch_uid="schoolexam_post_save")
+@receiver(post_delete, sender=Schoolexam, dispatch_uid="schoolexam_post_delete")
 def schoolexam_handler(sender,**kwargs):
-
-    exam = kwargs['instance'].exam
-    total = Schoolexam.objects.filter(exam=exam).aggregate(Sum('total'))
-
-    if int(total['total__sum']) == int(exam.total):
-        exam.status = 'pass'
-
-    else:
-        exam.status = 'uncheck'
-
-    exam.save()
-
-@receiver(post_save, sender=Teacherexam, dispatch_uid="teacher_pre_save")
-@receiver(post_delete, sender=Teacherexam, dispatch_uid="teacher_pre_save")
+    try:
+        exam = kwargs['instance'].exam
+        total = Schoolexam.objects.filter(exam=exam).aggregate(Sum('total'))
+        if int(total['total__sum']) == int(exam.total):
+            exam.status = 'pass'
+        else:
+            exam.status = 'uncheck'
+        exam.save()
+    except:
+        pass
+   
+@receiver(post_save, sender=Teacherexam, dispatch_uid="teacherexam_post_save")
+@receiver(post_delete, sender=Teacherexam, dispatch_uid="teacherexam_post_delete")
 def teacherexam_handler(sender,**kwargs):
-    schoolexam = kwargs['instance'].schoolexam
+    try:
+        schoolexam = kwargs['instance'].schoolexam
+        total = Teacherexam.objects.filter(schoolexam=schoolexam).aggregate(Sum('total'))
+        if int(total['total__sum']) == int(schoolexam.total):
+            schoolexam.status = 'pass'
+        else:
+            schoolexam.status = 'uncheck'
 
-    total = Teacherexam.objects.filter(schoolexam=schoolexam).aggregate(Sum('total'))
-
-    if int(total['total__sum']) == int(schoolexam.total):
-        schoolexam.status = 'pass'
-
-    else:
-        schoolexam.status = 'uncheck'
-
-    schoolexam.save()
+        schoolexam.save()
+    except:
+        pass
+   
 
 
 # request_finished.connect(my_signal_handler)

@@ -158,10 +158,6 @@ class Teacherexam(models.Model):
         verbose_name_plural = verbose_name
 
 
-    def __str__(self):
-        return self.schoolexam.get_name()+'----'+ '监考老师:'+ self.teacher.name+ '-所属学校:' + self.teacher.school.name + ''
-
-
     def to_obj(self):
 
 

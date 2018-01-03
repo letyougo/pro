@@ -100,4 +100,6 @@ class SchoolResource(DjangoResource):
 
     # DELETE /pk/
     def delete(self, pk):
-        School.objects.get(id=pk).delete()
+        print(pk,School.objects.get(id=pk),'---')
+        School.objects.get(id=int(pk)).delete()
+ 
