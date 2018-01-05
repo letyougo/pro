@@ -14,6 +14,8 @@ class center_admin(admin.ModelAdmin):
 
 class teacher_admin(admin.ModelAdmin):
     list_display = ('name','phone','idcard','bankcard','bankinfo','school','create_time','update_time')
+    list_filter = ('school',)
+    search_fields = ('idcard','name',)
 
 class exam_admin(admin.ModelAdmin):
     list_display = ('office','time','total','desc','status','create_time','update_time')
@@ -23,6 +25,7 @@ class school_exam_admin(admin.ModelAdmin):
 
 class teacher_exam_admin(admin.ModelAdmin):
     list_display = ('teacher','schoolexam','total','create_time','update_time')
+    list_filter = ('schoolexam',)
 
 class config_admin(admin.ModelAdmin):
     list_display = ('id','key','value')

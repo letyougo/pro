@@ -2,24 +2,20 @@ from restless.dj import DjangoResource
 from restless.preparers import FieldsPreparer,SubPreparer,CollectionSubPreparer
 
 from exam.models import Teacher,School,Teacherexam,Schoolexam
-from pro.settings import PAGE_SIZE,PAGE_NUM
-from django.core.paginator import Paginator
+from exam.api.base import Base 
 from django.http import JsonResponse
+from django.db.models import Sum
 def money2(request):
     id = int(request.GET['schoolexam_id'])
     schoolexam = Schoolexam.objects.get(id=int(request.GET['schoolexam_id']))
-    query = Teacherexam.objects.filter(schoolexam=schoolexam)
-    num = 0
-    for item in query:
-        item=item.to_obj()
-        num+=int(item['total'])
+    query = Teacherexam.objects.filter(schoolexam=schoolexam).aggregate(Sum('total'))
     return JsonResponse(dict(
-        spend=int(num),
+        spend=query['total__sum'],
         school_total=int(schoolexam.total),
         exam_id=int(id)
     ))
 
-class TeacherExamResource(DjangoResource):
+class TeacherExamResource(Base):
     # Controls what data is included in the serialized output.
 
 
@@ -65,22 +61,6 @@ class TeacherExamResource(DjangoResource):
 
         return Teacherexam.objects.all()
 
-    def serialize_list(self, data):
-        page_size = self.request.GET.get('page_size', PAGE_SIZE)
-
-        paginator = Paginator(data, page_size)  # get value data
-        page_num = self.request.GET.get('page_num', PAGE_NUM)
-
-        self.page = paginator.page(page_num)  # This django method takes care of the page number
-        list = self.page.object_list
-        prepped_data = [self.prepare(item) for item in list]
-        final_data = self.wrap_list_response(prepped_data)
-        final_data['page'] = dict(
-            page_size=int(page_size),
-            page_num=int(page_num),
-            total=len(data)
-        )
-        return self.serializer.serialize(final_data)
 
     # GET /pk/
     def detail(self, pk):

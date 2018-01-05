@@ -8,6 +8,8 @@ from pro.settings import PAGE_SIZE,PAGE_NUM
 from django.core.paginator import Paginator
 import json
 import simplejson
+from exam.api.base import Base 
+
 
 class teacher2(View):
     def get(self,request):
@@ -35,20 +37,29 @@ class teacher2(View):
         body = simplejson.loads(request.body)
         list = body['list']
         school_id = int(body['school_id'])
-        bulk_teacher = [
-            Teacher(
-                name=item['name'],
-                idcard=item['idcard'],
-                phone=  item['phone'] if 'phone' in item else '',
-                bankcard=item['bankcard']  if 'bankcard' in item else '',
-                bankinfo=item['bankinfo'] if 'bankinfo' in item else '',
-                school=School.objects.get(id=school_id)
-            )
-            for item in list if not Teacher.objects.filter(idcard=item['idcard']).exists()
-        ]
-
+        # print(list)
+        # print('\n')
+        # print(school_id)
+        idcards = []
+        names = []
+        bulk_teacher = []
+        for item in list:
+            if not Teacher.objects.filter(idcard=item['idcard']).exists() and item['idcard'] not in idcards:
+                t = Teacher(
+                    name=item['name'],
+                    idcard=item['idcard'],
+                    phone=  item['phone'] if 'phone' in item else '',
+                    bankcard=item['bankcard']  if 'bankcard' in item else '',
+                    bankinfo=item['bankinfo'] if 'bankinfo' in item else '',
+                    school=School.objects.get(id=school_id)
+                )
+                idcards.append(item['idcard'])
+                bulk_teacher.append(t)
+            else:
+                names.append(item['name'])
+    
         Teacher.objects.bulk_create(bulk_teacher)
-        return JsonResponse(dict(error=False,create=len(bulk_teacher)))
+        return JsonResponse(dict(error=False,create=len(bulk_teacher),repeat=names))
 
 
 
@@ -61,7 +72,7 @@ class teacher2(View):
 def create2(request):
     pass
 
-class TeacherResource(DjangoResource):
+class TeacherResource(Base):
     # Controls what data is included in the serialized output.
 
 
@@ -95,23 +106,6 @@ class TeacherResource(DjangoResource):
         else:
             school = School.objects.get(id=int(self.request.GET['school_id']))
             return Teacher.objects.filter(school=school,name__contains=self.request.GET.get('search',''))
-
-    def serialize_list(self, data):
-        page_size = self.request.GET.get('page_size',PAGE_SIZE)
-
-        paginator = Paginator(data, page_size)  # get value data
-        page_num = self.request.GET.get('page_num',PAGE_NUM)
-
-        self.page = paginator.page(page_num)  # This django method takes care of the page number
-        list = self.page.object_list
-        prepped_data = [self.prepare(item) for item in list]
-        final_data = self.wrap_list_response(prepped_data)
-        final_data['page'] = dict(
-            page_size=int(page_size),
-            page_num=int(page_num),
-            total=len(data)
-        )
-        return self.serializer.serialize(final_data)
 
     # GET /pk/
     def detail(self, pk):
