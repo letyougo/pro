@@ -272,6 +272,6 @@ def export_users_csv(header,data,client):
     ws.write_merge(row_num + 2, row_num + 2, 0, 2, '经手人', style)
     ws.write_merge(row_num + 2, row_num + 2, 3, 6, '主管领导签字', style)
     ws.write_merge(row_num + 2, row_num + 2, 7, 11, '日期', style)
-    # ws.write_merge(2,3,0,len(columns)-1,'单位签字(公章)')
-    # wb.save(response)
-    # return response
+
+    wb.save(response)
+    return response
