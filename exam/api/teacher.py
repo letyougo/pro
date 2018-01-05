@@ -88,7 +88,8 @@ class TeacherResource(Base):
         'bankcard': 'bankcard',
         'bankinfo':'bankinfo',
         'school_id':'school.id',
-        'create_time':'create_time'
+        'create_time':'create_time',
+        'school_name':'school.name'
     })
 
     def is_authenticated(self):
@@ -103,9 +104,11 @@ class TeacherResource(Base):
             exam = Exam.objects.get(id=int(self.request.GET['exclude_exam_id']))
             return Teacher.objects.filter(school=school, name__contains=self.request.GET.get('search', '')).exclude(teacherexam__schoolexam__exam=exam)
 
-        else:
+        if 'school_id' in self.request.GET:
             school = School.objects.get(id=int(self.request.GET['school_id']))
             return Teacher.objects.filter(school=school,name__contains=self.request.GET.get('search',''))
+
+        return Teacher.objects.filter(name__contains=self.request.GET.get('search',''))
 
     # GET /pk/
     def detail(self, pk):
