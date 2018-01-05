@@ -85,8 +85,8 @@ def excel(request):
         query = Teacherexam.objects.filter(schoolexam__exam__time__range=[start,end])
         client = 'center'
 
-    paginator = Paginator(query, page_size)
-    page = paginator.page(page_num)
+    # paginator = Paginator(query, page_size)
+    # page = paginator.page(page_num)
 
 
 
@@ -97,7 +97,7 @@ def excel(request):
                 page_num=page_num,
                 total=len(query)
             ),
-            list=[t.to_obj() for t in page],
+            list=[t.to_obj() for t in query],
             exam= [e.to_obj() for e in exam]
         )
     )
@@ -179,6 +179,8 @@ def data_export(request):
 
     result = []
     i=0
+    print(len(res),'res')
+    print(len(list),'list')
     for r in res:
         i=i+1
         obj = {}
@@ -208,7 +210,7 @@ def data_export(request):
     header.append('应缴税金')
     header.append('实发金额')
     header.append('本人签字')
-
+    print(len(result),'result')
     return export_users_csv(header,result,client)
 
 
@@ -256,13 +258,14 @@ def export_users_csv(header,data,client):
 
     # Sheet body, remaining rows
     style = xlwt.XFStyle()
-
+    row_num = row_num+1
+    print(len(data),'len-data')
     for row in data:
-        row_num += 1
+ 
 
         for col_num in range(len(header)):
             ws.write(row_num, col_num, row[header[col_num]], style)
-
+        row_num += 1
 
 
     ws.write_merge(row_num+1, row_num+1, 0, 3, '合计',style)
@@ -270,5 +273,5 @@ def export_users_csv(header,data,client):
     ws.write_merge(row_num + 2, row_num + 2, 3, 6, '主管领导签字', style)
     ws.write_merge(row_num + 2, row_num + 2, 7, 11, '日期', style)
     # ws.write_merge(2,3,0,len(columns)-1,'单位签字(公章)')
-    wb.save(response)
-    return response
+    # wb.save(response)
+    # return response
