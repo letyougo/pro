@@ -174,6 +174,18 @@ class Teacherexam(models.Model):
         )
 
 class Config(models.Model):
-    key = models.CharField(max_length=128,unique=True)
-    value = models.TextField()
+    key = models.CharField(max_length=128,unique=True,verbose_name='键')
+    value = models.TextField(verbose_name='值')
+    desc = models.TextField(null=True,blank=True,verbose_name='描述')
 
+
+    class Meta:
+        verbose_name = '系统配置'
+        verbose_name_plural = verbose_name
+
+    def to_obj(self):
+        return dict(
+            key=self.key,
+            value=self.value,
+            desc=self.desc
+        )

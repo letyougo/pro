@@ -28,7 +28,7 @@ class teacher_exam_admin(admin.ModelAdmin):
     list_filter = ('schoolexam',)
 
 class config_admin(admin.ModelAdmin):
-    list_display = ('id','key','value')
+    list_display = ('id','key','value','desc')
 admin.site.register(School,school_admin)
 admin.site.register(Office,office_admin)
 admin.site.register(Center,center_admin)

@@ -21,6 +21,7 @@ from exam.api.teacherexam import TeacherExamResource,money2
 from exam.api.school import SchoolResource
 from exam.api.exam import ExamResource
 from exam.api.office import officeResource
+from exam.api.config import ConfigResource
 from exam.account import login,logout
 import exam.views as view
 
@@ -51,6 +52,7 @@ urlpatterns = [
     path('api/exam/', include(ExamResource.urls())),
     path('api/school/', include(SchoolResource.urls())),
     path('api/office/', include(officeResource.urls())),
+    path('api/config/', include(ConfigResource.urls())),
     path('api/excel/', view.excel),
     path(r'login/', login),
 
@@ -67,8 +69,6 @@ urlpatterns = [
 
     path('api2/excel2/', view.export_users_csv),
     path('api2/export/', view.data_export),
-
-
 ]
 
 

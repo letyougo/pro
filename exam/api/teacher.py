@@ -108,7 +108,7 @@ class TeacherResource(Base):
             school = School.objects.get(id=int(self.request.GET['school_id']))
             return Teacher.objects.filter(school=school,name__contains=self.request.GET.get('search',''))
 
-        return Teacher.objects.filter(name__contains=self.request.GET.get('search',''))
+        return Teacher.objects.filter(name__contains=self.request.GET.get('name',''),idcard__contains=self.request.GET.get('idcard',''))
 
     # GET /pk/
     def detail(self, pk):

@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 # Create your views here.
 from django.core.paginator import Paginator
 from pro.settings import PAGE_NUM,PAGE_SIZE
-from .models import Teacherexam,Schoolexam,School,Office,Exam
+from .models import Teacherexam,Schoolexam,School,Office,Exam,Config
 import requests
 import os
 from pro.settings import BASE_DIR
@@ -151,6 +151,9 @@ def data_export(request):
         client['type'] = 'center'
 
     list = [t.to_obj() for t in query]
+
+    base = Config.objects.get(key="base")
+    rate = Config.objects.get(key="rate")
     res = {}
     exam_obj = {}
     header = []
@@ -189,14 +192,16 @@ def data_export(request):
         for k in exam_obj:
             obj[k] = item[k]
             num+=obj[k]
+        print(base,rate)
+        shui =  (num - float(base.value)) * float(rate.value)
         obj['序号'] = i
         obj['身份证'] = item['teacher']['idcard']
         obj['银行卡号'] = item['teacher']['bankcard']
         obj['姓名'] = item['teacher']['name']
         obj['所属学校'] = item['teacher']['school_name']
         obj['总计'] = num
-        obj['应缴税金'] = ''
-        obj['实发金额'] = ''
+        obj['应缴税金'] = shui 
+        obj['实发金额'] = float(num) - float(shui)
         obj['本人签字'] = ''
         result.append(obj)
     header.append('序号')

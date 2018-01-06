@@ -9,6 +9,9 @@
 
 </head>
 <body>
+   {%for c in config%}  
+        {{c.key}}
+    {%endfor %}
 <div class="app" id="app"></div>
 </body>
 <script>
@@ -21,6 +24,7 @@
             office:false,
             school:false
         }
+   
 </script>
    
 
