@@ -182,8 +182,7 @@ def data_export(request):
 
     result = []
     i=0
-    print(len(res),'res')
-    print(len(list),'list')
+
     for r in res:
         i=i+1
         obj = {}
@@ -192,8 +191,9 @@ def data_export(request):
         for k in exam_obj:
             obj[k] = item[k]
             num+=obj[k]
-        print(base,rate)
+ 
         shui =  (num - float(base.value)) * float(rate.value)
+        shui = 0 if shui<0 else shui
         obj['序号'] = i
         obj['身份证'] = item['teacher']['idcard']
         obj['银行卡号'] = item['teacher']['bankcard']
@@ -215,7 +215,7 @@ def data_export(request):
     header.append('应缴税金')
     header.append('实发金额')
     header.append('本人签字')
-    print(len(result),'result')
+  
     return export_users_csv(header,result,client)
 
 
@@ -264,7 +264,7 @@ def export_users_csv(header,data,client):
     # Sheet body, remaining rows
     style = xlwt.XFStyle()
     row_num = row_num+1
-    print(len(data),'len-data')
+
     for row in data:
  
 
