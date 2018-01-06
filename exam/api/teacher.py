@@ -37,9 +37,7 @@ class teacher2(View):
         body = simplejson.loads(request.body)
         list = body['list']
         school_id = int(body['school_id'])
-        # print(list)
-        # print('\n')
-        # print(school_id)
+    
         idcards = []
         names = []
         bulk_teacher = []

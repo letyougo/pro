@@ -63,49 +63,7 @@ def upload(request):
     return JsonResponse(r.json())
 
 
-def excel(request):
 
-    start = date_parse(request.GET['start'])
-    end = date_parse(request.GET['end'])
-    page_size = int(request.GET.get('page_size', PAGE_SIZE))
-    page_num = int(request.GET.get('page_num', PAGE_NUM))
-    client = ''
-    if  'school_id' in request.GET:
-        school = School.objects.get(id=int(request.GET['school_id']))
-        query = Teacherexam.objects.filter(schoolexam__school=school,schoolexam__exam__time__range=[start,end])
-        exam = Exam.objects.filter(time__range=[start, end])
-        client = 'school'
-    elif 'office_id' in request.GET:
-        office = Office.objects.get(id=request.GET['office_id'])
-        exam = Exam.objects.filter(office=office,time__range=[start, end])
-        query = Teacherexam.objects.filter(schoolexam__exam__office=office,schoolexam__exam__time__range=[start,end])
-        client = 'office'
-    else:
-        exam = Exam.objects.filter( time__range=[start, end])
-        query = Teacherexam.objects.filter(schoolexam__exam__time__range=[start,end])
-        client = 'center'
-
-    # paginator = Paginator(query, page_size)
-    # page = paginator.page(page_num)
-
-
-
-    return JsonResponse(
-        dict(
-            page=dict(
-                page_size=page_size,
-                page_num=page_num,
-                total=len(query)
-            ),
-            list=[t.to_obj() for t in query],
-            exam= [e.to_obj() for e in exam]
-        )
-    )
-
-    return JsonResponse(
-        [item.to_obj() for item in query],
-        safe=False
-    )
 
 import datetime
 import xlwt
@@ -126,7 +84,20 @@ def _find(list,fn):
 
     return False
 
+def excel(request):
+
+   
+
+    return JsonResponse(
+        get_data(request),
+        safe=False
+    )
+
 def data_export(request):
+    obj = get_data(request)
+    return export_users_csv(obj['header'],obj['result'],obj['client'])
+
+def get_data(request):
     start = date_parse(request.GET['start'])
     end = date_parse(request.GET['end'])
 
@@ -136,8 +107,13 @@ def data_export(request):
     )
 
     if 'school_id' in request.GET:
-        school = School.objects.get(id=int(request.GET['school_id']))
-        query = Teacherexam.objects.filter(schoolexam__school=school, schoolexam__exam__time__range=[start, end])
+        if int(request.GET['school_id'])==0:
+            query = Teacherexam.objects.filter(schoolexam__exam__time__range=[start,end])
+        else:
+            school = School.objects.get(id=int(request.GET['school_id']))
+         
+            query = Teacherexam.objects.filter(schoolexam__school=school, teacher__school=school,schoolexam__exam__time__range=[start, end])
+     
         exam = Exam.objects.filter(time__range=[start, end])
         client['type'] = 'school'
     elif 'office_id' in request.GET:
@@ -151,7 +127,7 @@ def data_export(request):
         client['type'] = 'center'
 
     list = [t.to_obj() for t in query]
-
+ 
     base = Config.objects.get(key="base")
     rate = Config.objects.get(key="rate")
     res = {}
@@ -215,8 +191,12 @@ def data_export(request):
     header.append('应缴税金')
     header.append('实发金额')
     header.append('本人签字')
-  
-    return export_users_csv(header,result,client)
+    return dict(
+        header=header,
+        result=result,
+        client=client
+    )
+   
 
 
 

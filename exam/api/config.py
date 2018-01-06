@@ -28,7 +28,7 @@ class ConfigResource(Base):
 
     # GET /
     def list(self):
-        print('hello world')
+   
         if 'rate' in self.request.GET:
        
             query = self.request.GET

@@ -82,6 +82,6 @@ class SchoolResource(Base):
 
     # DELETE /pk/
     def delete(self, pk):
-        print(pk,School.objects.get(id=pk),'---')
+
         School.objects.get(id=int(pk)).delete()
  
