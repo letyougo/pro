@@ -112,7 +112,7 @@ def get_data(request):
         else:
             school = School.objects.get(id=int(request.GET['school_id']))
          
-            query = Teacherexam.objects.filter(schoolexam__school=school, teacher__school=school,schoolexam__exam__time__range=[start, end])
+            query = Teacherexam.objects.filter(teacher__school=school,schoolexam__exam__time__range=[start, end])
      
         exam = Exam.objects.filter(time__range=[start, end])
         client['type'] = 'school'
