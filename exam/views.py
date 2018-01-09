@@ -205,6 +205,9 @@ def export_users_csv(header,data,client):
     response['Content-Disposition'] = 'attachment; filename="total.xls"'
 
     title = client['year']+ '年'+client['month']+'月劳务费合并计税发放表'
+
+
+
     wb = xlwt.Workbook(encoding='utf-8')
     ws = wb.add_sheet(title)
 
