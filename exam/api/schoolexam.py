@@ -42,7 +42,8 @@ class SchoolExamResource(Base):
         'school_name':'school.name',
 
         'total':'total',
-        'status':'status'
+        'status':'status',
+        'lock':'exam.lock'
     })
 
     def is_authenticated(self):

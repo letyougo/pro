@@ -3,7 +3,9 @@ from __future__ import unicode_literals
 
 from django.db import models
 from django.contrib.auth.models import User
-
+# import datetime
+# import pendulum
+# from django.db.models import Sum
 # Create your models here.
 
 
@@ -88,6 +90,15 @@ class Teacher(models.Model):
     def __str__(self):
         return self.school.name + '('+ self.name+')'
 
+    def to_excel(self):
+        return {
+            "姓名":self.name,
+            "电话":self.phone,
+            '身份证号':self.idcard,
+            '银行卡号':self.bankcard,
+            '银行信息':self.bankinfo
+        }
+
 import time
 
 status_list = (
@@ -104,7 +115,7 @@ class Exam(models.Model):
     create_time = models.DateTimeField(auto_now_add=True, null=True, blank=True,verbose_name='创建时间')
     update_time = models.DateTimeField(auto_now=True, null=True, blank=True,verbose_name='更新时间')
     status = models.CharField(max_length=128,verbose_name=u'状态',choices=status_list,null=True,blank=True)
-
+    lock = models.BooleanField(default=False,verbose_name=u'关闭')
     class Meta:
         verbose_name = '考试'
         verbose_name_plural = verbose_name
@@ -118,6 +129,7 @@ class Exam(models.Model):
             office_name=self.office.office_name,
             office_id=self.office.id
         )
+
 
     def __str__(self):
         return self.desc
@@ -152,6 +164,27 @@ class Teacherexam(models.Model):
     total = models.IntegerField(null=True,blank=True,max_length=256,verbose_name='老师应得监考费')
     create_time = models.DateTimeField(auto_now_add=True, null=True, blank=True,verbose_name='创建时间')
     update_time = models.DateTimeField(auto_now=True, null=True, blank=True,verbose_name='更新时间')
+
+
+    # @property
+    # def month_total(self):
+    #     date_time=self.schoolexam.exam.time
+    #     date_time = datetime.datetime.strptime(str(date_time), '%Y-%m-%d')
+    #     year = date_time.year
+    #     month = date_time.month
+    #     start = pendulum.create(year,month,1)
+    #     end = start.add(months=1)
+    #
+    #     start = start.strftime('%Y-%m-%d')
+    #     end = end.strftime('%Y-%m-%d')
+    #
+    #     base = Config.objects.get(key="base")
+    #     rate = Config.objects.get(key="rate")
+    #
+    #
+    #     num = self.teacher.teacherexam_set.filter(schoolexam__exam__time__range=[start,end]).aggregate(Sum('total'))['total__sum']
+    #
+    #     return (float(num)-float(base.value))*float(rate.value)
 
     class Meta:
         verbose_name = '监考考试'

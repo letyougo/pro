@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 # Create your views here.
 from django.core.paginator import Paginator
 from pro.settings import PAGE_NUM,PAGE_SIZE
-from .models import Teacherexam,Schoolexam,School,Office,Exam,Config
+from .models import Teacherexam,Schoolexam,School,Office,Exam,Config,Teacher
 import requests
 import os
 from pro.settings import BASE_DIR
@@ -93,6 +93,29 @@ def excel(request):
         safe=False
     )
 
+def teacherexport(request):
+    id = request.GET['school_id']
+    school = School.objects.get(id=int(id))
+   
+    teacher = [t.to_excel() for t in Teacher.objects.filter(school=school)]
+
+    response = HttpResponse(content_type='application/ms-excel')
+    response['Content-Disposition'] = 'attachment; filename="teacher.xls"'
+    wb = xlwt.Workbook(encoding='utf-8')
+    ws = wb.add_sheet(school.name)
+    header = ['姓名','电话','身份证号','银行卡号','银行信息']
+    row_num= 0 
+    for i in range(len(header)):
+        ws.write(row_num, i, header[i])
+    row_num=row_num+1  
+    for row in teacher:
+        for col_num in range(len(header)):
+            ws.write(row_num, col_num, row[header[col_num]])
+        row_num += 1
+    wb.save(response)
+    return response
+
+
 def data_export(request):
     obj = get_data(request)
     return export_users_csv(obj['header'],obj['result'],obj['client'])
@@ -175,7 +198,7 @@ def get_data(request):
         obj['银行卡号'] = item['teacher']['bankcard']
         obj['姓名'] = item['teacher']['name']
         obj['所属学校'] = item['teacher']['school_name']
-        obj['总计'] = num
+        obj['应发金额'] = num
         obj['应缴税金'] = shui 
         obj['实发金额'] = float(num) - float(shui)
         obj['本人签字'] = ''
@@ -187,7 +210,7 @@ def get_data(request):
     header.append('银行卡号')
     for e in exam_obj:
         header.append(e)
-    header.append('总计')
+    header.append('应发金额')
     header.append('应缴税金')
     header.append('实发金额')
     header.append('本人签字')

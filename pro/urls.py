@@ -13,6 +13,7 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+
 from django.contrib import admin
 from django.urls import path,include
 from exam.api.teacher import TeacherResource,teacher2
@@ -25,7 +26,7 @@ from exam.api.config import ConfigResource
 from exam.account import login,logout
 import exam.views as view
 
-
+import sys
 from exam.models import Center,Office,Schoolexam,Teacher,Exam,School,Teacherexam
 
 
@@ -38,14 +39,25 @@ handler404 = 'exam.status.page404'
 handler500 = 'exam.status.page500'
 
 
+import os
+def back(file):
+    return os.path.dirname(file)
 
+file = os.path.abspath(__file__)
 
+file=back(file)
+file=back(file)
+file=back(file)
+sys.path.append(file)
+
+from django3.contrib import admin as admin2
 
 
 urlpatterns = [
     path(r'upload/', view.upload),
     path(r'upload2/', view.upload2),
     path('admin/', admin.site.urls),
+    path('admin2/', admin.site.urls),
     path('api/teacher/', include(TeacherResource.urls())),
     path('api/schoolexam/', include(SchoolExamResource.urls())),
     path('api/teacherexam/', include(TeacherExamResource.urls())),
@@ -69,6 +81,7 @@ urlpatterns = [
 
     path('api2/excel2/', view.export_users_csv),
     path('api2/export/', view.data_export),
+    path('teacherexport', view.teacherexport)
 ]
 
 

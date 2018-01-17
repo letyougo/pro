@@ -41,23 +41,35 @@ class teacher2(View):
         idcards = []
         names = []
         bulk_teacher = []
+        update = []
         for item in list:
-            if not Teacher.objects.filter(idcard=item['idcard']).exists() and item['idcard'] not in idcards:
-                t = Teacher(
-                    name=item['name'],
-                    idcard=item['idcard'],
-                    phone=  item['phone'] if 'phone' in item else '',
-                    bankcard=item['bankcard']  if 'bankcard' in item else '',
-                    bankinfo=item['bankinfo'] if 'bankinfo' in item else '',
-                    school=School.objects.get(id=school_id)
-                )
-                idcards.append(item['idcard'])
-                bulk_teacher.append(t)
+            if item['idcard'] not in idcards:
+               
+                if not Teacher.objects.filter(idcard=item['idcard']).exists():
+                    t = Teacher(
+                        name=item['name'],
+                        idcard=item['idcard'],
+                        phone=  item['phone'] if 'phone' in item else '',
+                        bankcard=item['bankcard']  if 'bankcard' in item else '',
+                        bankinfo=item['bankinfo'] if 'bankinfo' in item else '',
+                        school=School.objects.get(id=school_id)
+                    )
+                    idcards.append(item['idcard'])
+                    bulk_teacher.append(t)
+                    names.append(item['name'])
+                else:
+                    teacher = Teacher.objects.get(idcard=item['idcard'])
+                    teacher.name = item['name']
+                    teacher.phone = item['phone'] 
+                    teacher.bankcard=item['bankcard'] 
+                    teacher.bankinfo=item['bankinfo']
+                    update.append(item['name'])
+                    teacher.save()
             else:
                 names.append(item['name'])
-    
+        
         Teacher.objects.bulk_create(bulk_teacher)
-        return JsonResponse(dict(error=False,create=len(bulk_teacher),repeat=names))
+        return JsonResponse(dict(error=False,create=len(bulk_teacher),repeat=names,update=update))
 
 
 

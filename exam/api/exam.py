@@ -19,7 +19,8 @@ class ExamResource(Base):
         'desc':'desc',
         'office_name':'office.office_name',
         'office_id':'office.id',
-        'status':'status'
+        'status':'status',
+        'lock':'lock'
     })
 
     def is_authenticated(self):
@@ -62,7 +63,7 @@ class ExamResource(Base):
         exam.time = self.data['time']
         exam.desc = self.data['desc']
         exam.total = self.data['total']
-
+        exam.lock = self.data['lock']
         exam.save()
         return exam
 

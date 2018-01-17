@@ -36,7 +36,9 @@ class TeacherExamResource(Base):
         'teacher_id':'teacher.id',
         'teacher_name':'teacher.name',
         'teacher_in_school_id':'teacher.school.id',
-        'teacher_in_school_name':'teacher.school.name'
+        'teacher_in_school_name':'teacher.school.name',
+        # 'month_total':'month_total'
+        
     })
 
     def is_authenticated(self):
