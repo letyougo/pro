@@ -39,18 +39,18 @@ handler404 = 'exam.status.page404'
 handler500 = 'exam.status.page500'
 
 
-import os
-def back(file):
-    return os.path.dirname(file)
+# import os
+# def back(file):
+#     return os.path.dirname(file)
 
-file = os.path.abspath(__file__)
+# file = os.path.abspath(__file__)
 
-file=back(file)
-file=back(file)
-file=back(file)
-sys.path.append(file)
+# file=back(file)
+# file=back(file)
+# file=back(file)
+# sys.path.append(file)
 
-from django3.contrib import admin as admin2
+# from django3.contrib import admin as admin2
 
 
 urlpatterns = [
