@@ -118,6 +118,7 @@ def teacherexport(request):
 
 def data_export(request):
     obj = get_data(request)
+    # return obj
     return export_users_csv(obj['header'],obj['result'],obj['client'])
 
 def get_data(request):
@@ -134,7 +135,7 @@ def get_data(request):
             query = Teacherexam.objects.filter(schoolexam__exam__time__range=[start,end])
         else:
             school = School.objects.get(id=int(request.GET['school_id']))
-         
+
             query = Teacherexam.objects.filter(teacher__school=school,schoolexam__exam__time__range=[start, end])
      
         exam = Exam.objects.filter(time__range=[start, end])
@@ -149,8 +150,9 @@ def get_data(request):
         query = Teacherexam.objects.filter(schoolexam__exam__time__range=[start, end])
         client['type'] = 'center'
 
+
     list = [t.to_obj() for t in query]
- 
+
     base = Config.objects.get(key="base")
     rate = Config.objects.get(key="rate")
     res = {}
@@ -168,16 +170,22 @@ def get_data(request):
             item[e] = 0
 
     for item in list:
+
         item[item['desc']] = item['total']
+
+
 
     for item in list:
         _id ='teacher_' + str(item['teacher']['id'])
-
+        desc = item['desc']
         if _id not in res:
             res[_id] = item
+            res[_id][desc] = item['total']
+        else:
+            res[_id][desc] =res[_id][desc]+ item['total']
 
-        desc = item['desc']
-        res[_id][desc] = item['total']
+
+
 
     result = []
     i=0
@@ -214,6 +222,16 @@ def get_data(request):
     header.append('应缴税金')
     header.append('实发金额')
     header.append('本人签字')
+
+    # return  JsonResponse(
+    #     dict(
+    #         header=header,
+    #         result=result,
+    #         client=client
+    #     ),safe=False
+    #
+    # )
+
     return dict(
         header=header,
         result=result,

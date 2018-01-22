@@ -57,6 +57,10 @@ class Center(models.Model):
         return self.center_name
 
 
+class TeacherManager(models.Manager):
+    def exist_exam(self,time):
+        return self.filter()
+
 class Teacher(models.Model):
     name = models.CharField(max_length=128,null=True,blank=True,verbose_name='老师名字')
     phone = models.CharField(max_length=128,null=True,blank=True,verbose_name='手机号码')
@@ -98,6 +102,15 @@ class Teacher(models.Model):
             '银行卡号':self.bankcard,
             '银行信息':self.bankinfo
         }
+
+    @property
+    def exam_exist_name(self):
+        pass 
+    
+    def exam_exist_id(self):
+        pass
+    
+    
 
 import time
 

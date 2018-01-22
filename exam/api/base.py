@@ -11,7 +11,7 @@ class Base(DjangoResource):
             final_data = self.wrap_list_response(prepped_data)
             return self.serializer.serialize(final_data)
         else:
-                
+
             page_size = self.request.GET.get('page_size',PAGE_SIZE)
 
             paginator = Paginator(data, page_size)  # get value data

@@ -31,7 +31,7 @@ class TeacherExamResource(Base):
         'exam_time':'schoolexam.exam.time',
         'school_exam_id': 'schoolexam.id',
         'school_exam_total': 'schoolexam.total',
-
+        'school_name':'schoolexam.school.name',
         'teacher_total':'total',
         'teacher_id':'teacher.id',
         'teacher_name':'teacher.name',

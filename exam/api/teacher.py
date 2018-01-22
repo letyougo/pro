@@ -109,10 +109,10 @@ class TeacherResource(Base):
 
     # GET /
     def list(self):
-        if 'exclude_exam_id' in self.request.GET:
-            school = School.objects.get(id=int(self.request.GET['school_id']))
-            exam = Exam.objects.get(id=int(self.request.GET['exclude_exam_id']))
-            return Teacher.objects.filter(school=school, name__contains=self.request.GET.get('search', '')).exclude(teacherexam__schoolexam__exam=exam)
+        # if 'exam_time' in self.request.GET:
+        #     school = School.objects.get(id=int(self.request.GET['school_id']))
+        #     exam = Exam.objects.get(id=int(self.request.GET['exclude_exam_id']))
+        #     return Teacher.objects.filter(school=school, name__contains=self.request.GET.get('search', '')).exclude(teacherexam__schoolexam__exam=exam)
 
         if 'school_id' in self.request.GET:
             school = School.objects.get(id=int(self.request.GET['school_id']))
