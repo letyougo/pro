@@ -129,30 +129,33 @@ def get_data(request):
         year=str(start.year),
         month=str(start.month)
     )
+    query=[]
+    exam=[]
 
-    if 'school_id' in request.GET:
-        if int(request.GET['school_id'])==0:
-            query = Teacherexam.objects.filter(schoolexam__exam__time__range=[start,end])
-        else:
-            school = School.objects.get(id=int(request.GET['school_id']))
 
-            query = Teacherexam.objects.filter(teacher__school=school,schoolexam__exam__time__range=[start, end])
-     
-        exam = Exam.objects.filter(time__range=[start, end])
-        client['type'] = 'school'
-    elif 'office_id' in request.GET:
+    if 'office_id' in request.GET:
         office = Office.objects.get(id=request.GET['office_id'])
         exam = Exam.objects.filter(office=office, time__range=[start, end])
-        query = Teacherexam.objects.filter(schoolexam__exam__office=office, schoolexam__exam__time__range=[start, end])
-        client['type']= 'office'
+        if int(request.GET['school_id'])==0:
+            query = Teacherexam.objects.filter(schoolexam__exam__office=office, schoolexam__exam__time__range=[start, end])
+        else:
+            school = School.objects.get(id=int(request.GET['school_id']))
+            query = Teacherexam.objects.filter(schoolexam__exam__office=office, teacher__school=school,schoolexam__exam__time__range=[start, end])
     else:
+        if int(request.GET['school_id'])==0:
+                query = Teacherexam.objects.filter(schoolexam__exam__time__range=[start,end])
+        else:
+            school = School.objects.get(id=int(request.GET['school_id']))
+            query = Teacherexam.objects.filter(teacher__school=school,schoolexam__exam__time__range=[start, end])
         exam = Exam.objects.filter(time__range=[start, end])
-        query = Teacherexam.objects.filter(schoolexam__exam__time__range=[start, end])
-        client['type'] = 'center'
+        client['type'] = 'school'
+
+ 
+
 
 
     list = [t.to_obj() for t in query]
-
+ 
     base = Config.objects.get(key="base")
     rate = Config.objects.get(key="rate")
     res = {}
@@ -162,6 +165,7 @@ def get_data(request):
         e1 = e.to_obj()
         desc = e1['desc']
         exam_obj[desc] = 0
+
 
 
     for item in list:
@@ -175,6 +179,7 @@ def get_data(request):
 
 
 
+
     for item in list:
         _id ='teacher_' + str(item['teacher']['id'])
         desc = item['desc']
@@ -183,9 +188,6 @@ def get_data(request):
             res[_id][desc] = item['total']
         else:
             res[_id][desc] =res[_id][desc]+ item['total']
-
-
-
 
     result = []
     i=0
@@ -231,7 +233,7 @@ def get_data(request):
     #     ),safe=False
     #
     # )
-
+ 
     return dict(
         header=header,
         result=result,
