@@ -112,6 +112,8 @@ def teacherexport(request):
         for col_num in range(len(header)):
             ws.write(row_num, col_num, row[header[col_num]])
         row_num += 1
+
+    ws.col(2).width = 256*20    
     wb.save(response)
     return response
 
@@ -299,10 +301,17 @@ def export_users_csv(header,data,client):
         row_num += 1
 
 
-    ws.write_merge(row_num+1, row_num+1, 0, 3, '合计',style)
-    ws.write_merge(row_num + 2, row_num + 2, 0, 2, '经手人', style)
-    ws.write_merge(row_num + 2, row_num + 2, 3, 6, '主管领导签字', style)
-    ws.write_merge(row_num + 2, row_num + 2, 7, 11, '日期', style)
+    ws.write(row_num, 0,  '合计',style)
+    for i in range(5,len(header)-1):
+        en = chr(ord('A')+i)
+        fm = ' SUM('+en+'6'+':'+en+str(5+len(data))+')'
+        ws.write(row_num, i,xlwt.Formula(fm))
 
+
+    ws.write_merge(row_num + 1, row_num + 1, 0, 2, '经手人', style)
+    ws.write_merge(row_num + 1, row_num + 1, 3, 6, '主管领导签字', style)
+    ws.write_merge(row_num + 1, row_num + 1, 7, 11, '日期', style)
+    ws.col(2).width = 256*40
+    ws.col(3).width = 256*40
     wb.save(response)
     return response
