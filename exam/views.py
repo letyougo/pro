@@ -15,26 +15,26 @@ from pro.settings import DEBUG
 @login_required
 def index(req):
 
-    if DEBUG:
-        return render(req,'exam_dev/index.html')
+    # if DEBUG:
+    #     return render(req,'exam_dev/index.html')
     return render(req,'exam/index.html')
 
 def school(request):
     school = request.user.school
-    if DEBUG:
-        return render(request,'exam_dev/school.html')
+    # if DEBUG:
+    #     return render(request,'exam_dev/school.html')
     return render(request, 'exam/school.html')
 
 def office(request):
     office = request.user.office
-    if DEBUG:
-        return render(request,'exam_dev/office.html')
+    # if DEBUG:
+    #     return render(request,'exam_dev/office.html')
     return render(request, 'exam/office.html')
 
 def center(request):
     center = request.user.center
-    if DEBUG:
-        return render(request,'exam_dev/center.html')
+    # if DEBUG:
+    #     return render(request,'exam_dev/center.html')
     return render(request, 'exam/center.html')
 
 def upload(request):
