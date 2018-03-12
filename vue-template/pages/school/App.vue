@@ -8,14 +8,73 @@
      <img src="/static/img/logo.png" />
         </a>
         </el-tooltip>
-       
+
       </div>
 
- 
-    
 
-      <div class="right">  
-        <span>欢迎：{{user.name}}</span>
+      <el-dialog title="修改手机号" :visible.sync="forget.visible"
+      >
+        <el-form class="demo-form-inline"  status-icon size="mini" ref="add_form">
+
+          <el-form-item  >
+            <el-row :gutter="2">
+
+              <el-col :span="20">
+                <el-input v-model="forget.phone" placeholder="原始新手机号" :disabled="true"></el-input>
+              </el-col>
+              <el-col :span="4">
+                <el-button @click="send_code(forget.phone)">发送验证码</el-button>
+              </el-col>
+            </el-row>
+          </el-form-item>
+
+          <el-form-item>
+            <el-input v-model="forget.new_phone" placeholder="新手机号" ></el-input>
+          </el-form-item>
+
+          <el-form-item >
+            <el-input v-model="forget.code" placeholder="验证码"></el-input>
+          </el-form-item>
+
+        </el-form>
+
+      </el-dialog>
+
+
+        <el-dialog title="设置手机号" :visible.sync="set_d.visible"
+        >
+          <el-form class="demo-form-inline"  status-icon size="mini" ref="add_form">
+
+            <el-form-item  >
+              <el-row :gutter="2">
+
+                <el-col :span="20">
+                  <el-input v-model="set_d.phone" placeholder="手机号" ></el-input>
+                </el-col>
+                <el-col :span="4">
+                  <el-button @click="send_code(set_d.phone)">发送验证码</el-button>
+                </el-col>
+              </el-row>
+            </el-form-item>
+
+            <el-form-item>
+              <el-input v-model="set_d.code" placeholder="验证码" ></el-input>
+            </el-form-item>
+
+
+
+          </el-form>
+
+
+        <span slot="footer" class="dialog-footer">
+          <el-button @click="set_d.visible=false" size="mini">取 消</el-button>
+          <el-button type="primary" @click="set" size="mini">确 定</el-button>
+        </span>
+      </el-dialog>
+
+
+      <div class="right">
+        <span style="cursor: pointer" @click="forget.visible=true">欢迎：{{user.name}}</span>
         <a href="/logout/" class="logout">
           <i class="icon iconfont icon-web-quit "></i>
         </a>
@@ -70,20 +129,40 @@
 </template>
 
 <script>
+  import request from 'axios'
 export default {
   name: 'app',
   data(){
       var name = this.$route.path
+    var phone = window.user.phone
       return {
           name,
           school:window.school,
           user:window.user,
+
+        forget:{
+          visible:false,
+          phone:phone,
+          code:'',
+          new_phone:phone
+        },
+        set_d:{
+          visible:false,
+          phone:phone,
+          code:''
+        }
       }
   },
   methods:{
-      route(name){
-          this.$router.push(name)
+
+  },
+  mounted(){
+    setTimeout(()=>{
+      if(!window.user.phone){
+
+        this.set_d.visible = true
       }
+    },2000)
   }
 }
 </script>
@@ -121,7 +200,7 @@ export default {
   .right{
     position: absolute;
     right: 20px;
-  
+
     top: 0;
     bottom: 0;
     font-size: 14px;

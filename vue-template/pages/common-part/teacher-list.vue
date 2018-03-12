@@ -41,14 +41,14 @@
         </template>
       </el-table-column>
         <el-table-column prop="name" label="教师姓名"></el-table-column>
-   
+
 
 
         <el-table-column prop="idcard"  label="身份证"></el-table-column>
         <el-table-column prop="bankcard"  label="银行卡号"></el-table-column>
-        <el-table-column prop="bankinfo"  label="银行信息"></el-table-column>
+        <el-table-column prop="bankinfo"  label="开户行银行信息"></el-table-column>
         <el-table-column prop="phone"  label="电话号码"></el-table-column>
-    
+
         <el-table-column  label="操作" width="195" >
           <template scope="scope">
             <el-button-group>
@@ -250,7 +250,7 @@ export default {
 
       teacher_export(){
         var id = this.$route.query.id
-        location.href = '/teacherexport?school_id='+id 
+        location.href = '/teacherexport?school_id='+id
       },
       open_edit(data){
           console.log(data)

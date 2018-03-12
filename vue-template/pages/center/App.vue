@@ -3,14 +3,81 @@
     <div class="top-bar">
      <div class="left">
         <el-tooltip class="item" effect="dark" content="通信地址：海淀区知春里31号，邮政编码:100086" placement="bottom">
-          <a href="http://www.hdks.gov.cn/" title="" v-popover:popover1>
+          <a href="http://www.hdks.gov.cn/" title="" >
            <img src="/static/img/logo.png" />
         </a>
         </el-tooltip>
-       
+
       </div>
+
+      <el-dialog title="修改手机号" :visible.sync="forget.visible"
+      >
+        <el-form class="demo-form-inline"  status-icon size="mini" ref="add_form">
+
+          <el-form-item  >
+            <el-row :gutter="2">
+
+              <el-col :span="20">
+                <el-input v-model="forget.phone" placeholder="原始新手机号" :disabled="true"></el-input>
+              </el-col>
+              <el-col :span="4">
+                <el-button @click="send_code">发送验证码</el-button>
+              </el-col>
+            </el-row>
+          </el-form-item>
+
+          <el-form-item>
+            <el-input v-model="forget.new_phone" placeholder="新手机号" ></el-input>
+          </el-form-item>
+
+          <el-form-item >
+            <el-input v-model="forget.code" placeholder="验证码"></el-input>
+          </el-form-item>
+
+        </el-form>
+
+
+
+
+        <span slot="footer" class="dialog-footer">
+          <el-button @click="forget.visible=false" size="mini">取 消</el-button>
+          <el-button type="primary" @click="update" size="mini">确 定</el-button>
+        </span>
+      </el-dialog>
+
+      <el-dialog title="设置手机号" :visible.sync="set_d.visible"
+      >
+        <el-form class="demo-form-inline"  status-icon size="mini" ref="add_form">
+
+          <el-form-item  >
+            <el-row :gutter="2">
+
+              <el-col :span="20">
+                <el-input v-model="set_d.phone" placeholder="手机号" ></el-input>
+              </el-col>
+              <el-col :span="4">
+                <el-button @click="send_code(set_d.phone)">发送验证码</el-button>
+              </el-col>
+            </el-row>
+          </el-form-item>
+
+          <el-form-item>
+            <el-input v-model="set_d.code" placeholder="验证码" ></el-input>
+          </el-form-item>
+
+
+
+        </el-form>
+
+
+        <span slot="footer" class="dialog-footer">
+          <el-button @click="set_d.visible=false" size="mini">取 消</el-button>
+          <el-button type="primary" @click="set" size="mini">确 定</el-button>
+        </span>
+      </el-dialog>
+
       <div class="right">
-        <span>欢迎：{{user.name}}</span>
+        <span style="cursor: pointer" @click="forget.visible=true">欢迎：{{user.name}}</span>
         <a href="/logout/" class="logout">
           <i class="icon iconfont icon-web-quit "></i>
         </a>
@@ -55,21 +122,85 @@
 </template>
 
 <script>
+  import request from 'axios'
 export default {
   name: 'app',
   data(){
       var name = this.$route.path
+      var phone = window.user.phone
       return {
           name,
 
           user:window.user,
+          forget:{
+            visible:false,
+            phone:phone,
+            code:'',
+            new_phone:phone
+          },
+        set_d:{
+          visible:false,
+          phone:phone,
+          code:''
+        }
       }
   },
   methods:{
-      route(name){
-          this.$router.push(name)
+    route(name){
+      this.$router.push(name)
+    },
+    async send_code(phone){
 
+      await request.get('/sendcode/?phone='+phone)
+      this.$message({
+        type: 'success',
+        message: '发送验证码成功'
+      });
+    },
+    async update(){
+      var phone = this.forget.phone
+      var code = this.forget.code
+      var new_phone = this.forget.new_phone
+      var res = await request.get('/changephone/',{
+        params:{
+          phone,
+          new_phone,
+          code,
+          role:'school'
+        }
+      })
+
+      if(res.data.error){
+        this.$message({
+          type: 'error',
+          message: '验证码有误'
+        });
+      }else {
+        this.forget.phone = this.forget.new_phone
+        this.$message({
+          type: 'success',
+          message: '修改手机号成功'
+        });
       }
+
+      location.reload()
+
+    },
+    async set(){
+      var phone = this.set_d.phone
+      var code = this.set_d.code
+
+      var res = await request.get('/setphone/',{
+        params:{
+          phone,
+          code,
+          role:'school'
+        }
+      })
+
+      location.reload()
+
+    }
   },
   mounted(){
 
@@ -117,7 +248,7 @@ export default {
   .right{
     position: absolute;
     right: 20px;
-  
+
     top: 0;
     bottom: 0;
     font-size: 14px;

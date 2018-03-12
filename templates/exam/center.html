@@ -69,7 +69,8 @@
 <script>
     window.user = {
         'id': '{{ user.id }}',
-        'name': '{{ user.username }}'
+        'name': '{{ user.username }}',
+                'phone':{{ user.center.admin_phone }}
     }
     window.type = {
         center: true,

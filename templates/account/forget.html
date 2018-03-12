@@ -33,29 +33,34 @@
 {#                <!--Continually expanded and constantly improved Inspinia Admin Them (IN+)-->#}
 {#            </p>#}
 {#            <p>Login in. To see it in action.</p>#}
-            <div class="m-t" role="form" >
+
+            <form class="m-t" role="form" method="post" action="/changepwd/">
                 <input type='hidden' name='csrfmiddlewaretoken' value='{{ csrf_token }}' />
                  <input type="hidden"  name="next" value="/admin/" class="form-control next" />
                 <div class="form-group">
-                    <input type="text"  class="form-control phone" name="username" placeholder="输入手机号" required="">
+                    <input type="text"  class="form-control phone" name="phone" placeholder="输入手机号" required="">
                 </div>
 
                  <div class="form-group">
-                    <input type="password" class="form-control" name="password" placeholder="输入验证码" >
+                    <input class="form-control number"  placeholder="输入验证码" name="code" >
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control" name="password" placeholder="输入新密码" >
+                    <input type="password" class="form-control pwd1" name="pwd" placeholder="输入新密码" >
                 </div>
-                  <div class="form-group">
-                    <input type="password" class="form-control" name="password" placeholder="确认新密码" >
-                </div>
-                <div class="form-group">
+{#                  <div class="form-group">#}
+{#                    <input type="password" class="form-control pwd2" name="password" placeholder="确认新密码" >#}
+{#                </div>#}
+                   <div class="form-group">
+
+                    </div>
+
+                <input type="submit" class="btn btn-primary block full-width m-b submit" value="确定"> </input>
+
+
+            </form>
+              <div class="form-group">
                     <button type="text" class="form-control code" >获得验证码</button>
                 </div>
-                <input type="submit" class="btn btn-primary block full-width m-b" value="确定"> </input>
-
-
-            </div>
 {#            <p class="m-t"> <small>Inspinia we app framework base on Bootstrap 3 &copy; 2014</small> </p>#}
         </div>
     </div>
@@ -78,5 +83,7 @@
         })
     }
     $('.code').click(sendcode)
+
+
 </script>
 </html>

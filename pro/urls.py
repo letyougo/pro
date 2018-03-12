@@ -24,7 +24,7 @@ from exam.api.exam import ExamResource
 from exam.api.office import officeResource
 from exam.api.config import ConfigResource
 from exam.api.user import UserResource
-from exam.account import login,logout,forget,sendcode,changepwd
+from exam.account import login,logout,forget,sendcode,changepwd,changephone,setphone
 import exam.views as view
 
 import sys
@@ -74,6 +74,8 @@ urlpatterns = [
     path(r'forget/', forget),
     path(r'sendcode/', sendcode),
     path(r'changepwd/', changepwd),
+    path(r'changephone/', changephone),
+    path(r'setphone/', setphone),
     path(r'school/', view.school),
     path(r'office/', view.office),
     path(r'center/', view.center),

@@ -46,6 +46,8 @@ class Office(models.Model):
 class Center(models.Model):
     user = models.OneToOneField(User,null=True,blank=True,on_delete=models.CASCADE,verbose_name='注册用户')
     center_name = models.CharField(max_length=128,null=True,blank=True,verbose_name='中心名字')
+    admin_name = models.CharField(max_length=128, null=True, blank=True, verbose_name=u'中心管理员')
+    admin_phone = models.CharField(max_length=128, null=True, blank=True, verbose_name=u'中心联系电话')
     create_time = models.DateTimeField(auto_now_add=True, null=True, blank=True,verbose_name='创建时间')
     update_time = models.DateTimeField(auto_now=True, null=True, blank=True,verbose_name='更新时间')
     class Meta:
@@ -239,3 +241,6 @@ class Shortmsg(models.Model):
     phone = models.CharField(max_length=128,verbose_name='电话号码')
     code = models.CharField(max_length=128,verbose_name='验证码')
     create_time = models.DateTimeField(auto_now_add=True, null=True, blank=True, verbose_name='创建时间')
+
+    def __str__(self):
+        return self.phone + '--' + self.code

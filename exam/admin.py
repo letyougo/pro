@@ -10,7 +10,7 @@ class office_admin(admin.ModelAdmin):
     list_display = ('user','office_name','exam_name','create_time','update_time')
 
 class center_admin(admin.ModelAdmin):
-    list_display = ('user','center_name','create_time','update_time')
+    list_display = ('user','center_name','admin_phone','admin_name','create_time','update_time')
 
 class teacher_admin(admin.ModelAdmin):
     list_display = ('name','phone','idcard','bankcard','bankinfo','school','create_time','update_time')
