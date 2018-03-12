@@ -15,7 +15,7 @@ from pro.settings import DEBUG
 @login_required
 def index(req):
 
-
+    #
     if DEBUG:
         return render(req,'exam_dev/index.html')
     return render(req,'exam/index.html')

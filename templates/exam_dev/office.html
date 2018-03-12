@@ -20,8 +20,9 @@
         window.user= {
             'id':'{{ user.id }}',
             'name':'{{ user.username }}',
-               'phone':"{{ user.office.admin_phone }}"
+               'phone':"{{ user.office.admin_phone | safe}}"
         }
+           window.user.phone =  window.user.phone == 'None' ? '': window.user.phone
         window.type = {
             center:false,
             office:true,

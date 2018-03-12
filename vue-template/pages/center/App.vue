@@ -166,7 +166,7 @@ export default {
           phone,
           new_phone,
           code,
-          role:'school'
+          role:'center'
         }
       })
 
@@ -194,7 +194,7 @@ export default {
         params:{
           phone,
           code,
-          role:'school'
+          role:'center'
         }
       })
 

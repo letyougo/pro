@@ -41,9 +41,6 @@
         </template>
       </el-table-column>
         <el-table-column prop="name" label="教师姓名"></el-table-column>
-
-
-
         <el-table-column prop="idcard"  label="身份证"></el-table-column>
         <el-table-column prop="bankcard"  label="银行卡号"></el-table-column>
         <el-table-column prop="bankinfo"  label="开户行银行信息"></el-table-column>

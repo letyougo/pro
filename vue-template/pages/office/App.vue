@@ -160,7 +160,7 @@
             phone,
             new_phone,
             code,
-            role:'school'
+            role:'office'
           }
         })
 
@@ -188,7 +188,7 @@
           params:{
             phone,
             code,
-            role:'school'
+            role:'office'
           }
         })
 
