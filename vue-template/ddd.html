@@ -1,0 +1,648 @@
+<meta name="viewport"
+      content="width=360,user-scalable=no">
+<style type="text/css">
+  html,
+  body {
+
+  }
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+  }
+  #container {
+    position: relative;
+  }
+  #app {
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: auto;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-size: auto 100%;
+    text-align: center;
+  }
+  .item-1 {
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: auto;
+    left: 0;
+    top: 0;
+    height: 1670px;
+    right: 0;
+    bottom: 0;
+    /*background: url(http://r1.ykimg.com/051000005982D578ADB9120754060D83) no-repeat top center;*/
+    /*background: url(http://r1.ykimg.com/0510000059C39911ADC0AE070B0B6599) no-repeat top center;*/
+    background: url(http://r1.ykimg.com/051000005A3CC375ADC0B0AF2502F4CE) no-repeat center;
+    background-size: auto 100%;
+    text-align: center;
+  }
+  .item-1 div {
+    padding-top: 100px;
+  }
+  #swiperBackImg0 {
+    left: 50%;
+    top: 600px;
+    height: 472px;
+    width: 1200px;
+    margin-left: -596px;
+    background: url(http://r1.ykimg.com/051000005A3CC7F2ADC0AE24A2085BF7) no-repeat top center;
+    /*background: url("./1.png") no-repeat center;*/
+    background-size: contain;
+    position: absolute;
+  }
+
+
+  #swiperBackImg {
+    left: 50%;
+    top: 1072px;
+    height: 472px;
+    width: 1200px;
+    margin-left: -600px;
+    background: url(http://r1.ykimg.com/0510000059C398CAADC0AE0706002036) no-repeat top center;
+    background-size: contain;
+    position: absolute;
+  }
+
+  #swiperBackImg1 {
+    left: 50%;
+    top: 1544px;
+    height: 472px;
+    width: 1200px;
+    margin-left: -600px;
+    background: url("http://r1.ykimg.com/051000005982D579ADB91207510487EE") no-repeat top center;
+    background-size: contain;
+    position: absolute;
+  }
+
+  #appbox {
+    overflow-x: hidden;
+    height: 1446px;
+  }
+
+  .swiperbutton {
+    height: 40px;
+    margin-top: 45px;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    right: 25%;
+  }
+  #btn_left {
+    left: 25%;
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+  }
+  #btn_left1 {
+    left: 25%;
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+
+    -webkit-transform: rotate(180deg);
+
+    -o-transform: rotate(180deg);
+
+  }
+  #btn_left2 {
+    left: 25%;
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+  }
+  #btn_left3 {
+    left: 25%;
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+  }
+  .slide {
+    position: relative;
+    max-width: 640px;
+    overflow: hidden;
+    margin: 20px auto;
+  }
+  .slide:after {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: 100%;
+  }
+  .slide ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .slide li {
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .slide_tab {
+    width: 439px;
+    height:210px;
+    border-radius: 14px;
+    -moz-border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -39px;
+    overflow: hidden;
+    -webkit-transform: rotate(0deg);
+    margin-left: -224px;
+  }
+  .slide_tab .tab_box {
+    background-color: #aaa;
+    text-align: center;
+    color: #fff;
+  }
+  .slide_tab .btn_left,
+  .slide_tab .btn_right {
+    width: 50px;
+  }
+  .slide_tab .tab {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  .slide_tab .tab span {
+    display: block;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  .slide_tab .tab .cur {
+    background-color: #fff;
+    color: #333;
+  }
+  .slide_tab .product_box {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+  }
+  .slide_tab .product_box li:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .slide_tab .product_box .pic:after {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: 100%;
+  }
+  .slide_tab .product_box .pic img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  #ulpadding {
+    padding: 0;
+    margin: 0;
+  }
+  .palybutton {
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    margin-left: -75px;
+  }
+  .slide_tab1 {
+    width: 256px;
+    height: 121.5px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -22px;
+    overflow: hidden;
+    -webkit-transform: rotate(0deg);
+    margin-left: -126px;
+  }
+  .slide_tab1 .tab_box {
+    background-color: #aaa;
+    text-align: center;
+    color: #fff;
+  }
+  .slide_tab1 .btn_left,
+  .slide_tab1 .btn_right {
+    width: 50px;
+  }
+  .slide_tab1 .tab {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  .slide_tab1 .tab span {
+    display: block;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  .slide_tab1 .tab .cur {
+    background-color: #fff;
+    color: #333;
+  }
+  .slide_tab1 .product_box {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+  }
+  .slide_tab1 .product_box li:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .slide_tab1 .product_box .pic:after {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: 100%;
+  }
+  .slide_tab1 .product_box .pic img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .slide_tab2 {
+    width: 256px;
+    height: 121.5px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -22px;
+    overflow: hidden;
+    -webkit-transform: rotate(0deg);
+    margin-left: -126px;
+  }
+  .slide_tab2 .tab_box {
+    background-color: #aaa;
+    text-align: center;
+    color: #fff;
+  }
+  .slide_tab2 .btn_left,
+  .slide_tab2 .btn_right {
+    width: 50px;
+  }
+  .slide_tab2 .tab {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  .slide_tab2 .tab span {
+    display: block;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  .slide_tab2 .tab .cur {
+    background-color: #fff;
+    color: #333;
+  }
+  .slide_tab2 .product_box {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+  }
+  .slide_tab2 .product_box li:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .slide_tab2 .product_box .pic:after {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: 100%;
+  }
+  .slide_tab2 .product_box .pic img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .slide_tab3 {
+    width: 256px;
+    height: 121.5px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -22px;
+    overflow: hidden;
+    -webkit-transform: rotate(0deg);
+    margin-left: -126px;
+  }
+  .slide_tab3 .tab_box {
+    background-color: #aaa;
+    text-align: center;
+    color: #fff;
+  }
+  .slide_tab3 .btn_left,
+  .slide_tab3 .btn_right {
+    width: 50px;
+  }
+  .slide_tab3 .tab {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  .slide_tab3 .tab span {
+    display: block;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  .slide_tab3 .tab .cur {
+    background-color: #fff;
+    color: #333;
+  }
+  .slide_tab3 .product_box {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+  }
+  .slide_tab3 .product_box li:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .slide_tab3 .product_box .pic:after {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: 100%;
+  }
+  .slide_tab3 .product_box .pic img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+</style>
+
+
+<div id=??container??>
+  <div id="appbox">
+    <div id="app">
+
+      <div class="item-1">
+        <div style="margin-top:110px;">
+          <iframe height=302 width=495 src='http://player.youku.com/embed/XMzIzNDUxNjgwOA==' frameborder='0' allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div id="swiperBackImg0">
+
+        <div class="slide_tab">
+          <div class="product_box slide">
+            <ul id="ulpadding">
+              <li>
+                <img width="439px" height="210px" src="http://r1.ykimg.com/051000005A3A0E58ADC0B0AE340788DA" data-src="http://r1.ykimg.com/051000005A3A0E58ADC0B0AE340788DA" alt=""/>
+                <a href="http://v.youku.com/v_show/id_XMzIxMjAxODk1Ng==.html">
+                  <img class="palybutton"  width="150px" height="116px" src='http://r1.ykimg.com/051000005982D579ADB91207600A18E8'/>
+                </a>
+              </li>
+              <li>
+                <img width="439px" height="210px" src="http://r1.ykimg.com/051000005A3A0E57ADC0B0A83F08ECE2" data-src="http://r1.ykimg.com/051000005A3A0E57ADC0B0A83F08ECE2" alt=""/>
+                <a href="http://v.youku.com/v_show/id_XMzIyNzA0OTM2MA==.html">
+                  <img class="palybutton" width="150px" height="116px" src='http://r1.ykimg.com/051000005982D579ADB91207600A18E8'/>
+                </a>
+
+              </li>
+
+              <li>
+                <img width="439px" height="210px" src="http://r1.ykimg.com/051000005A3A0E57ADC0B0A63F0535FD" data-src="http://r1.ykimg.com/051000005A3A0E57ADC0B0A63F0535FD" alt=""/>
+                <a href="http://v.youku.com/v_show/id_XMzA4MDc2NjIyMA==.html">
+                  <img class="palybutton" width="150px" height="116px" src='http://r1.ykimg.com/051000005982D579ADB91207600A18E8'/>
+                </a>
+
+              </li>
+
+              <li>
+                <img width="439px" height="210px" src="http://r1.ykimg.com/051000005A3A0E58ADC0B0BBEC0A63EC" data-src="http://r1.ykimg.com/051000005A3A0E58ADC0B0BBEC0A63EC" alt=""/>
+                <a href="http://v.youku.com/v_show/id_XMzIwNDc1NjU0OA==.html">
+                  <img class="palybutton" width="150px" height="116px" src='http://r1.ykimg.com/051000005982D579ADB91207600A18E8'/>
+                </a>
+
+              </li>
+
+              <li>
+                <img width="439px" height="210px" src="http://r1.ykimg.com/051000005A3A0E58ADC0B0C7CE071028" data-src="http://r1.ykimg.com/051000005A3A0E58ADC0B0C7CE071028" alt=""/>
+                <a href="http://v.youku.com/v_show/id_XMzAyMTQ2MTI2NA==.html">
+                  <img class="palybutton" width="150px" height="116px" src='http://r1.ykimg.com/051000005982D579ADB91207600A18E8'/>
+                </a>
+
+              </li>
+
+            </ul>
+          </div>
+        </div>
+        <img class="swiperbutton" id="btn_left0" src='http://r1.ykimg.com/051000005982D579ADB912075C0B8D5C'/>
+        <img class="swiperbutton" id="btn_right0" src='http://r1.ykimg.com/051000005982D579ADB912075C0B8D5C'/>
+      </div>
+
+      <div id="swiperBackImg">
+
+        <div class="slide_tab">
+          <div class="product_box slide">
+            <ul id="ulpadding">
+              <li>
+                <img width="439px" height="210px" src="http://r1.ykimg.com/0510000059C0F8FF8B3D06076B0CFCCA" data-src="http://r1.ykimg.com/0510000059C0F8FF8B3D06076B0CFCCA" alt=""/>
+                <a href="http://v.youku.com/v_show/id_XMzAyNDI4MTgwNA==.html">
+                  <img class="palybutton"  width="150px" height="116px" src='http://r1.ykimg.com/051000005982D579ADB91207600A18E8'/>
+                </a>
+              </li>
+              <li>
+                <img width="439px" height="210px" src="http://r1.ykimg.com/0510000059C0F8FD8B3D060773082C38" data-src="http://r1.ykimg.com/0510000059C0F8FD8B3D060773082C38" alt=""/>
+                <a href="http://v.youku.com/v_show/id_XMjk4NTM1MjkyNA==.html">
+                  <img class="palybutton" width="150px" height="116px" src='http://r1.ykimg.com/051000005982D579ADB91207600A18E8'>
+                </a>
+
+              </li>
+
+              <li>
+                <img width="439px" height="210px" src="http://r1.ykimg.com/0510000059C0F8FE8B3D0607660503E7" data-src="http://r1.ykimg.com/0510000059C0F8FE8B3D0607660503E7" alt=""/>
+                <a href="http://v.youku.com/v_show/id_XMjg4MDQ4NjY1Ng==.html">
+                  <img class="palybutton" width="150px" height="116px" src='http://r1.ykimg.com/051000005982D579ADB91207600A18E8'/>
+                </a>
+
+              </li>
+
+              <li>
+                <img width="439px" height="210px" src="http://r1.ykimg.com/0510000059C0F8FE8B3D06076209FAEA" data-src="http://r1.ykimg.com/0510000059C0F8FE8B3D06076209FAEA" alt=""/>
+                <a href="http://v.youku.com/v_show/id_XMzAxNjg4NDI4NA==.html">
+                  <img class="palybutton" width="150px" height="116px" src='http://r1.ykimg.com/051000005982D579ADB91207600A18E8'/>
+                </a>
+
+              </li>
+
+              <li>
+                <img width="439px" height="210px" src="http://r1.ykimg.com/0510000059C0F8FF8B3D06075F0E6803" data-src="http://r1.ykimg.com/0510000059C0F8FF8B3D06075F0E6803" alt=""/>
+                <a href="http://v.youku.com/v_show/id_XMzAyMTQ2MTI2NA==.html">
+                  <img class="palybutton" width="150px" height="116px" src='http://r1.ykimg.com/051000005982D579ADB91207600A18E8'/>
+                </a>
+
+              </li>
+
+            </ul>
+          </div>
+        </div>
+        <img class="swiperbutton" id="btn_left1" src='http://r1.ykimg.com/051000005982D579ADB912075C0B8D5C'/>
+        <img class="swiperbutton" id="btn_right1" src='http://r1.ykimg.com/051000005982D579ADB912075C0B8D5C'/>
+      </div>
+
+      <div id="swiperBackImg1">
+        <div class="slide_tab">
+          <div class="product_box slide">
+            <ul id="ulpadding">
+              <li>
+                <img width="439px" height="210px" src="http://r1.ykimg.com/0510000059853824ADC0B0DB92033945" data-src="http://r1.ykimg.com/0510000059853824ADC0B0DB92033945" alt=""/>
+                <a href="http://v.youku.com/v_show/id_XOTU5OTUwMDI4.html">
+                  <img class="palybutton"  width="150px" height="116px" src='http://r1.ykimg.com/051000005982D579ADB91207600A18E8'/>
+                </a>
+              </li>
+              <li>
+                <img width="439px" height="210px" src="http://r1.ykimg.com/0510000059853868ADB9125BBA07B265" data-src="http://r1.ykimg.com/0510000059853868ADB9125BBA07B265" alt=""/>
+                <a href="http://v.youku.com/v_show/id_XODQwODQ3NjUy.html">
+                  <img class="palybutton" width="150px" height="116px" src='http://r1.ykimg.com/051000005982D579ADB91207600A18E8'>
+                </a>
+
+              </li>
+
+              <li>
+                <img width="439px" height="210px" src="http://r1.ykimg.com/051000005985389FAD9E0706E70C5AD4" data-src="http://r1.ykimg.com/051000005985389FAD9E0706E70C5AD4" alt=""/>
+                <a href="http://v.youku.com/v_show/id_XOTAyNTE5MTky.html">
+                  <img class="palybutton" width="150px" height="116px" src='http://r1.ykimg.com/051000005982D579ADB91207600A18E8'/>
+                </a>
+
+              </li>
+
+              <li>
+                <img width="439px" height="210px" src="http://r1.ykimg.com/05100000598538A0AD9E0706EF0BAA10" data-src="http://r1.ykimg.com/05100000598538A0AD9E0706EF0BAA10" alt=""/>
+                <a href="http://v.youku.com/v_show/id_XMjg5MTQyNzk4NA==.html">
+                  <img class="palybutton" width="150px" height="116px" src='http://r1.ykimg.com/051000005982D579ADB91207600A18E8'/>
+                </a>
+
+              </li>
+
+              <li>
+                <img width="439px" height="210px" src="http://r1.ykimg.com/05100000598538A0AD9E0706FB01112B" data-src="http://r1.ykimg.com/05100000598538A0AD9E0706FB01112B" alt=""/>
+                <a href="http://v.youku.com/v_show/id_XMjkxODUyNTA3Mg==.html">
+                  <img class="palybutton" width="150px" height="116px" src='http://r1.ykimg.com/051000005982D579ADB91207600A18E8'/>
+                </a>
+
+              </li>
+              <li>
+                <img width="439px" height="210px" src="http://r1.ykimg.com/05100000598538A1AD9E0706E90CA23C" data-src="http://r1.ykimg.com/05100000598538A1AD9E0706E90CA23C" alt=""/>
+                <a href="http://v.youku.com/v_show/id_XMjkxODUyNTA3Mg==.html">
+                  <img class="palybutton" width="150px" height="116px" src='http://r1.ykimg.com/051000005982D579ADB91207600A18E8'/>
+                </a>
+
+              </li>
+            </ul>
+          </div>
+        </div>
+        <img class="swiperbutton" id="btn_left2" src='http://r1.ykimg.com/051000005982D579ADB912075C0B8D5C'/>
+        <img class="swiperbutton" id="btn_right2" src='http://r1.ykimg.com/051000005982D579ADB912075C0B8D5C'/>
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script >
+  !function(a,b){"use strict";function h(a,b,c){b.css({"-webkit-transition":"all "+c+"s "+a.opts.transitionType,transition:"all "+c+"s "+a.opts.transitionType})}function i(a,b,c){var d=a.opts.axisX?c+"px,0,0":"0,"+c+"px,0";b.css({"-webkit-transform":"translate3d("+d+")",transform:"translate3d("+d+")"})}function j(a,c){var d=a.opts.ul.children(),e=d.eq(c).find("[data-src]");e&&e.each(function(){var c=b(this);c.is("img")?(c.attr("src",c.data("src")),c.removeAttr("data-src")):(c.css({"background-image":"url("+c.data("src")+")"}),c.removeAttr("data-src"))})}function k(a){e.touch&&!a.touches&&(a.touches=a.originalEvent.touches)}function l(a,b){b.isScrolling=void 0,b._moveDistance=b._moveDistanceIE=0,b._startX=e.touch?a.touches[0].pageX:a.pageX||a.clientX,b._startY=e.touch?a.touches[0].pageY:a.pageY||a.clientY}function m(a,b){b.opts.autoSwipe&&p(b),b.allowSlideClick=!1,b._curX=e.touch?a.touches[0].pageX:a.pageX||a.clientX,b._curY=e.touch?a.touches[0].pageY:a.pageY||a.clientY,b._moveX=b._curX-b._startX,b._moveY=b._curY-b._startY,"undefined"==typeof b.isScrolling&&(b.isScrolling=b.opts.axisX?!!(Math.abs(b._moveX)>=Math.abs(b._moveY)):!!(Math.abs(b._moveY)>=Math.abs(b._moveX))),b.isScrolling&&(a.preventDefault?a.preventDefault():a.returnValue=!1,h(b,b.opts.ul,0),b._moveDistance=b._moveDistanceIE=b.opts.axisX?b._moveX:b._moveY),b.opts.continuousScroll||(0==b._index&&b._moveDistance>0||b._index+1>=b._liLength&&b._moveDistance<0)&&(b._moveDistance=0),i(b,b.opts.ul,-(b._slideDistance*b._index-b._moveDistance))}function n(a){a.opts.autoSwipe&&o(a),(c.ie10||c.ie11)&&(Math.abs(a._moveDistanceIE)<5&&(a.allowSlideClick=!0),setTimeout(function(){a.allowSlideClick=!0},100)),Math.abs(a._moveDistance)<=a._distance?q(a,"",".3"):a._moveDistance>a._distance?q(a,"prev",".3"):Math.abs(a._moveDistance)>a._distance&&q(a,"next",".3"),a._moveDistance=a._moveDistanceIE=0}function o(a){a.opts.autoSwipe&&(p(a),a.autoSlide=setInterval(function(){q(a,"next",".3")},a.opts.speed))}function p(a){clearInterval(a.autoSlide)}function q(a,b,c){"number"==typeof b?(a._index=b,a.opts.lazyLoad&&(a.opts.continuousScroll?(j(a,a._index),j(a,a._index+1),j(a,a._index+2)):(j(a,a._index-1),j(a,a._index),j(a,a._index+1)))):"next"==b?(a._index++,a.opts.lazyLoad&&(a.opts.continuousScroll?(j(a,a._index+2),a._index+1==a._liLength?j(a,1):a._index==a._liLength&&(j(a,0),j(a,2))):j(a,a._index+1))):"prev"==b&&(a._index--,a.opts.lazyLoad&&(a.opts.continuousScroll?(j(a,a._index),0==a._index?j(a,a._liLength):a._index<0&&j(a,a._liLength-1)):j(a,a._index-1))),a.opts.continuousScroll?a._index>=a._liLength?(r(a,c),a._index=0,setTimeout(function(){r(a,0)},300)):a._index<0?(r(a,c),a._index=a._liLength-1,setTimeout(function(){r(a,0)},300)):r(a,c):(a._index>=a._liLength?a._index=0:a._index<0&&(a._index=a._liLength-1),r(a,c)),""!==arguments[1]&&a.opts.callback(a._index,a._liLength,a.$el)}function r(a,b){h(a,a.opts.ul,b),i(a,a.opts.ul,-a._index*a._slideDistance)}var f,g,c={ie10:a.navigator.msPointerEnabled,ie11:a.navigator.pointerEnabled},d=["touchstart","touchmove","touchend"],e={touch:a.Modernizr&&Modernizr.touch===!0||function(){return!!("ontouchstart"in a||a.DocumentTouch&&document instanceof DocumentTouch)}()};c.ie10&&(d=["MSPointerDown","MSPointerMove","MSPointerUp"]),c.ie11&&(d=["pointerdown","pointermove","pointerup"]),f={touchStart:d[0],touchMove:d[1],touchEnd:d[2]},b.fn.swipeSlide=function(a){var b=[];return this.each(function(c,d){b.push(new g(d,a))}),b},g=function(a,c){var d=this;d.$el=b(a),d._distance=50,d.allowSlideClick=!0,d.init(c)},g.prototype.init=function(d){function p(){var c,a=e.opts.ul.children();e._slideDistance=e.opts.axisX?e.opts.ul.width():e.opts.ul.height(),h(e,e.opts.ul,0),i(e,e.opts.ul,-e._slideDistance*e._index),h(e,a,0),c=e.opts.continuousScroll?-1:0,a.each(function(a){i(e,b(this),e._slideDistance*(a+c))})}var g,e=this;return e.opts=b.extend({},{ul:e.$el.children("ul"),li:e.$el.children().children("li"),index:0,continuousScroll:!1,autoSwipe:!0,speed:4e3,axisX:!0,transitionType:"ease",lazyLoad:!1,firstCallback:function(){},callback:function(){}},d),e._index=e.opts.index,e._liLength=e.opts.li.length,e.isScrolling,e.opts.firstCallback(e._index,e._liLength,e.$el),e._liLength<=1?(e.opts.lazyLoad&&j(e,0),!1):(e.opts.continuousScroll&&e.opts.ul.prepend(e.opts.li.last().clone()).append(e.opts.li.first().clone()),e.opts.lazyLoad&&(j(e,e._index),e.opts.continuousScroll?(j(e,e._index+1),j(e,e._index+2),0==e._index?j(e,e._liLength):e._index+1==e._liLength&&j(e,1)):0==e._index?j(e,e._index+1):e._index+1==e._liLength?j(e,e._index-1):(j(e,e._index+1),j(e,e._index-1))),p(),(c.ie10||c.ie11)&&(g="",g=e.opts.axisX?"pan-y":"none",e.$el.css({"-ms-touch-action":g,"touch-action":g}),e.$el.on("click",function(){return e.allowSlideClick})),o(e),e.$el.on(f.touchStart,function(a){k(a),l(a,e)}),e.$el.on(f.touchMove,function(a){k(a),m(a,e)}),e.$el.on(f.touchEnd,function(){n(e)}),e.opts.ul.on("webkitTransitionEnd MSTransitionEnd transitionend",function(){o(e)}),b(a).on("onorientationchange"in a?"orientationchange":"resize",function(){clearTimeout(e.timer),e.timer=setTimeout(p,150)}),void 0)},g.prototype.goTo=function(a){var b=this;q(b,a,".3")}}(window,window.Zepto||window.jQuery);
+</script>
+<script>
+  $(function () {
+    var slideTab = $('.slide_tab .slide').swipeSlide({
+      continuousScroll: true,
+      autoSwipe: false,
+      lazyLoad: true,
+      firstCallback: function (i) {
+        $('.slide_tab .tab .item').eq(i).addClass('cur');
+      },
+      callback: function (i) {
+        $('.slide_tab .tab .item').eq(i).addClass('cur').siblings().removeClass('cur');
+      }
+    });
+    $('#btn_left0').on('click', function (i) {
+      slideTab[0].goTo('prev');
+    });
+    $('#btn_right0').on('click', function (i) {
+      slideTab[0].goTo('next');
+    });
+
+    $('#btn_left1').on('click', function (i) {
+      slideTab[1].goTo('prev');
+    });
+    $('#btn_right1').on('click', function (i) {
+      slideTab[1].goTo('next');
+    });
+
+    $('#btn_left2').on('click', function (i) {
+      slideTab[2].goTo('prev');
+    });
+    $('#btn_right2').on('click', function (i) {
+      slideTab[2].goTo('next');
+    });
+
+  });
+
+
+</script>

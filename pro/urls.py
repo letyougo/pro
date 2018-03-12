@@ -23,7 +23,8 @@ from exam.api.school import SchoolResource
 from exam.api.exam import ExamResource
 from exam.api.office import officeResource
 from exam.api.config import ConfigResource
-from exam.account import login,logout
+from exam.api.user import UserResource
+from exam.account import login,logout,forget,sendcode,changepwd
 import exam.views as view
 
 import sys
@@ -57,7 +58,8 @@ urlpatterns = [
     path(r'upload/', view.upload),
     path(r'upload2/', view.upload2),
     path('admin/', admin.site.urls),
-    path('admin2/', admin.site.urls),
+
+    path('api/user/', include(UserResource.urls())),
     path('api/teacher/', include(TeacherResource.urls())),
     path('api/schoolexam/', include(SchoolExamResource.urls())),
     path('api/teacherexam/', include(TeacherExamResource.urls())),
@@ -69,6 +71,9 @@ urlpatterns = [
     path(r'login/', login),
 
     path(r'logout/', logout),
+    path(r'forget/', forget),
+    path(r'sendcode/', sendcode),
+    path(r'changepwd/', changepwd),
     path(r'school/', view.school),
     path(r'office/', view.office),
     path(r'center/', view.center),

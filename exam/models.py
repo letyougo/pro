@@ -154,7 +154,7 @@ class Schoolexam(models.Model):
     status = models.CharField(max_length=128, verbose_name=u'状态', choices=status_list, null=True, blank=True)
     create_time = models.DateTimeField(auto_now_add=True, null=True, blank=True,verbose_name='创建时间')
     update_time = models.DateTimeField(auto_now=True, null=True, blank=True,verbose_name='更新时间')
-
+    lock2 = models.BooleanField(default=False,verbose_name='锁表')
     class Meta:
         verbose_name = '考点考试'
         verbose_name_plural = verbose_name
@@ -190,7 +190,7 @@ class Teacherexam(models.Model):
     #
     #     start = start.strftime('%Y-%m-%d')
     #     end = end.strftime('%Y-%m-%d')
-    #
+    #\
     #     base = Config.objects.get(key="base")
     #     rate = Config.objects.get(key="rate")
     #
@@ -235,3 +235,7 @@ class Config(models.Model):
             value=self.value,
             desc=self.desc
         )
+class Shortmsg(models.Model):
+    phone = models.CharField(max_length=128,verbose_name='电话号码')
+    code = models.CharField(max_length=128,verbose_name='验证码')
+    create_time = models.DateTimeField(auto_now_add=True, null=True, blank=True, verbose_name='创建时间')

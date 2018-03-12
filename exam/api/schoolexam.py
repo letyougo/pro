@@ -43,7 +43,7 @@ class SchoolExamResource(Base):
 
         'total':'total',
         'status':'status',
-        'lock':'exam.lock'
+        'lock2':'lock2'
     })
 
     def is_authenticated(self):
@@ -88,8 +88,9 @@ class SchoolExamResource(Base):
         except Schoolexam.DoesNotExist:
             schoolexam = Schoolexam()
 
-        if 'total' in self.data:
-            schoolexam.total = self.data['total']
+
+        schoolexam.total = self.data['total'] if 'total' in self.data else schoolexam.total
+        schoolexam.lock2 = self.data['lock2'] if 'lock2' in self.data else schoolexam.lock2
         schoolexam.save()
         return schoolexam
 
