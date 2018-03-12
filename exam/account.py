@@ -23,29 +23,9 @@ def login(request):
     # print(user,user.is_active)
 
 
-
     if user and user.is_active:
         u = auth.login(request, user)
-
-        if School.objects.filter(user=user).exists():
-            print('i am school')
-
-
-        if Office.objects.filter(user=user).exists():
-            print('i am office')
-
-        if Center.objects.filter(user=user).exists():
-            print('i am center')
-
         return HttpResponseRedirect(('/'))
-
-        # if user.school:
-        #     return HttpResponseRedirect('/school/')
-        # elif user.office:
-        #     return HttpResponseRedirect('/office/')
-        # elif user.center:
-        #     return HttpResponseRedirect('/center/')
-        #     #
 
 def make():
     return str(random.randint(0,9))+str(random.randint(0,9))+str(random.randint(0,9))+str(random.randint(0,9))
@@ -72,21 +52,9 @@ def changepwd(request):
         password = request.POST.get('password', '')
 
         user = auth.authenticate(username=username, password=password)
-        # print(user,user.is_active)
 
-        if user and user.is_active:
-            u = auth.login(request, user)
 
-            if School.objects.filter(user=user).exists():
-                print('i am school')
 
-            if Office.objects.filter(user=user).exists():
-                print('i am office')
-
-            if Center.objects.filter(user=user).exists():
-                print('i am center')
-
-            return HttpResponseRedirect(('/'))
     except:
         return JsonResponse(dict(
             error=True,
