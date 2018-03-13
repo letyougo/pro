@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
-
+import logging
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -23,13 +23,16 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'x^s86fwdh=sq^u5_qu=2t$8_xa3zj1$+6&h@#a$=7c%esjhb@y'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
+
+
 
 ALLOWED_HOSTS = [
     '101.200.129.112',
     'localhost',
     '127.0.0.1',
-    'fe.dongnaoedu.com'
+    'fe.dongnaoedu.com',
+    '222.249.132.10'
 ]
 
 
@@ -83,12 +86,20 @@ WSGI_APPLICATION = 'pro.wsgi.application'
 
 
 DATABASES = {
-       'default': {
+       # 'default': {
+       #  'ENGINE': 'django.db.backends.mysql',
+       #  'NAME': 'exam',
+       #  'USER': 'root',
+       #  'PASSWORD': 'surui123',
+       #  'HOST': '101.200.129.112',
+       #  'PORT': '3306',
+       #  },
+    'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'exam',
         'USER': 'root',
-        'PASSWORD': 'surui123',
-        'HOST': '101.200.129.112',
+        'PASSWORD': '',
+        'HOST': 'localhost',
         'PORT': '3306',
     }
 }
@@ -148,8 +159,46 @@ APPEND_SLASH=False
 PAGE_SIZE = 10
 PAGE_NUM = 1
 
-#
-# LOGGING = {
+
+
+
+
+
+if DEBUG:
+    pass
+   # INTERNAL_IPS = ('127.0.0.1', 'localhost',)
+#    MIDDLEWARE+= (
+#        'debug_toolbar.middleware.DebugToolbarMiddleware',
+#    )
+
+#    INSTALLED_APPS += (
+#        'debug_toolbar',
+#    )
+
+#    DEBUG_TOOLBAR_PANELS = [
+#        'debug_toolbar.panels.versions.VersionsPanel',
+#        'debug_toolbar.panels.timer.TimerPanel',
+#        'debug_toolbar.panels.settings.SettingsPanel',
+#        'debug_toolbar.panels.headers.HeadersPanel',
+#        'debug_toolbar.panels.request.RequestPanel',
+#        'debug_toolbar.panels.sql.SQLPanel',
+#        'debug_toolbar.panels.staticfiles.StaticFilesPanel',
+#        'debug_toolbar.panels.templates.TemplatesPanel',
+#        'debug_toolbar.panels.cache.CachePanel',
+#        'debug_toolbar.panels.signals.SignalsPanel',
+#        'debug_toolbar.panels.logging.LoggingPanel',
+#        'debug_toolbar.panels.redirects.RedirectsPanel',
+#    ]
+
+#    DEBUG_TOOLBAR_CONFIG = {
+#        'INTERCEPT_REDIRECTS': False,
+#    }
+
+   # log = logging.getLogger('django.db.backends')
+   # log.setLevel(logging.DEBUG)
+   # log.addHandler(logging.StreamHandler())
+
+#    LOGGING = {
 #     'version': 1,
 #     'disable_existing_loggers': False,
 #     'handlers': {
@@ -162,44 +211,8 @@ PAGE_NUM = 1
 #             'handlers': ['console'],
 #             'level': 'DEBUG' if DEBUG else 'INFO',
 #         },
-#     },
-# }
-
-
-
-if DEBUG:
-
-   # INTERNAL_IPS = ('127.0.0.1', 'localhost',)
-   MIDDLEWARE+= (
-       'debug_toolbar.middleware.DebugToolbarMiddleware',
-   )
-
-   INSTALLED_APPS += (
-       'debug_toolbar',
-   )
-
-   # DEBUG_TOOLBAR_PANELS = [
-   #     'debug_toolbar.panels.versions.VersionsPanel',
-   #     'debug_toolbar.panels.timer.TimerPanel',
-   #     'debug_toolbar.panels.settings.SettingsPanel',
-   #     'debug_toolbar.panels.headers.HeadersPanel',
-   #     'debug_toolbar.panels.request.RequestPanel',
-   #     'debug_toolbar.panels.sql.SQLPanel',
-   #     'debug_toolbar.panels.staticfiles.StaticFilesPanel',
-   #     'debug_toolbar.panels.templates.TemplatesPanel',
-   #     'debug_toolbar.panels.cache.CachePanel',
-   #     'debug_toolbar.panels.signals.SignalsPanel',
-   #     'debug_toolbar.panels.logging.LoggingPanel',
-   #     'debug_toolbar.panels.redirects.RedirectsPanel',
-   # ]
-   #
-   # DEBUG_TOOLBAR_CONFIG = {
-   #     'INTERCEPT_REDIRECTS': False,
-   # }
-   #
-   # log = logging.getLogger('django.db.backends')
-   # log.setLevel(logging.DEBUG)
-   # log.addHandler(logging.StreamHandler())
+#         },
+#     }
 
 
 
