@@ -154,7 +154,61 @@ export default {
       }
   },
   methods:{
+    route(name){
+      this.$router.push(name)
+    },
+    async send_code(phone){
 
+      await request.get('/sendcode/?phone='+phone)
+      this.$message({
+        type: 'success',
+        message: '发送验证码成功'
+      });
+    },
+    async update(){
+      var phone = this.forget.phone
+      var code = this.forget.code
+      var new_phone = this.forget.new_phone
+      var res = await request.get('/changephone/',{
+        params:{
+          phone,
+          new_phone,
+          code,
+          role:'school'
+        }
+      })
+
+      if(res.data.error){
+        this.$message({
+          type: 'error',
+          message: '验证码有误'
+        });
+      }else {
+        this.forget.phone = this.forget.new_phone
+        this.$message({
+          type: 'success',
+          message: '修改手机号成功'
+        });
+      }
+
+      location.reload()
+
+    },
+    async set(){
+      var phone = this.set_d.phone
+      var code = this.set_d.code
+
+      var res = await request.get('/setphone/',{
+        params:{
+          phone,
+          code,
+          role:'school'
+        }
+      })
+
+      location.reload()
+
+    }
   },
   mounted(){
     setTimeout(()=>{
