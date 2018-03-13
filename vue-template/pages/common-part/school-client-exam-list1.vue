@@ -68,10 +68,10 @@
         <el-table-column  label="操作" width="180" >
           <template scope="scope">
             <el-button-group>
-              <el-button size="mini" @click="submit(scope.row.id,true)" v-if="!scope.row.lock2">
+              <el-button size="mini" @click="submit(scope.row.id,true)" v-if="!scope.row.lock2 && !is_school">
                 提交
               </el-button>
-              <el-button size="mini" @click="submit(scope.row.id,false)" v-else>
+              <el-button size="mini" @click="submit(scope.row.id,false)" v-if="scope.row.lock2 && !is_school">
                 撤回
               </el-button>
               <el-button
@@ -175,8 +175,9 @@ export default {
   components: {ElButtonGroup},
   name: 'exam-info',
   data () {
+    var is_school = window.type.school
     return {
-
+      is_school:is_school,
       list:[],
       detail:{},
       total:0,

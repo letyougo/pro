@@ -2,164 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e175e6c-5f66-4d73-8c72-c21be1c807eb" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/web.config" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/wfastcgi.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/d.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/demo.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/demo.sql" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/deploy.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/exam.sql" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/exam/views.py" afterPath="$PROJECT_DIR$/exam/views.py" />
       <change beforePath="$PROJECT_DIR$/pro/settings.py" afterPath="$PROJECT_DIR$/pro/settings.py" />
-      <change beforePath="$PROJECT_DIR$/vue-template/.babelrc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/.editorconfig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/.postcssrc.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/build/build.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/build/check-versions.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/build/dev-client.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/build/dev-server.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/build/my-server.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/build/utils.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/build/vue-loader.conf.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/build/webpack.base.conf.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/build/webpack.dev.conf.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/build/webpack.prod.conf.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/config/dev.env.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/config/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/config/prod.env.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/ddd.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/element-variables.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/package-lock.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/package.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/pages/center/App.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/pages/center/index.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/pages/center/main.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/pages/center/router/index-bat.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/pages/center/router/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/pages/common-part/center-export.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/pages/common-part/config.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/pages/common-part/excel-download.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/pages/common-part/office-client-exam-list1.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/pages/common-part/office-client-exam-list2.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/pages/common-part/office-export.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/pages/common-part/office-list.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/pages/common-part/plugins/fetch_school.js" afterPath="$PROJECT_DIR$/b.py" />
-      <change beforePath="$PROJECT_DIR$/vue-template/pages/common-part/plugins/su_validate.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/pages/common-part/rules.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/pages/common-part/school-client-exam-list1.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/pages/common-part/school-client-exam-list2.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/pages/common-part/school-list.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/pages/common-part/teacher-exam-list.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/pages/common-part/teacher-export.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/pages/common-part/teacher-list.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/pages/common-part/teacher-upload.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/pages/office/App.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/pages/office/index.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/pages/office/main.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/pages/office/router/index-bat.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/pages/office/router/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/pages/school/App.vue" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/pages/school/index.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/pages/school/main.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/pages/school/router/index-bat.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/pages/school/router/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/scholl/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/scholl/static/css/app.e63050a6f239ede42b0c1fb806567612.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/scholl/static/fonts/element-icons.6f0a763.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/scholl/static/js/app.5afef2ed4e0b1972ca8d.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/scholl/static/js/app.5afef2ed4e0b1972ca8d.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/scholl/static/js/manifest.e121a38e65a628efea65.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/scholl/static/js/manifest.e121a38e65a628efea65.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/scholl/static/js/vendor.16acd5ab8d7d90192eb5.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/scholl/static/js/vendor.16acd5ab8d7d90192eb5.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/static/.gitkeep" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/alert.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/aside.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/autocomplete.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/badge.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/base.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/breadcrumb-item.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/breadcrumb.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/button-group.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/button.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/card.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/carousel-item.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/carousel.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/cascader.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/checkbox-button.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/checkbox-group.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/checkbox.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/col.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/collapse-item.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/collapse.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/color-picker.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/container.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/date-picker.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/dialog.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/display.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/dropdown-item.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/dropdown-menu.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/dropdown.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/element-variables.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/fonts/element-icons.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/fonts/element-icons.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/footer.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/form-item.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/form.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/header.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/icon.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/index.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/input-number.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/input.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/loading.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/main.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/menu-item-group.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/menu-item.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/menu.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/message-box.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/message.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/notification.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/option-group.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/option.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/pagination.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/popover.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/popper.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/progress.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/radio-button.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/radio-group.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/radio.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/rate.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/reset.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/row.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/scrollbar.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/select-dropdown.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/select.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/slider.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/spinner.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/step.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/steps.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/submenu.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/switch.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/tab-pane.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/table-column.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/table.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/tabs.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/tag.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/time-picker.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/time-select.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/tooltip.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/transfer.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/tree.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/theme/upload.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/tt/1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/tt/bat.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/tt/bg.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/tt/final-code.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/tt/final.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/vue-template/webpack-stats.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/exam/css/center.css" afterPath="$PROJECT_DIR$/static/exam/css/center.css" />
+      <change beforePath="$PROJECT_DIR$/static/exam/css/office.css" afterPath="$PROJECT_DIR$/static/exam/css/office.css" />
+      <change beforePath="$PROJECT_DIR$/static/exam/css/school.css" afterPath="$PROJECT_DIR$/static/exam/css/school.css" />
+      <change beforePath="$PROJECT_DIR$/static/exam/js/center.js" afterPath="$PROJECT_DIR$/static/exam/js/center.js" />
+      <change beforePath="$PROJECT_DIR$/static/exam/js/center.js.map" afterPath="$PROJECT_DIR$/static/exam/js/center.js.map" />
+      <change beforePath="$PROJECT_DIR$/static/exam/js/manifest.js" afterPath="$PROJECT_DIR$/static/exam/js/manifest.js" />
+      <change beforePath="$PROJECT_DIR$/static/exam/js/manifest.js.map" afterPath="$PROJECT_DIR$/static/exam/js/manifest.js.map" />
+      <change beforePath="$PROJECT_DIR$/static/exam/js/office.js" afterPath="$PROJECT_DIR$/static/exam/js/office.js" />
+      <change beforePath="$PROJECT_DIR$/static/exam/js/office.js.map" afterPath="$PROJECT_DIR$/static/exam/js/office.js.map" />
+      <change beforePath="$PROJECT_DIR$/static/exam/js/school.js" afterPath="$PROJECT_DIR$/static/exam/js/school.js" />
+      <change beforePath="$PROJECT_DIR$/static/exam/js/school.js.map" afterPath="$PROJECT_DIR$/static/exam/js/school.js.map" />
+      <change beforePath="$PROJECT_DIR$/static/exam/js/vendor.js" afterPath="$PROJECT_DIR$/static/exam/js/vendor.js" />
+      <change beforePath="$PROJECT_DIR$/static/exam/js/vendor.js.map" afterPath="$PROJECT_DIR$/static/exam/js/vendor.js.map" />
+      <change beforePath="$PROJECT_DIR$/vue-template/pages/common-part/school-client-exam-list1.vue" afterPath="$PROJECT_DIR$/vue-template/pages/common-part/school-client-exam-list1.vue" />
     </list>
     <ignored path="pro.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -200,11 +59,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pro/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+            <state relative-caret-position="187">
+              <caret line="32" column="16" lean-forward="false" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/exam/tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -233,8 +102,18 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exam/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="36" column="2" lean-forward="false" selection-start-line="36" selection-start-column="2" selection-end-line="37" selection-end-column="55" />
+            <state relative-caret-position="306">
+              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="center.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/exam/js/center.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -355,7 +234,6 @@
         <option value="$PROJECT_DIR$/templates/exam/office.html" />
         <option value="$PROJECT_DIR$/templates/exam/center.html" />
         <option value="$PROJECT_DIR$/nginx.conf" />
-        <option value="$PROJECT_DIR$/exam/views.py" />
         <option value="$PROJECT_DIR$/uwsgi-2.0.17/plugins/python/uwsgiplugin.py" />
         <option value="$PROJECT_DIR$/uwsgi-2.0.17/plugins/mono/uwsgiplugin.py" />
         <option value="$PROJECT_DIR$/uwsgi-2.0.17/plugins/alarm_speech/uwsgiplugin.py" />
@@ -371,6 +249,7 @@
         <option value="$PROJECT_DIR$/web2.config" />
         <option value="$PROJECT_DIR$/web.config" />
         <option value="$PROJECT_DIR$/exam/account.py" />
+        <option value="$PROJECT_DIR$/exam/views.py" />
         <option value="$PROJECT_DIR$/pro/settings.py" />
       </list>
     </option>
@@ -386,9 +265,13 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+    <handled-path value="$PROJECT_DIR$/vue-template/node_modules" />
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="478" />
-    <option name="y" value="26" />
+    <option name="x" value="380" />
+    <option name="y" value="44" />
     <option name="width" value="1382" />
     <option name="height" value="1047" />
   </component>
@@ -445,6 +328,11 @@
               <item name="pro" type="462c0819:PsiDirectoryNode" />
               <item name="pro" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="pro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pro" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -461,8 +349,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\2018-3\projects\pro" />
       <recent name="E:\2018-3\projects\pro\static" />
+      <recent name="E:\2018-3\projects\pro" />
       <recent name="E:\projects\pro\templates\account" />
       <recent name="$PROJECT_DIR$/static/img" />
       <recent name="$PROJECT_DIR$/static" />
@@ -1062,19 +950,34 @@
       <option name="project" value="LOCAL" />
       <updated>1520949886664</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="database 444">
+      <created>1520950135720</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1520950135720</updated>
+    </task>
+    <task id="LOCAL-00049" summary="setting debug=false">
+      <created>1520952252790</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1520952252790</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="478" y="26" width="1382" height="1047" extended-state="0" />
+    <frame x="380" y="44" width="1382" height="1047" extended-state="0" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48030636" sideWeight="0.39183056" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3118162" sideWeight="0.39561272" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="manage.py@pro" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822758" sideWeight="0.49092284" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48030636" sideWeight="0.60816944" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32394367" sideWeight="0.46801707" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3118162" sideWeight="0.6043873" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3238512" sideWeight="0.46520424" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.46822995" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46389496" sideWeight="0.64826024" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46389496" sideWeight="0.6444781" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21860817" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15085287" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1084,7 +987,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35188216" sideWeight="0.60665655" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1135,8 +1037,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="改成绿色主题色17" />
-    <MESSAGE value="改成绿色主题色18" />
     <MESSAGE value="改成绿色主题色19" />
     <MESSAGE value="改成绿色主题色20" />
     <MESSAGE value="改成绿色主题色22" />
@@ -1160,7 +1060,9 @@
     <MESSAGE value="database" />
     <MESSAGE value="database 22222" />
     <MESSAGE value="database 333" />
-    <option name="LAST_COMMIT_MESSAGE" value="database 333" />
+    <MESSAGE value="database 444" />
+    <MESSAGE value="setting debug=false" />
+    <option name="LAST_COMMIT_MESSAGE" value="setting debug=false" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1176,16 +1078,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/exam/api/schoolexam.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="94" column="25" lean-forward="false" selection-start-line="94" selection-start-column="25" selection-end-line="94" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1325,14 +1217,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1258">
           <caret line="74" column="79" lean-forward="false" selection-start-line="74" selection-start-column="79" selection-end-line="74" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/exam/js/center.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1547,10 +1431,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exam/views.py">
+    <entry file="file://$PROJECT_DIR$/exam/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="36" column="2" lean-forward="false" selection-start-line="36" selection-start-column="2" selection-end-line="37" selection-end-column="55" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1565,8 +1449,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pro/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+        <state relative-caret-position="187">
+          <caret line="32" column="16" lean-forward="false" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/exam/js/center.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
