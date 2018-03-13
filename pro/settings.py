@@ -86,22 +86,22 @@ WSGI_APPLICATION = 'pro.wsgi.application'
 
 
 DATABASES = {
-       # 'default': {
-       #  'ENGINE': 'django.db.backends.mysql',
-       #  'NAME': 'exam',
-       #  'USER': 'root',
-       #  'PASSWORD': 'surui123',
-       #  'HOST': '101.200.129.112',
-       #  'PORT': '3306',
-       #  },
-    'default': {
+       'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'exam',
         'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost',
+        'PASSWORD': 'surui123',
+        'HOST': '101.200.129.112',
         'PORT': '3306',
-    }
+        },
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME': 'exam',
+    #     'USER': 'root',
+    #     'PASSWORD': '',
+    #     'HOST': 'localhost',
+    #     'PORT': '3306',
+    # }
 }
 
 
