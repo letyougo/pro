@@ -22,20 +22,20 @@ def index(req):
 
 def school(request):
     school = request.user.school
-    # if DEBUG:
-    #     return render(request,'exam_dev/school.html')
+    if DEBUG:
+        return render(request,'exam_dev/school.html')
     return render(request, 'exam/school.html')
 
 def office(request):
     office = request.user.office
-    # if DEBUG:
-    #     return render(request,'exam_dev/office.html')
+    if DEBUG:
+        return render(request,'exam_dev/office.html')
     return render(request, 'exam/office.html')
 
 def center(request):
     center = request.user.center
-    # if DEBUG:
-    #     return render(request,'exam_dev/center.html')
+    if DEBUG:
+        return render(request,'exam_dev/center.html')
     return render(request, 'exam/center.html')
 
 def upload(request):

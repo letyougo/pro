@@ -75,10 +75,20 @@
       </el-dialog>
 
       <div class="right">
-        <span style="cursor: pointer" @click="forget.visible=true">欢迎：{{user.name}}</span>
-        <a href="/logout/" class="logout">
-          <i class="icon iconfont icon-web-quit "></i>
+        <span style="cursor: pointer" >欢迎：{{user.name}}</span>
+        <a href="javascript:void(0)" class="logout">
+          <el-dropdown @command="handleCommand">
+            <i class="el-icon-setting"></i>
+            <el-dropdown-menu slot="dropdown">
+              <el-dropdown-item command="edit"> <i style="color: #6f7180" class="el-icon-edit"/>&nbsp;&nbsp;修改密码</el-dropdown-item>
+              <el-dropdown-item command="phone"><i  style="color: #6f7180" class="el-icon-phone"/>&nbsp;&nbsp;修改手机号</el-dropdown-item>
+              <el-dropdown-item command="logout"><i  style="color: #6f7180" class="icon iconfont icon-web-quit icon-web-quit"/>&nbsp;&nbsp;退出登陆</el-dropdown-item>
+            </el-dropdown-menu>
+          </el-dropdown>
         </a>
+
+
+
       </div>
 
 
@@ -142,6 +152,17 @@
     methods:{
       route(name){
         this.$router.push(name)
+      },
+      handleCommand(c){
+        if(c=='edit'){
+          location.href = '/forget/'
+        }
+        if(c=='phone'){
+          this.forget.visible = true
+        }
+        if(c=='logout'){
+          location.href = '/logout/'
+        }
       },
       async send_code(phone){
 

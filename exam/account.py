@@ -10,33 +10,32 @@ import requests
 from django.http.response import HttpResponseRedirect
 import random
 from django.contrib.auth.hashers import make_password, check_password
+from datetime import datetime,timedelta
+def get_phone(user):
+    return get_user(user).admin_phone
 
-def get_phone(req):
-    return get_user(req).admin_phone
+def get_user(user):
+    try:
+        is_center = user.center
+    except:
+        is_center = False
 
-def get_user(req):
-    def get_phone(req):
-        try:
-            is_center = req.user.center
-        except:
-            is_center = False
+    try:
+        is_office = user.office
+    except:
+        is_office = False
 
-        try:
-            is_office = req.user.office
-        except:
-            is_office = False
+    try:
+        is_school = user.school
+    except:
+        is_school = False
 
-        try:
-            is_school = req.user.school
-        except:
-            is_school = False
-
-        if is_center:
-            return is_center
-        if is_office:
-            return is_office
-        if is_school:
-            return is_school
+    if is_center:
+        return is_center
+    if is_office:
+        return is_office
+    if is_school:
+        return is_school
 
 def get_user_by_phone(phone):
     try:
@@ -67,13 +66,24 @@ def login(request):
 
     username = request.POST.get('username', '')
     password = request.POST.get('password', '')
+    phone = request.POST.get('phone')
+    code = request.POST.get('code')
+    smg = Shortmsg.objects.filter(phone=phone).last()
+    t1 = datetime.now()
+    t2= smg.create_time
+    delta = timedelta(minutes=5)
+    expired = t1 - delta > t2
+    print(expired)
     user = auth.authenticate(username=username, password=password)
 
 
-
     if user and user.is_active:
-        u = auth.login(request, user)
-        return HttpResponseRedirect(('/'))
+        if get_phone(user) == phone:
+            if code == smg.code:
+                if not expired:
+                    u = auth.login(request, user)
+                    return HttpResponseRedirect(('/'))
+
 
 def make():
     return str(random.randint(0,9))+str(random.randint(0,9))+str(random.randint(0,9))+str(random.randint(0,9))

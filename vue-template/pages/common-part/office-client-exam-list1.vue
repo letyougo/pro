@@ -59,7 +59,7 @@
           <el-tag v-if="scope.row.status =='uncheck' "size="mini" type="danger">未通过</el-tag>
         </template>
       </el-table-column>
- 
+
       <el-table-column  label="操作"  width="213">
         <template scope="scope">
           <el-button-group>

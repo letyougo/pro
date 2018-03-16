@@ -81,8 +81,8 @@
         <el-table-column  label="操作" width="135" >
           <template scope="scope">
             <el-button-group>
-              <el-button type="danger" @click="remove(scope.row)" size="mini" :disabled="disabled">删除</el-button>
-              <el-button @click="open_edit(scope.row)" size="mini" :disabled="disabled">编辑</el-button>
+              <el-button type="danger" @click="remove(scope.row)" size="mini" :disabled="disabled || exam_item.lock2">删除</el-button>
+              <el-button @click="open_edit(scope.row)" size="mini" :disabled="disabled || exam_item.lock2">编辑</el-button>
 
             </el-button-group>
 
