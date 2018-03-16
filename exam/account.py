@@ -73,16 +73,30 @@ def login(request):
     t2= smg.create_time
     delta = timedelta(minutes=5)
     expired = t1 - delta > t2
-    print(expired)
+
     user = auth.authenticate(username=username, password=password)
 
 
+    error = ''
+
     if user and user.is_active:
+
         if get_phone(user) == phone:
             if code == smg.code:
                 if not expired:
                     u = auth.login(request, user)
                     return HttpResponseRedirect(('/'))
+                else:
+                    error='验证码过期了'
+            else:
+                error='验证码错误'
+        else:
+            error='绑定的手机号错误'
+
+    else:
+        error='密码错误'
+
+    return render(request,'status/500.html',dict(error=error))
 
 
 def make():
