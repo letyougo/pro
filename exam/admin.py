@@ -4,13 +4,13 @@ from django.contrib import admin
 from .models import School,Center,Office,Teacher,Exam,Schoolexam,Teacherexam,Config
 
 class school_admin(admin.ModelAdmin):
-    list_display = ('user','name','create_time','update_time')
+    list_display = ('user','name','admin_phone','create_time','update_time')
 
 class office_admin(admin.ModelAdmin):
-    list_display = ('user','office_name','exam_name','create_time','update_time')
+    list_display = ('user','office_name','admin_phone','exam_name','create_time','update_time')
 
 class center_admin(admin.ModelAdmin):
-    list_display = ('user','center_name','admin_phone','admin_name','create_time','update_time')
+    list_display = ('user','center_name','admin_phone','admin_phone','admin_name','create_time','update_time')
 
 class teacher_admin(admin.ModelAdmin):
     list_display = ('name','phone','idcard','bankcard','bankinfo','school','create_time','update_time')
