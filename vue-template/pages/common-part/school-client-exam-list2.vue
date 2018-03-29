@@ -46,8 +46,9 @@
 
       <el-form-item>
         <el-button-group>
-          <el-button  @click="add_form.visible=true" size="small" :disabled="disabled || loading || exam_item.lock2">增加教师</el-button>
-
+          <el-button  @click="add_form.visible=true" size="small"
+                      :disabled="disabled || exam_item.lock2"
+          >增加教师</el-button>
 
         </el-button-group>
 
@@ -81,14 +82,19 @@
         <el-table-column  label="操作" width="135" >
           <template scope="scope">
             <el-button-group>
-              <el-button type="danger" @click="remove(scope.row)" size="mini" :disabled="disabled || exam_item.lock2">删除</el-button>
-              <el-button @click="open_edit(scope.row)" size="mini" :disabled="disabled || exam_item.lock2">编辑</el-button>
+              <el-button type="danger" @click="remove(scope.row)" size="mini"
+                         :disabled="disabled || exam_item.lock2"
+              >删除</el-button>
+              <el-button @click="open_edit(scope.row)" size="mini"
+                         :disabled="disabled || exam_item.lock2"
+              >编辑</el-button>
 
             </el-button-group>
 
           </template>
         </el-table-column>
       </el-table>
+
 
 
     <el-dialog title="增加考试信息" :visible.sync="add_form.visible"

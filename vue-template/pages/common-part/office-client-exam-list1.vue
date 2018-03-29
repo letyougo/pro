@@ -45,11 +45,11 @@
 
 
       <el-table-column prop="time"  label="发放时间"></el-table-column>
-      <el-table-column   label="锁表" width="100">
+      <el-table-column   label="锁表" >
         <template scope="scope">
 
-          <el-tag v-if="scope.row.lock " size="mini">不可编辑</el-tag>
-          <el-tag v-else size="mini" type="danger">可编辑</el-tag>
+          <el-tag v-if="scope.row.lock " size="mini">不可增删改考点信息</el-tag>
+          <el-tag v-else size="mini" type="danger">可增删改考点信息</el-tag>
         </template>
       </el-table-column>
       <el-table-column   label="录入状态" width="80">
@@ -60,12 +60,20 @@
         </template>
       </el-table-column>
 
-      <el-table-column  label="操作"  width="213">
+
+
+      <el-table-column  label="操作"  width="270">
         <template scope="scope">
           <el-button-group>
-            <el-button type="danger" @click="remove(scope.row)" size="mini" :disabled="disabled">删除</el-button>
-            <el-button @click="open_edit(scope.row,scope)" size="mini" :disabled="disabled">编辑</el-button>
-            <el-button :disabled="scope.row.lack" @click="$router.push('/officeexam2?id='+scope.row.id)" size="mini">考点分配</el-button>
+            <el-button size="mini" @click="submit(scope.row.id,true)" v-if="!scope.row.lock && is_office">
+              提交
+            </el-button>
+            <el-button size="mini" @click="submit(scope.row.id,false)" v-if="scope.row.lock && is_center">
+              撤回
+            </el-button>
+            <el-button :disabled="scope.row.lock" type="danger" @click="remove(scope.row)" size="mini" >删除</el-button>
+            <el-button :disabled="scope.row.lock" @click="open_edit(scope.row,scope)" size="mini" >编辑</el-button>
+            <el-button :disabled="scope.row.lock" @click="$router.push('/officeexam2?id='+scope.row.id)" size="mini" >考点分配</el-button>
           </el-button-group>
 
         </template>
@@ -217,6 +225,8 @@
     data () {
       return {
         disabled:!window.type.office,
+        is_office:window.type.office,
+        is_center:window.type.center,
         list:[],
         detail:{},
         total:0,
@@ -256,6 +266,13 @@
     methods:{
       change_page(p){
         console.log(p)
+      },
+      async submit(id,bool){
+        var response = await request.put('/api/exam/'+id + '/',{
+          lock:bool
+        })
+        await this.fetch()
+        await this.fetch_school()
       },
       open_edit(data,b){
         console.log(data,b)

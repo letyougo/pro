@@ -46,11 +46,11 @@
 
         <!--<el-table-column prop="exam_total" label="考试办规划总监考费"></el-table-column>-->
 
-      <el-table-column   label="锁表" width="100">
+      <el-table-column   label="锁表" >
         <template scope="scope">
 
-          <el-tag v-if="scope.row.lock2 " size="mini" >不可编辑</el-tag>
-          <el-tag v-else size="mini" type="danger">可编辑</el-tag>
+          <el-tag v-if="scope.row.lock2 " size="mini" >不可增删改监考老师信息</el-tag>
+          <el-tag v-else size="mini" type="danger">可增删改监考老师信息</el-tag>
         </template>
       </el-table-column>
 
@@ -68,10 +68,10 @@
         <el-table-column  label="操作" width="180" >
           <template scope="scope">
             <el-button-group>
-              <el-button size="mini" @click="submit(scope.row.id,true)" v-if="!scope.row.lock2 && !is_school">
+              <el-button size="mini" @click="submit(scope.row.id,true)" v-if="!scope.row.lock2 && is_school">
                 提交
               </el-button>
-              <el-button size="mini" @click="submit(scope.row.id,false)" v-if="scope.row.lock2 && !is_school">
+              <el-button size="mini" @click="submit(scope.row.id,false)" v-if="scope.row.lock2 && is_office">
                 撤回
               </el-button>
               <el-button
@@ -178,6 +178,7 @@ export default {
     var is_school = window.type.school
     return {
       is_school:is_school,
+      is_office:window.type.office,
       list:[],
       detail:{},
       total:0,

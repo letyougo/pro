@@ -60,10 +60,10 @@ class ExamResource(Base):
             exam = Exam()
 
 
-        exam.time = self.data['time']
-        exam.desc = self.data['desc']
-        exam.total = self.data['total']
-        exam.lock = self.data['lock']
+        exam.time = self.data['time'] if 'time' in self.data else exam.time
+        exam.desc = self.data['desc'] if 'desc' in self.data else exam.desc
+        exam.total = self.data['total'] if 'total' in self.data else exam.total
+        exam.lock = self.data['lock'] if 'lock' in self.data else exam.lock
         exam.save()
         return exam
 

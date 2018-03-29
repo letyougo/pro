@@ -75,6 +75,9 @@ class SchoolExamResource(Base):
 
     # POST /
     def create(self):
+        exam = Exam.objects.get(id=int(self.data['exam_id']))
+        if exam.lock:
+            return
         return Schoolexam.objects.create(
             exam=Exam.objects.get(id=int(self.data['exam_id'])),
             school = School.objects.get(id=int(self.data['school_id'])),
@@ -83,11 +86,10 @@ class SchoolExamResource(Base):
 
     # PUT /pk/
     def update(self, pk):
-        try:
-            schoolexam = Schoolexam.objects.get(id=pk)
-        except Schoolexam.DoesNotExist:
-            schoolexam = Schoolexam()
-
+        schoolexam = Schoolexam.objects.get(id=pk)
+        exam = schoolexam.exam
+        if exam.lock:
+            return schoolexam
 
         schoolexam.total = self.data['total'] if 'total' in self.data else schoolexam.total
         schoolexam.lock2 = self.data['lock2'] if 'lock2' in self.data else schoolexam.lock2
@@ -96,4 +98,9 @@ class SchoolExamResource(Base):
 
     # DELETE /pk/
     def delete(self, pk):
-        Schoolexam.objects.get(id=pk).delete()
+        schoolexam = Schoolexam.objects.get(id=pk)
+        exam = schoolexam.exam
+        if exam.lock:
+            return schoolexam
+
+        return Schoolexam.objects.get(id=pk).delete()

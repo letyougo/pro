@@ -34,7 +34,7 @@
         </el-col>
         <el-col :span="12">
           <p style="text-align: center;color;#000000">
-      
+
              <span style="color: #1ab394" >   已分配出监考费</span>
             <span style="color: red" v-if="spend>exam_item.total*1"> {{spend}} </span>
             <span style="color: #1ab394" v-else>{{spend}}</span>
@@ -82,7 +82,7 @@
         </template>
       </el-table-column>
       <el-table-column prop="school_name" label="学校"></el-table-column>
-     
+
       <el-table-column prop="total"  label="应发金额"></el-table-column>
 
       <el-table-column   label="录入状态" width="80">
@@ -90,6 +90,14 @@
 
           <el-tag v-if="scope.row.status =='pass' " size="mini">通过</el-tag>
           <el-tag v-if="scope.row.status =='uncheck' "size="mini" type="danger">未通过</el-tag>
+        </template>
+      </el-table-column>
+
+      <el-table-column   label="提交状态" >
+        <template scope="scope">
+
+          <el-tag v-if="scope.row.lock2" size="mini">已提交（不可修改监考教师）</el-tag>
+          <el-tag v-else size="mini" type="danger">未提交（可修改监考教师）</el-tag>
         </template>
       </el-table-column>
 

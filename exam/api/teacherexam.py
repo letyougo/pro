@@ -37,6 +37,7 @@ class TeacherExamResource(Base):
         'teacher_name':'teacher.name',
         'teacher_in_school_id':'teacher.school.id',
         'teacher_in_school_name':'teacher.school.name',
+        'lock2':'schoolexam.lock2'
         # 'month_total':'month_total'
         
     })
@@ -73,6 +74,10 @@ class TeacherExamResource(Base):
 
         teacher = Teacher.objects.get(id=int(self.data['teacher']))
         schoolexam = Schoolexam.objects.get(id=int(self.data['school_exam']))
+
+        if schoolexam.lock2:
+            return
+
         total = self.data['total']
         return Teacherexam.objects.create(
             teacher=teacher,
@@ -83,19 +88,20 @@ class TeacherExamResource(Base):
     # PUT /pk/
     def update(self, pk):
 
-        try:
-            post = Teacherexam.objects.get(id=pk)
-        except Teacher.DoesNotExist:
-            post = Teacher()
-
-
-        post.total = self.data['teacher_total']
-
-        post.save()
-        return post
+        teacherexam = Teacherexam.objects.get(id=pk)
+        schoolexam = teacherexam.schoolexam
+        if schoolexam.lock2:
+            return teacherexam
+        teacherexam.total = self.data['teacher_total']
+        teacherexam.save()
+        return teacherexam
 
 
 
     # DELETE /pk/
     def delete(self, pk):
-        Teacherexam.objects.get(id=pk).delete()
+        teacherexam = Teacherexam.objects.get(id=pk)
+        schoolexam = teacherexam.schoolexam
+        if schoolexam.lock2:
+            return teacherexam
+        return teacherexam.delete()
