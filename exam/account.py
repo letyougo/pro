@@ -109,7 +109,7 @@ def logout(request):
 def sendcode(request):
     code =make()
     phone = request.GET.get('phone')
-    requests.get('http://localhost:7788/send?phone='+phone+'&code='+code,)
+    requests.get('http://101.200.129.112:7788/send?phone='+phone+'&code='+code,)
     Shortmsg.objects.create(phone=phone,code=code)
     return HttpResponse(dict(phone=phone,code=code))
 

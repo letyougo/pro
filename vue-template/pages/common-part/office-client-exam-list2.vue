@@ -46,8 +46,6 @@
 
 
 
-
-
     <br/>
 
 
@@ -60,11 +58,27 @@
         <el-button-group>
           <el-button type="primary" @click="fetch" >查询</el-button>
           <el-button  @click="add_form.visible=true" :disabled="disabled || exam_item.lock">增加新考点</el-button>
-
+          <el-button  @click="go_upload" :disabled="disabled || exam_item.lock">批量上传</el-button>
         </el-button-group>
       </el-form-item>
 
     </el-form>
+
+
+    <el-dialog title="批量上传" :visible.sync="muti.show"
+    >
+      <el-row>
+        <el-button-group>
+          <el-button>下载模版</el-button>
+        </el-button-group>
+      </el-row>
+
+
+      <span slot="footer" class="dialog-footer">
+          <el-button @click="muti.show=false" size="mini">取 消</el-button>
+          <el-button type="primary" @click="edit" size="mini">确 定</el-button>
+        </span>
+    </el-dialog>
 
 
     <el-table
@@ -226,6 +240,9 @@
         },
         school_list:[],
 
+        muti:{
+          show:false
+        }
       }
     },
 
@@ -236,6 +253,9 @@
     },
 
     methods:{
+      go_upload(){
+        this.$router.push('/office_upload?id='+this.$route.query.id)
+      },
       change_page(p){
         console.log(p)
       },

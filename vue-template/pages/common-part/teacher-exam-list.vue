@@ -9,7 +9,7 @@
         v-loading="loading"
 
       >
-     
+
       <el-table-column  label="序号">
         <template scope="scope">
           {{scope.$index+(page_num-1)*page_size+1}}
@@ -22,7 +22,7 @@
         <el-table-column prop="exam_desc" label="考试描述"></el-table-column>
         <el-table-column prop="exam_time" label="考试时间"></el-table-column>
         <el-table-column prop="teacher_total" label="该老师总监考费"></el-table-column>
-       
+
       </el-table>
 
     <br/>
@@ -95,6 +95,10 @@ export default {
           console.log(p)
       },
 
+      async aa(){
+
+      },
+
       async fetch(){
         var page_size = this.page_size,
           page_num = this.page_num,
@@ -108,7 +112,7 @@ export default {
             }
           })
           this.list = response.data.objects
-         
+
         var page  = response.data.page
         this.page_num = page.page_num
         this.page_size = page.page_size
@@ -116,19 +120,17 @@ export default {
         this.loading = false
       },
 
-  
       async send_idcard(){
 //        this.$refs.upload.submit();
         var res = await req.get('http://123.56.3.23:8888/func/card')
 
       },
 
- 
 
   },
   mounted(){
       this.fetch()
-   
+
   }
 
 

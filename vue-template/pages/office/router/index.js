@@ -15,6 +15,8 @@ import teacher_upload from '../../common-part/teacher-upload.vue'
 import teacher_export from '../../common-part/teacher-export.vue'
 import schoolexam1 from '../../common-part/school-client-exam-list1.vue'
 import schoolexam2 from '../../common-part/school-client-exam-list2.vue'
+
+import officeupload from '../../common-part/office-upload'
 Vue.use(Router)
 export default new Router({
   routes: [
@@ -78,5 +80,10 @@ export default new Router({
       name: 'schoolexam2',
       component: schoolexam2
     },
+    {
+          path: '/office_upload',
+      name: 'office_upload',
+      component: officeupload
+    }
   ]
 })

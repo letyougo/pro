@@ -5,7 +5,7 @@
 
 
       <el-form :inline="true" class="demo-form-inline" :loading="loading">
-       
+
         <h3>计税公式</h3>
         <el-form-item label=" 税=（总计-">
             <el-input size="mini" style="width:100px" type="number" v-model="config.base"/>
@@ -17,8 +17,8 @@
 
       <el-form-item>
             <el-button @click="save" size="mini" type="primary" :disabled="config_loading">{{config_loading?"修改中...":"保存"}}</el-button>
-        
-        </el-form-item>        
+
+        </el-form-item>
       </el-form>
 
       <el-form :inline="true" class="demo-form-inline" :loading="loading">
@@ -47,7 +47,9 @@
         <el-form-item>
           <el-button  size="mini" @click="download">下载数据</el-button>
         </el-form-item>
-
+  <el-form-item>
+          <el-button  size="mini" @click="jssq">下载金税三期表格</el-button>
+        </el-form-item>
       </el-form>
 
 
@@ -98,7 +100,7 @@ export default {
       school_list:[],
       active_school_id:''
     }
-    
+
   },
 
 
@@ -112,7 +114,9 @@ export default {
   },
 
   methods:{
-
+    jssq(){
+      location.href = `/api2/jssq/?start=${this.start}&end=${this.end}`
+    },
     download(){
       location.href = `/api2/export/?start=${this.start}&end=${this.end}&school_id=${this.active_school_id}`
     },
@@ -123,23 +127,23 @@ export default {
       },
 
       async fetch_config(){
-      
+
             var response = await request.get('/api/config/')
-            var config = response.data.objects 
+            var config = response.data.objects
             var obj = {}
             for(var i=0;i<config.length;i++){
                 var key = config[i].key
                 obj[key] = config[i].value
-              
+
             }
-            this.config = obj 
-       
+            this.config = obj
+
             console.log(this.config,obj,config)
       },
-      
+
       async save(){
           var config = this.config
-          this.config_loading = true 
+          this.config_loading = true
           var response = await request.get('/api/config/',{
             params:config
           })
@@ -153,16 +157,16 @@ export default {
                 message: '请选择学校!'
             });
           }
-          var 
+          var
             search = this.search,
             start = this.start,
             end = this.end,
             school_id=this.active_school_id,
             that = this
-       
+
 
           this.loading = true
-  
+
           var response = await request.get('/api/excel/',{
             params:{
               start:start,
@@ -170,9 +174,9 @@ export default {
               school_id
             }
           })
- 
 
-          this.list = response.data.result  
+
+          this.list = response.data.result
           this.header = response.data.header
         this.loading = false
       },
@@ -184,8 +188,8 @@ export default {
         })
         var data =  response.data.objects
         data.push({id:0,name:'全部学校'})
-        this.school_list = data 
-   
+        this.school_list = data
+
       },
 
 

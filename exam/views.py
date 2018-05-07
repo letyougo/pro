@@ -94,6 +94,32 @@ def excel(request):
         safe=False
     )
 
+def office_template(request):
+
+
+    response = HttpResponse(content_type='application/ms-excel')
+    response['Content-Disposition'] = 'attachment; filename="office-template.xls"'
+    wb = xlwt.Workbook(encoding='utf-8')
+    ws = wb.add_sheet('sheet1')
+    header = ['学校名', '监考费']
+
+    row_num = 0
+    for i in range(len(header)):
+        ws.write(row_num, i, header[i])
+    row_num = row_num + 1
+
+
+    exam = Exam.objects.get(id=int(request.GET['id']))
+    list = Schoolexam.objects.filter(exam=exam)
+    for item in list:
+        ws.write(row_num,0,item.school.name)
+        ws.write(row_num, 1, item.total)
+        row_num = row_num+1
+
+    wb.save(response)
+    return response
+
+
 def teacherexport(request):
     id = request.GET['school_id']
     school = School.objects.get(id=int(id))
@@ -117,6 +143,90 @@ def teacherexport(request):
     ws.col(2).width = 256*20    
     wb.save(response)
     return response
+
+
+def jssq(request):
+    start = date_parse(request.GET['start'])
+    end = date_parse(request.GET['end'])
+    query = Teacherexam.objects.filter(schoolexam__exam__time__range=[start, end])
+    exam = Exam.objects.filter(time__range=[start, end])
+
+
+    list = [t.to_obj() for t in query]
+
+
+    base = Config.objects.get(key="base")
+    rate = Config.objects.get(key="rate")
+    res = {}
+    exam_obj = {}
+    header = []
+
+    for e in exam:
+        e1 = e.to_obj()
+        desc = e1['desc']
+        exam_obj[desc] = 0
+
+
+    for item in list:
+        for e in exam_obj:
+            item[e] = 0
+
+    for item in list:
+        item[item['desc']] = item['total']
+
+
+    for item in list:
+        _id = 'teacher_' + str(item['teacher']['id'])
+        desc = item['desc']
+        if _id not in res:
+            res[_id] = item
+            res[_id][desc] = item['total']
+        else:
+            res[_id][desc] = res[_id][desc] + item['total']
+
+
+
+
+
+
+
+    response = HttpResponse(content_type='application/ms-excel')
+    response['Content-Disposition'] = 'attachment; filename="total.xls"'
+
+    title =  str(start)+'-'+str(end)+ '金税三期表'
+
+    wb = xlwt.Workbook(encoding='utf-8')
+    ws = wb.add_sheet(title)
+
+    # Sheet header, first row
+    header = ['姓名','证件类型','证件号码','所得期间起','所得期间止','收入额','免税所得','基本养老保险费','基本医疗保险费',
+              '失业保险费用','住房公积金','允许扣除的税费','其他','税前扣除项目合计','减除费用','实际捐赠额','允许列支的捐赠比例','准予扣除捐赠额','扣除及减除项目合计','应纳税所得额','税率','应纳税额','减免税额','应扣缴税额']
+
+    row_num=0
+    for i in range(len(header)):
+        ws.write(row_num, i, header[i])
+    row_num = row_num + 1
+
+    for key in res:
+
+        item=res[key]
+
+        ws.write(row_num, 0, item['teacher']['name'])
+        ws.write(row_num, 1, '身份证')
+        ws.write(row_num, 2, item['teacher']['idcard'])
+        ws.write(row_num, 3, str(start))
+        ws.write(row_num, 4, str(end))
+
+        shui = (item['total'] - float(base.value)) * float(rate.value)
+        shui = 0 if shui < 0 else shui
+
+        ws.write(row_num, 5, item['total']-shui)
+        ws.write(row_num,6,item['total'])
+        row_num = row_num + 1
+    ws.col(2).width = 256 * 40
+    wb.save(response)
+    return response
+
 
 
 def data_export(request):

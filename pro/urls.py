@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from exam.api.teacher import TeacherResource,teacher2
-from exam.api.schoolexam import SchoolExamResource,money
+from exam.api.schoolexam import SchoolExamResource,money,schoolexam2
 from exam.api.teacherexam import TeacherExamResource,money2
 from exam.api.school import SchoolResource
 from exam.api.exam import ExamResource
@@ -82,13 +82,15 @@ urlpatterns = [
     path(r'', view.index),
 
     path('api2/teacher/',teacher2.as_view()),
-
+    path('api2/schoolexam/',schoolexam2.as_view()),
     path('api2/schoolexam/money/', money),
     path('api2/teacherexam/money/', money2),
 
     path('api2/excel2/', view.export_users_csv),
     path('api2/export/', view.data_export),
-    path('teacherexport', view.teacherexport)
+    path('api2/jssq/', view.jssq),
+    path('teacherexport', view.teacherexport),
+    path('officetemplate', view.office_template)
 ]
 
 

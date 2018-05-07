@@ -6,6 +6,46 @@ from exam.api.base import Base
 from django.db.models import Avg,Max,Min,Count
 from django.http import JsonResponse
 from django.db.models import Sum
+import simplejson
+from django.views import View
+class schoolexam2(View):
+
+
+    def post(self, request):
+
+        body = simplejson.loads(request.body)
+        list = body['list']
+        exam = Exam.objects.get(id=int(body['exam_id']))
+
+        create = []
+        update = []
+        error=[]
+
+        for item in list:
+            if School.objects.filter(name=item['name']).exists():
+                if Schoolexam.objects.filter(exam=exam,school__name=item['name']).exists():
+                    schoolexam = Schoolexam.objects.get(exam=exam,school__name=item['name'])
+                    schoolexam.total = item['total']
+                    schoolexam.save()
+                    item['status'] = '已更新'
+                else:
+                    s = Schoolexam(
+                        school=School.objects.get(name=item['name']),
+                        total=item['total'],
+                        exam=exam,
+                        status='uncheck',
+                        lock2=False
+                    )
+                    create.append(s)
+                    item['status'] = '已增加'
+            else:
+                item['status'] = "不存在该学校"
+
+
+        Schoolexam.objects.bulk_create(create)
+        return JsonResponse(dict(list=list))
+
+
 def money(request):
     id = int(request.GET['exam_id'])
     exam = Exam.objects.get(id=id)
