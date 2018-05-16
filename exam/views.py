@@ -220,8 +220,14 @@ def jssq(request):
         shui = (item['total'] - float(base.value)) * float(rate.value)
         shui = 0 if shui < 0 else shui
 
-        ws.write(row_num, 5, item['total']-shui)
-        ws.write(row_num,6,item['total'])
+        ws.write(row_num, 5, item['total'])
+        # ws.write(row_num,6,item['total'])
+        ws.write(row_num, 14, 800)
+        ws.write(row_num, 18, 800)
+        ws.write(row_num, 19, 0 if item['total']-800 < 0 else item['total']-800)
+        ws.write(row_num, 20, '20%')
+        ws.write(row_num, 21, shui*0.2)
+        ws.write(row_num, 23, shui * 0.2)
         row_num = row_num + 1
     ws.col(2).width = 256 * 40
     wb.save(response)
