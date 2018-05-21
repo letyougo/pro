@@ -193,7 +193,7 @@ def jssq(request):
     response = HttpResponse(content_type='application/ms-excel')
     response['Content-Disposition'] = 'attachment; filename="total.xls"'
 
-    title =  str(start)+'-'+str(end)+ '金税三期表'
+    title =str(start.year) + str(start.month)+ '金税三期表'
 
     wb = xlwt.Workbook(encoding='utf-8')
     ws = wb.add_sheet(title)
@@ -224,7 +224,7 @@ def jssq(request):
         # ws.write(row_num,6,item['total'])
         ws.write(row_num, 14, 800)
         ws.write(row_num, 18, 800)
-        ws.write(row_num, 19, 0 if item['total']-800 < 0 else item['total']-800)
+        ws.write(row_num, 19, 0 if item['total']-800 < 0 else (item['total']-800)*0.2)
         ws.write(row_num, 20, '20%')
         ws.write(row_num, 21, shui*0.2)
         ws.write(row_num, 23, shui * 0.2)
