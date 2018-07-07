@@ -2,20 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e175e6c-5f66-4d73-8c72-c21be1c807eb" name="Default" comment="修改 权限问题">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/pro.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pro.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam/account.py" beforeDir="false" afterPath="$PROJECT_DIR$/exam/account.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam/api/schoolexam.py" beforeDir="false" afterPath="$PROJECT_DIR$/exam/api/schoolexam.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam/api/teacherexam.py" beforeDir="false" afterPath="$PROJECT_DIR$/exam/api/teacherexam.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exam/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/exam/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pro/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/pro/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pro/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/pro/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-template/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue-template/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-template/pages/common-part/center-export.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-template/pages/common-part/center-export.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-template/pages/common-part/office-client-exam-list2.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-template/pages/common-part/office-client-exam-list2.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-template/pages/common-part/teacher-exam-list.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-template/pages/common-part/teacher-exam-list.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-template/pages/office/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-template/pages/office/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/exam/css/center.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/exam/css/office.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/exam/css/school.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/exam/fonts/element-icons.6f0a763.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/exam/js/center.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/exam/js/center.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/exam/js/manifest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/exam/js/manifest.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/exam/js/office.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/exam/js/office.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/exam/js/school.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/exam/js/school.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/exam/js/vendor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/exam/js/vendor.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/exam_dev/school.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/exam_dev/school.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-template/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-template/config/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-template/pages/common-part/school-client-exam-list2.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-template/pages/common-part/school-client-exam-list2.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue-template/webpack-stats.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue-template/webpack-stats.json" afterDir="false" />
     </list>
     <ignored path="pro.iws" />
@@ -75,32 +84,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="office-upload.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue-template/pages/common-part/office-upload.vue">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/exam/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="122" column="28" selection-start-line="122" selection-start-column="28" selection-end-line="122" selection-end-column="28" />
+            <state relative-caret-position="1632">
+              <caret line="109" column="19" selection-start-line="109" selection-start-column="19" selection-end-line="109" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pro/urls.py">
+      <file leaf-file-name="school-client-exam-list2.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue-template/pages/common-part/school-client-exam-list2.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1185">
-              <caret line="96" selection-start-line="96" selection-end-line="96" />
+            <state relative-caret-position="113">
+              <caret line="276" column="53" selection-start-line="276" selection-start-column="53" selection-end-line="276" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="center.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/exam/js/center.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="teacherexam.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/exam/api/teacherexam.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1018">
+              <caret line="117" column="11" selection-start-line="117" selection-start-column="11" selection-end-line="117" selection-end-column="11" />
               <folding>
-                <element signature="e#628#660#0" expanded="true" />
+                <element signature="e#0#38#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="teacher.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exam/api/teacher.py">
+      <file leaf-file-name="school.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/exam/api/school.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+            <state relative-caret-position="-1209">
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,60 +133,19 @@
       <file leaf-file-name="office.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exam/api/office.py">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1243">
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="exam_teacherexam" pinned="false" current-in-tab="false">
+        <entry file="das://ffd6a680-62b0-4e0e-8275-3acb28b6d4af/schema/exam/table/exam_teacherexam">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="schoolexam.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exam/api/schoolexam.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="45" column="42" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/exam/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1430">
-              <caret line="362" column="12" selection-start-line="362" selection-start-column="12" selection-end-line="362" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="teacherexam.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exam/api/teacherexam.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="status.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exam/status.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="center-export.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue-template/pages/common-part/center-export.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-282">
-              <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -169,8 +153,26 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exam/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="182" lean-forward="true" selection-start-line="182" selection-end-line="182" />
+            <state relative-caret-position="-101">
+              <caret line="221" column="9" selection-start-line="221" selection-start-column="9" selection-end-line="221" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="a.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/a.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="exam_teacher" pinned="false" current-in-tab="false">
+        <entry file="das://ffd6a680-62b0-4e0e-8275-3acb28b6d4af/schema/exam/table/exam_teacher">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -210,6 +212,13 @@
       <find>api/exam</find>
       <find>reque</find>
       <find>数据</find>
+      <find>houmen</find>
+      <find>templ</find>
+      <find>王建平</find>
+      <find>response.data</find>
+      <find>school_detail</find>
+      <find>list</find>
+      <find>重</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -224,10 +233,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/.virtualenvs/mypy/lib/python3.5/site-packages/restless/resources.py" />
-        <option value="$PROJECT_DIR$/exam/api/school.py" />
-        <option value="$PROJECT_DIR$/exam/api/office.py" />
-        <option value="$PROJECT_DIR$/templates/exam_dev/index.html" />
         <option value="$PROJECT_DIR$/exam/__init__.py" />
         <option value="$PROJECT_DIR$/exam/signals/schoolexam.py" />
         <option value="$PROJECT_DIR$/exam/apps.py" />
@@ -238,12 +243,10 @@
         <option value="$PROJECT_DIR$/deploy.txt" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a8519aa3-3eb0-4350-b0ab-31a7cdc306a8/console.sql" />
         <option value="$PROJECT_DIR$/exam/api/exam.py" />
-        <option value="$PROJECT_DIR$/exam/api/teacherexam.py" />
         <option value="$PROJECT_DIR$/exam/admin.py" />
         <option value="$PROJECT_DIR$/templates/account/forget.html" />
         <option value="$PROJECT_DIR$/templates/exam_dev/center.html" />
         <option value="$PROJECT_DIR$/templates/exam_dev/office.html" />
-        <option value="$PROJECT_DIR$/templates/exam_dev/school.html" />
         <option value="$PROJECT_DIR$/templates/exam/school.html" />
         <option value="$PROJECT_DIR$/templates/exam/office.html" />
         <option value="$PROJECT_DIR$/templates/exam/center.html" />
@@ -264,7 +267,6 @@
         <option value="$PROJECT_DIR$/web.config" />
         <option value="$PROJECT_DIR$/templates/account/login.html" />
         <option value="$PROJECT_DIR$/templates/status/500.html" />
-        <option value="$PROJECT_DIR$/pro/settings.py" />
         <option value="$PROJECT_DIR$/exam/account.py" />
         <option value="$PROJECT_DIR$/vue-template/pages/common-part/teacher-exam-list.vue" />
         <option value="$PROJECT_DIR$/vue-template/pages/common-part/office-client-exam-list2.vue" />
@@ -272,9 +274,16 @@
         <option value="$PROJECT_DIR$/exam/api/schoolexam.py" />
         <option value="$PROJECT_DIR$/vue-template/pages/common-part/office-upload.vue" />
         <option value="$PROJECT_DIR$/vue-template/pages/common-part/center-export.vue" />
-        <option value="$PROJECT_DIR$/pro/urls.py" />
-        <option value="$PROJECT_DIR$/exam/models.py" />
+        <option value="$PROJECT_DIR$/pro/settings.py" />
+        <option value="$PROJECT_DIR$/vue-template/config/index.js" />
+        <option value="$PROJECT_DIR$/templates/exam_dev/school.html" />
         <option value="$PROJECT_DIR$/exam/views.py" />
+        <option value="$PROJECT_DIR$/pro/urls.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/ffd6a680-62b0-4e0e-8275-3acb28b6d4af/console_1.sql" />
+        <option value="$PROJECT_DIR$/a.txt" />
+        <option value="$PROJECT_DIR$/exam/models.py" />
+        <option value="$PROJECT_DIR$/exam/api/teacherexam.py" />
+        <option value="$PROJECT_DIR$/vue-template/pages/common-part/school-client-exam-list2.vue" />
       </list>
     </option>
   </component>
@@ -303,11 +312,11 @@
       <path value="$PROJECT_DIR$/vue-template/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="11" />
-    <option name="y" value="23" />
-    <option name="width" value="1805" />
-    <option name="height" value="1282" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="201" />
+    <option name="y" value="-22" />
+    <option name="width" value="1386" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -338,12 +347,25 @@
             <path>
               <item name="pro" type="b2602c69:ProjectViewProjectNode" />
               <item name="pro" type="462c0819:PsiDirectoryNode" />
-              <item name="pro" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pro" type="b2602c69:ProjectViewProjectNode" />
               <item name="pro" type="462c0819:PsiDirectoryNode" />
               <item name="vue-template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pro" type="462c0819:PsiDirectoryNode" />
+              <item name="vue-template" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pro" type="462c0819:PsiDirectoryNode" />
+              <item name="vue-template" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pro" type="b2602c69:ProjectViewProjectNode" />
@@ -355,8 +377,7 @@
               <item name="pro" type="b2602c69:ProjectViewProjectNode" />
               <item name="pro" type="462c0819:PsiDirectoryNode" />
               <item name="vue-template" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="common-part" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -374,7 +395,7 @@
     <property name="js-jscs-nodeInterpreter" value="$USER_HOME$/.nvm/versions/node/v8.0.0/bin/node" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -450,117 +471,7 @@
       <option name="useCustomRunCommand" value="false" />
       <option name="customRunCommand" value="" />
     </configuration>
-    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pro" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="TARGET" value="" />
-      <option name="SETTINGS_FILE" value="" />
-      <option name="CUSTOM_SETTINGS" value="false" />
-      <option name="USE_OPTIONS" value="false" />
-      <option name="OPTIONS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pro" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pro" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pro" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <module name="pro" />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run" />
-      <scripts />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Attests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pro" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -991,19 +902,20 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="11" y="23" width="1805" height="1282" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.37443268" side_tool="true" weight="0.35066372" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.46822995" weight="0.3289689" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.5816944" weight="0.30464134" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" sideWeight="0.5816944" visible="true" weight="0.37953794" />
       <window_info anchor="bottom" id="Python Console" order="8" sideWeight="0.46217853" weight="0.321519" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.6255673" visible="true" weight="0.3586498" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17923993" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.6255673" weight="0.30528054" />
+      <window_info anchor="bottom" id="Database Console" order="14" sideWeight="0.49092284" weight="0.32178217" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19440243" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="4" weight="0.68089235" />
-      <window_info anchor="right" id="SciView" order="5" weight="0.32910448" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.27155825" />
+      <window_info anchor="right" id="SciView" order="5" weight="0.3290469" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.60665655" weight="0.35188216" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -1016,7 +928,6 @@
       <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Database Console" order="14" sideWeight="0.49092284" weight="0.26410258" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49167928" weight="0.32603937" />
     </layout>
   </component>
@@ -1101,22 +1012,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/nginx.conf" />
-    <entry file="file://$PROJECT_DIR$/content.json" />
-    <entry file="file://$PROJECT_DIR$/0313.json" />
-    <entry file="file://$PROJECT_DIR$/exam.sql" />
-    <entry file="file://$PROJECT_DIR$/uwsgi-2.0.17/t/go/cachetest.go" />
-    <entry file="file://$PROJECT_DIR$/uwsgi-2.0.17/bin/uwsgi" />
-    <entry file="file://$PROJECT_DIR$/uwsgi-2.0.17/uwsgiconfig.py" />
-    <entry file="file://$PROJECT_DIR$/uwsgi-2.0.17/plugins/python/uwsgiplugin.py" />
-    <entry file="file://$PROJECT_DIR$/uwsgi-2.0.17/plugins/mono/uwsgiplugin.py" />
-    <entry file="file://$PROJECT_DIR$/uwsgi-2.0.17/plugins/alarm_speech/uwsgiplugin.py" />
-    <entry file="file://$PROJECT_DIR$/uwsgi-2.0.17/plugins/jvm/uwsgiplugin.py" />
-    <entry file="file://$PROJECT_DIR$/uwsgi-2.0.17/plugins/forkptyrouter/uwsgiplugin.py" />
-    <entry file="file://$PROJECT_DIR$/uwsgi-2.0.17/plugins/pty/uwsgiplugin.py" />
-    <entry file="file://$PROJECT_DIR$/uwsgi-2.0.17/plugins/router_basicauth/uwsgiplugin.py" />
-    <entry file="file://$PROJECT_DIR$/uwsgi-2.0.17/examples/uwsgistatus.py" />
-    <entry file="file://$PROJECT_DIR$/222" />
     <entry file="file://D:/program/wamp/bin/apache/apache2.4.23/conf/httpd1.conf" />
     <entry file="file://D:/program/wamp/bin/apache/apache2.4.23/conf/httpd1 - 副本.conf" />
     <entry file="file://D:/program/wamp/bin/apache/apache2.4.23/conf/httpd - 副本.conf" />
@@ -1169,24 +1064,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://b5621f16-72a0-43cc-a4d6-56c814a56785/schema/exam/table/exam_exam">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://b5621f16-72a0-43cc-a4d6-56c814a56785/schema/exam/table/exam_exam" />
     <entry file="file://$PROJECT_DIR$/vue-template/pages/common-part/teacher-exam-list.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1695">
           <caret line="121" selection-start-line="121" selection-end-line="121" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pro/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="30" column="20" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1197,63 +1079,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue-template/pages/common-part/school-client-exam-list2.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4680">
-          <caret line="314" column="79" selection-start-line="314" selection-start-column="79" selection-end-line="314" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-template/pages/common-part/office-client-exam-list2.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5535">
-          <caret line="369" column="4" selection-start-line="369" selection-start-column="4" selection-end-line="373" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://b5621f16-72a0-43cc-a4d6-56c814a56785/schema/exam/table/exam_school">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exam/account.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="114" selection-start-line="114" selection-end-line="114" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exam/api/office.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://b5621f16-72a0-43cc-a4d6-56c814a56785/schema/exam/table/exam_school" />
     <entry file="file://$PROJECT_DIR$/exam/api/teacher.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state>
           <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-template/pages/common-part/teacher-upload.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1330">
-          <caret line="230" column="12" lean-forward="true" selection-start-line="230" selection-start-column="12" selection-end-line="230" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/exam/api/schoolexam.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
+        <state>
           <caret line="45" column="42" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
@@ -1261,59 +1097,197 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pro/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1185">
-          <caret line="96" selection-start-line="96" selection-end-line="96" />
-          <folding>
-            <element signature="e#628#660#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vue-template/pages/common-part/office-upload.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
+        <state>
           <caret line="122" column="28" selection-start-line="122" selection-start-column="28" selection-end-line="122" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue-template/pages/common-part/center-export.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-282">
+        <state>
           <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exam/api/teacherexam.py">
-      <provider selected="true" editor-type-id="text-editor">
+    <entry file="das://ffd6a680-62b0-4e0e-8275-3acb28b6d4af/schema/exam/table/exam_center">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ffd6a680-62b0-4e0e-8275-3acb28b6d4af/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://ffd6a680-62b0-4e0e-8275-3acb28b6d4af/schema/exam/table/auth_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pro/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
-            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#302#311#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/exam/status.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
+        <state relative-caret-position="102">
           <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exam/models.py">
+    <entry file="file://$PROJECT_DIR$/exam/account.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-template/config/dev.env.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/exam_dev/school.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="182" lean-forward="true" selection-start-line="182" selection-end-line="182" />
+        <state relative-caret-position="476">
+          <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pro/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="93" column="24" selection-start-line="93" selection-start-column="10" selection-end-line="93" selection-end-column="24" />
+          <folding>
+            <element signature="e#628#660#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-template/pages/common-part/excel-download.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-template/pages/common-part/office-client-exam-list2.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2005">
+          <caret line="369" column="4" selection-start-line="369" selection-start-column="4" selection-end-line="373" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://ffd6a680-62b0-4e0e-8275-3acb28b6d4af/schema/exam/table/exam_school">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-template/config/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-template/pages/common-part/school-client-exam-list1.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4692" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/exam_dev/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ffd6a680-62b0-4e0e-8275-3acb28b6d4af/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="45" selection-start-column="45" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://ffd6a680-62b0-4e0e-8275-3acb28b6d4af/schema/exam/table/exam_teacher">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-template/pages/common-part/teacher-upload.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1728">
+          <caret line="142" column="2" selection-start-line="142" selection-start-column="2" selection-end-line="167" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/exam/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1430">
-          <caret line="362" column="12" selection-start-line="362" selection-start-column="12" selection-end-line="362" selection-end-column="47" />
+        <state relative-caret-position="1632">
+          <caret line="109" column="19" selection-start-line="109" selection-start-column="19" selection-end-line="109" selection-end-column="19" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-101">
+          <caret line="221" column="9" selection-start-line="221" selection-start-column="9" selection-end-line="221" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://ffd6a680-62b0-4e0e-8275-3acb28b6d4af/schema/exam/table/exam_teacherexam">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/api/school.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1209">
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/api/office.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1243">
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exam/api/teacherexam.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1018">
+          <caret line="117" column="11" selection-start-line="117" selection-start-column="11" selection-end-line="117" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-template/pages/common-part/school-client-exam-list2.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="276" column="53" selection-start-line="276" selection-start-column="53" selection-end-line="276" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/exam/js/center.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

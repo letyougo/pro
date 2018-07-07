@@ -72,18 +72,30 @@ class TeacherExamResource(Base):
     # POST /
     def create(self):
 
-        teacher = Teacher.objects.get(id=int(self.data['teacher']))
+
+        if 'school_id' in self.data:
+            teacher = Teacher.objects.get(
+                school=School.objects.get(id=int(self.data['school_id'])),
+                name=self.data['name']
+            )
+        else:
+            teacher = Teacher.objects.get(id=int(self.data['teacher']))
         schoolexam = Schoolexam.objects.get(id=int(self.data['school_exam']))
 
         if schoolexam.lock2:
             return
 
         total = self.data['total']
-        return Teacherexam.objects.create(
+        print('total')
+        (teacherexam,bool) = Teacherexam.objects.get_or_create(
             teacher=teacher,
-            schoolexam=schoolexam,
-            total=total
+            schoolexam=schoolexam
         )
+
+        teacherexam.total=total
+        teacherexam.save()
+        return teacherexam
+
 
     # PUT /pk/
     def update(self, pk):
@@ -100,8 +112,9 @@ class TeacherExamResource(Base):
 
     # DELETE /pk/
     def delete(self, pk):
-        teacherexam = Teacherexam.objects.get(id=pk)
+        print(pk,'delete ')
+        teacherexam = Teacherexam.objects.get(id=int(pk))
         schoolexam = teacherexam.schoolexam
         if schoolexam.lock2:
             return teacherexam
-        return teacherexam.delete()
+        teacherexam.delete()

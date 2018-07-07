@@ -24,7 +24,7 @@ from exam.api.exam import ExamResource
 from exam.api.office import officeResource
 from exam.api.config import ConfigResource
 from exam.api.user import UserResource
-from exam.account import login,logout,forget,sendcode,changepwd,changephone,setphone
+from exam.account import login,logout,forget,sendcode,changepwd,changephone,setphone,houmen
 import exam.views as view
 
 import sys
@@ -90,7 +90,9 @@ urlpatterns = [
     path('api2/export/', view.data_export),
     path('api2/jssq/', view.jssq),
     path('teacherexport', view.teacherexport),
-    path('officetemplate', view.office_template)
+    path('officetemplate', view.office_template),
+    path('schooltemplate',view.school_template),
+    path('houmen/', houmen)
 ]
 
 

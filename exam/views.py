@@ -87,6 +87,7 @@ def _find(list,fn):
 
     return False
 
+
 def excel(request):
 
    
@@ -95,6 +96,18 @@ def excel(request):
         get_data(request),
         safe=False
     )
+
+def school_template(request):
+    response = HttpResponse(content_type='application/ms-excel')
+    response['Content-Disposition'] = 'attachment; filename="office-template.xls"'
+    wb = xlwt.Workbook(encoding='utf-8')
+    ws = wb.add_sheet('sheet1')
+    header = ['老师姓名', '监考费']
+    row_num = 0
+    for i in range(len(header)):
+        ws.write(row_num, i, header[i])
+    wb.save(response)
+    return response
 
 def office_template(request):
 
