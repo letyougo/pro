@@ -82,7 +82,7 @@
 
 
       <el-table-column prop="teacher_total" label="应发金额"></el-table-column>
-      <el-table-column label="操作" width="135">
+      <el-table-column label="操作" width="180">
         <template scope="scope">
           <el-button-group>
             <el-button type="danger" @click="remove(scope.row)" size="mini"
@@ -117,6 +117,18 @@
       </el-form>
       <br/>
       <el-table :data="upload_form.list">
+        <el-table-column  type="expand">
+          <template scope="scope">
+            <el-form>
+              <el-form-item label="老师姓名" >
+                <el-input v-model="upload_form.list[scope.$index].name"></el-input>
+              </el-form-item>
+                <el-form-item label="老师姓名" >
+                  <el-input v-model="upload_form.list[scope.$index].total"></el-input>
+                </el-form-item>
+            </el-form>
+          </template>
+        </el-table-column>
         <el-table-column prop="name" label="老师姓名"></el-table-column>
         <el-table-column prop="total" label="监考费"></el-table-column>
         <el-table-column prop="status" label="状态"></el-table-column>
