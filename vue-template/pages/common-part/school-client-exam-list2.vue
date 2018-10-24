@@ -362,6 +362,7 @@
             search
           }
         })
+        this.loading = false
 
 
         this.list = response.data.objects
@@ -498,18 +499,16 @@
 
 
       async reload() {
-        this.loading = true
-        await this.fetch()
-        await this.fetch_money()
-        await this.fetch_exam()
-        this.loading = false
-        // await this.fetch_school()
+        this.fetch_money()
+        this.fetch_exam()
+        this.fetch()
+        // await
 
       }
     },
     async mounted() {
       this.reload()
-
+      this.fetch_school()
     }
   }
 </script>
